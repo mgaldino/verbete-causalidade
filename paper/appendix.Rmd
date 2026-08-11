@@ -1,0 +1,31 @@
+---
+title: "Apêndice de Trabalho — Causalidade"
+author: ""
+date: "`r Sys.Date()`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+    toc: false
+    includes:
+      in_header: preamble.tex
+bibliography: ../references.bib
+lang: pt-BR
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  fig.path = "../output/figures/appendix_",
+  dpi = 150
+)
+```
+
+# Notas de atualização
+
+[Registrar decisões editoriais, justificativas de estrutura e pontos a revisar antes da entrega.]
+
+# Referências candidatas
+
+[Registrar leituras ainda não incorporadas ao `references.bib`.]

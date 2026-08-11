@@ -1,0 +1,1058 @@
+                                          Statistical Science
+                                          2014, Vol. 29, No. 3, 439–457
+                                          DOI: 10.1214/14-STS489
+                                           c Institute of Mathematical Statistics, 2014
+
+
+
+                                          A Conversation with Donald B. Rubin
+                                          Fan Li and Fabrizia Mealli
+
+
+                                                                    Abstract. Donald Bruce Rubin is John L. Loeb Professor of Statis-
+                                                                    tics at Harvard University. He has made fundamental contributions
+
+
+
+
+arXiv:1404.1789v3 [stat.OT] 21 Oct 2014
+                                                                    to statistical methods for missing data, causal inference, survey sam-
+                                                                    pling, Bayesian inference, computing and applications to a wide range
+                                                                    of disciplines, including psychology, education, policy, law, economics,
+                                                                    epidemiology, public health and other social and biomedical sciences.
+
+
+                                             Don was born in Washington, D.C. on Decem-                       Don has advised or coadvised over 50 Ph.D. stu-
+                                          ber 22, 1943, to Harriet and Allan Rubin. One year               dents, written or edited 12 books, and published
+                                          later, his family moved to Evanston, Illinois, where             nearly 400 articles. According to Google Scholar, by
+                                          he grew up. He developed a keen interest in physics              May 2014, Rubin’s academic work has 150,000 cita-
+                                          and mathematics in high school. In 1961, he went                 tions, 16,000 in 2013 alone, placing him at the top
+                                          to college at Princeton University, intending to ma-             with the most cited scholars in the world.
+                                          jor in physics, but graduated in psychology in 1965.                For his many contributions, Don has been hon-
+                                          He began graduate school in psychology at Harvard,               ored by election to Membership in the US National
+                                          then switched to Computer Science (MS, 1966) and                 Academy of Sciences, the American Academy of
+                                          eventually earned a Ph.D. in Statistics under the                Arts and Sciences, the British Academy, and Fellow-
+                                          direction of Bill Cochran in 1970. After graduating              ship in the American Statistical Association, Insti-
+                                          from Harvard, he taught for a year in Harvard’s De-              tute of Mathematical Statistics, International Sta-
+                                          partment of Statistics, and then in 1971 he began                tistical Institute, Guggenheim Foundation, Hum-
+                                          working at Educational Testing Service (ETS) and                 boldt Foundation and Woodrow Wilson Society. He
+                                          served as a visiting faculty member at Princeton’s               has also received the Samuel S. Wilks Medal from
+                                          new Statistics Department. He held several visiting              the American Statistical Association, the Parzen
+                                          academic appointments in the next decade at Har-                 Prize for Statistical Innovation, the Fisher Lecture-
+                                          vard, UC Berkeley, University of Texas at Austin                 ship and the George W. Snedecor Award of the
+                                          and the University of Wisconsin at Madison. He was               Committee of Presidents of Statistical Societies. He
+                                          a full professor at the University of Chicago in 1981–           was named Statistician of the Year by the American
+                                                                                                           Statistical Association’s Boston and Chicago Chap-
+                                          1983, and in 1984 moved back to the Harvard Statis-
+                                                                                                           ters. In addition, he has received honorary degrees
+                                          tics Department, where he remains until now, and
+                                                                                                           from Bamberg University, Germany and the Univer-
+                                          where he served as chair from 1985 to 1994 and from
+                                                                                                           sity of Ljubljana, Slovenia.
+                                          2000 to 2004.
+                                                                                                              Besides being a statistician, he is a music lover,
+                                                                                                           audiophile and fan of classic sports cars.
+                                          Fan Li is Assistant Professor, Department of Statistical
+                                                                                                              This interview was initiated on August 7, 2013,
+                                          Science, Duke University, Durham, North Carolina
+                                          27708-0251, USA e-mail: fli@stat.duke.edu. Fabrizia              during the Joint Statistical Meetings 2013 in Mon-
+                                          Mealli is Professor, Department of Statistics, Computer          treal, in anticipation of Rubin’s 70th birthday,
+                                          Science, Applications, University of Florence, Viale             and completed at various times over the following
+                                          Morgagni 59, Florence 50134, Italy e-mail:                       months.
+                                          mealli@disia.unifi.it.
+                                                                                                                             BEGINNINGS
+                                           This is an electronic reprint of the original article
+                                           published by the Institute of Mathematical Statistics in          Fan: Let’s begin with your childhood. I under-
+                                           Statistical Science, 2014, Vol. 29, No. 3, 439–457. This        stand you grew up in a family of lawyers, which
+                                           reprint differs from the original in pagination and             must have heavily influenced you intellectually. Can
+                                           typographic detail.                                             you talk a little about your family?
+                                                                                                       1
+2                                              F. LI AND F. MEALLI
+
+   Don: Yes. My father was the youngest of four
+brothers, all of whom were lawyers, and we used
+to have stimulating arguments about all sorts of
+topics. Probably the most argumentative uncle was
+Sy (Seymour Rubin, senior partner at Arnold, For-
+tas and Porter, diplomat, and professor of law at
+American University), from D.C., who had framed
+personal letters of thanks for service from all the
+presidents starting with Harry Truman and going
+through Jerry Ford, as well as from some contenders,
+such as Adlai Stevenson, and various Supreme Court
+Justices. I found this impressive but daunting. The
+relevance of this is that it clearly created in me a
+deep respect for the principles of our legal system,
+to which I find statistics highly relevant—this has
+obviously influenced my own application of statis-                    Fig. 1.   Five-year old D. B. Rubin.
+tics to law, for example, concerning issues as diverse
+as the death penalty, affirmative action and the to-        scientific thinking from physics, and I had deep re-
+bacco litigation.                                           spect for disciplines other than formal mathematics,
+   Fabri: We will surely get back to these issues later,    in particular, physics and the law. These, in hind-
+but was there anyone else who influenced your in-           sight, are exposures that were crucial to the kind
+terest in statistics?                                       of statistics to which I gravitated in my later years.
+   Don: Probably the most influential was Mel, my           More details of the influence of my mentors can be
+mother’s brother, a dentist (then a bachelor). He           found in Rubin (2014b).
+loved to gamble small amounts, either in the bleach-
+ers at Wrigley Field, betting on the outcome of                    COLLEGE TIME AT PRINCETON
+the next pitch, while watching the Cubs lose, or               Fan: You entered Princeton in 1961, first as a
+at Arlington Race track, where I was taught at a            physics major, but later changed to psychology.
+young age how to read the Racing Form and esti-             Why the change and why psychology?
+mate the “true” odds from the various displayed bet-           Don: That’s a good question. Inspired by Anspaugh,
+ting pools, while losing two dollar bets. Wednesday         I wanted to become a physicist. I was lined up
+and Saturday afternoons, during the warm months             for a BA in three years when I entered Prince-
+when I was a preteen, were times to learn statistics—       ton, and unknown to me before I entered, also lined
+even if at various bookie joints that were sometimes        up for a crazy plan to get a Ph.D. in physics in
+raided. As I recall, I was a decent student of his, but     five years, in a program being reconditely planned
+still lost small amounts.                                   by John Wheeler, a very well-known professor of
+   There were two other important influences on             physics there (and Richard Feynman’s Ph.D. ad-
+my statistical interests from the late 1950s and            visor years earlier). In retrospect, this was a wildly
+early 1960s. First, there was an old friend of my           over-ambitious agenda, at least for me. For a combi-
+father’s from their government days together, a             nation of complications, including the Vietnam War
+Professor Emeritus of Economics at UC Berkeley,             (and its associated drafts) and Professor Wheeler’s
+George Mehren, with whom I had many entertain-              sabbatical at a critical time, I think no one suc-
+ing and educational (to me) arguments, which gener-         ceeded in completing a five-year Ph.D. from entry.
+ated a respect for economics that continues to grow         In any case, there were many kids like me at Prince-
+to this day. And second, my wonderful teacher of            ton then, who, even though primarily interested in
+physics at Evanston Township High School—Robert             math and physics, were encouraged to explore other
+Anspaugh—who tried to teach me to think like a              subjects. I did that, and one of the courses I took
+real scientist, and how to use mathematics in the           was on personality theory, taught by a wonderful
+pursuit of science.                                         professor, Silvan Tomkins, who later became a good
+   By the time I left high school for college, I appreci-   friend. At the end of my second year, I switched
+ated some statistical thinking from gambling, some          from Physics to Psychology, where my mathemati-
+                                   A CONVERSATION WITH D. B. RUBIN                                          3
+
+cal and scientific background seemed both rare and        Fan: But ultimately you chose Harvard.
+appreciated—it was an immature decision (not sure         Don: Well, we all make strange decisions. The rea-
+what a mature one would have been), but a fine one      son was that I had an east-coast girlfriend who had
+for me because it introduced me to some new ways        another year in college.
+of thinking, as well as to new fabulous academic
+mentors.                                                      GRADUATE YEARS AT HARVARD
+   Fabri: You had some computing skills which were
+uncommon then, right? So you started to use com-           Fabri: You first arrived at Harvard in 1965 as a
+puters quite early.                                     Ph.D. student in psychology, which was in the De-
+   Don: Yes. Sometime between my first and second       partment of Social Relations then, but were soon
+year at Princeton, I taught myself Fortran. As you      disappointed, and switched to computer science.
+mentioned, those skills were not common, even at        What happened?
+places like Princeton then.                                Don: When I visited Harvard in the summer of
+   Fabri: Was learning Fortran just a matter of hav-    1965, some senior people in Social Relations ap-
+ing fun or did you actually use these skills to solve   peared to find my background, in subjects like math
+problems?                                               and physics, attractive, so they promised me that I
+   Don: It was for solving problems. When I was in      could skip some of the basic more “mathy” require-
+the Psychology Department, I was helping to sup-        ments. But when I arrived there, the chair of the
+port myself by coding some of the early batch com-      department, a sociologist, told me something like,
+puter packages for PSTAT, a Princeton statistical       “No, no, I looked over your transcript and found
+software package, which competed with BMDP of           your undergraduate education scientifically deficient
+UCLA at the time. I also wrote various programs         because it lacked ‘methods and statistics’ courses.
+for simulating human behavior.                          You will have to take them now or withdraw.” Be-
+   Fan: In your senior year at Princeton, you applied   cause of all the math and physics that I’d had at
+for Ph.D. programs in psychology and were accepted      Princeton, I felt insulted! I had to get out of there.
+by several very good places.                            Because I had independent funding from an NSF
+   Don: Yes, I was accepted by Stanford, Michi-         graduate fellowship, I looked around. At the time,
+gan and Harvard. I met some extraordinary peo-          the main applied math appeared being done in the
+ple during my visits to these programs. I went out      Division of Engineering and Applied Physics, which
+to Stanford first, and met William Estes, a quiet       recently became the Harvard’s “School of Engineer-
+but wonderful professor with strong mathematical        ing and Applied Sciences.” The division had several
+skills and a wry wit, who later moved to Harvard.       sections; one of them was computer science (CS),
+Michigan had a very strong mathematical psychol-        which seemed happy to have me.
+ogy program, and when I visited in the spring of           Fan: But you got bored again soon. Was this be-
+1965, I was hosted primarily by a very promising        cause you found the problems in CS not interesting
+graduating Ph.D. student, Amos Tversky, who was         or challenging enough?
+doing extremely interesting work on human behav-           Don: No, not really that. There were several rea-
+ior and how people handled risks. In later years, he    sons. First, there was a big emphasis on automatic
+connected with another psychologist, Daniel Kahne-      language translation, because it was cold war time,
+man, and they wrote a series of extremely influential   and it appeared that CS got a lot of money for com-
+papers in psychology and economics, which eventu-       putational linguistics from ARPA (Advanced Re-
+ally led to Kahneman’s winning the Nobel Prize in       search Projects Agency), now known as DARPA.
+Economics in 2002; Tversky passed away in 1996          The Soviet Union, from behind the iron curtain, pro-
+and was thus not eligible for the Nobel Prize. Kahne-   duced a huge number of documents in Russian, but
+man (who recently was awarded a National Medal of       evidently there were not enough people in the US
+Science by President Obama) always acknowledges         to translate them. A complication is that there are
+that the Nobel Prize was really a joint award (to       sentences that you could not translate without their
+Tversky and him). I was on a committee sometime         context. I still remember one example: “Time flies
+last year with Kahneman, and it was interesting to      fast,” a three-word sentence that has three different
+find out that I had known Tversky longer than he        meanings depending on which of the three words
+had.                                                    is the verb. If this three-word sentence cannot be
+4                                          F. LI AND F. MEALLI
+
+automatically translated, how can one get an auto-        Fabri: Besides Mosteller, who else was on the
+matic (i.e., by computer) translation of a complex     statistics faculty then? It was a quite new depart-
+paragraph? Related to this was Noam Chomsky’s          ment, as you said.
+work on transformational grammars, down the river         Don: The other senior people were Bill Cochran
+at MIT.                                                and Art Dempster, who had recently been promoted
+   Second, although I found some real math courses     to tenure. The junior ones were Paul Holland; Jay
+and the ones in CS on mathy topics, such as com-       Goldman, a probabilist; and Shulamith Gross from
+putational complexity, which dealt with Turing ma-     Berkeley, a student of Erich Lehmann’s.
+chines, Godel’s theorem, etc., interesting, I found       Fabri: And you decided to work with Bill.
+many of the courses dull. Much of the time they were      Don: Actually, I first talked to Fred. Fred always
+about programming. I remember one of my projects       had a lot of projects going; one was with John Tukey
+was to write a program to project 4-dimensional fig-   and he proposed that I work on it. I told him that I
+ures into 2-dimensions, and then rotate them us-       had this matched sampling project of my own, and
+ing a DEC PDP-1. It took an enormous number of         he suggested that I talk to Cochran—Cochran a few
+hours. Even though my program worked perfectly,        years earlier was an advisor for the Surgeon Gen-
+I felt it was a gigantic waste of time. I also got a   eral’s report on smoking and lung cancer. It was ob-
+C+ in that course because I never went to any of       viously based on observational data, not on random-
+the classes. Now, having dealt with many students,     ized experiments, and Fred said that Cochran knew
+I would be more sympathetic that I deserved a C+,      all about these issues in epidemiology and biostatis-
+but not when I was a kid. At that time, I figured      tics. So I went to knock on Bill’s door. He answered
+there must be something better to do than rotating     with a grumpy sounding “yes,” I went in and he
+4D objects and getting a C+. But marching through      said, “No, not now, later!” So I thought “Hmmm,
+                                                       rough guy,” but actually he was a sweetheart, with
+rice paddies in Vietnam or departing for somewhere
+                                                       a great Scottish dry sense of humor and a love of
+in Canada didn’t seem appealing. So after picking
+                                                       scotch and cigarettes (I understand the former, al-
+up a MS degree in CS in 1966, although I stayed an-
+                                                       though not the latter).
+other year in CS, I was ready to try something else.
+                                                          Fabri: Cochran did have a lasting influence on you,
+   Fabri: How did statistics end up in your path?
+                                                       right?
+   Don: A summer job in Princeton in 1966 led to it.
+                                                          Don: Yes, he had a tremendous influence on me.
+I did some programming for John Tukey in Fortran,
+                                                       Once I was doing some irrelevant math on match-
+LISP and COBOL. I also did some consulting for         ing, which I now see popping up again in the lit-
+a Princeton sociology professor, Robert Althauser,     erature. I showed that to Bill, and he asked me,
+basically writing programs to do matched sampling,     “Do you think that’s important, Don?” I said, “Well,
+matching blacks and whites, to study racial dispar-    I don’t know.” Then he said, “It is not important
+ity in dropout rates at Temple University. I had a     to me. If you want to work on it, go find someone
+conversation with Althauser about how psychology       else to advise you. I care about statistical problems
+and then CS weren’t working out for me at Harvard.     that matter, not about making things epsilon bet-
+Because Bob was doing some semi-technical things       ter.” Another person who was very influential was
+in sociology, he knew of Fred Mosteller, although      Art Dempster. Once I did some consulting for Data
+not personally, and also knew that Harvard had a       Text, a collection of batch computer programs like
+decade-old Statistics Department that was founded      PSTAT or BMDP. I was designing programs to cal-
+in 1957. He suggested that I contact Mosteller. Af-    culate analyses of variance, do regressions, ordinary
+ter getting back to Harvard, I talked to Fred, and     least squares, matrix inversions, all when you have,
+he suggested that I take some stat courses. So in my   in hindsight, limited computing power. For advice
+third year in Harvard, I took mostly stat courses      on some of those I talked to Dempster, who always
+and did OK in them. And the Stat department said       has great multivariate insights based on his deep
+“Yes” to me. It also helped to have my own NSF         understanding of geometry—very Fisherian.
+funding, which I had from the start; they kept re-        Fan: Your Ph.D. thesis was on matching, which is
+newing for some reason, showing their bad taste        the start of your life-long pursuit of causal inference.
+probably, but it worked out well for me. Anyway, at    How did your interest in causal inference start?
+the end of my third year at Harvard, I had switched       Don: When I worked with Althauser on the racial
+to statistics, my third department in four years.      disparity problem, I always emphasized to him that
+                                     A CONVERSATION WITH D. B. RUBIN                                             5
+
+it was inherently descriptive, not really causal. I re-
+membered enough from my physics education in
+high school and Princeton that association is not
+causation. So I was probably not intrigued by causal
+inference per se, but rather by the confusion that the
+social scientists had about it. You have to describe a
+real or hypothetical experiment where you could in-
+tervene, and after you intervene, you see how things
+change, not in time but between intervention (i.e.,
+treatment) groups. If you are not talking about in-
+tervention, you can’t talk about causality. For some
+reason, when I look at old philosophy, it seems to
+me that they didn’t get it right, whereas in previ-
+ous centuries, some experimenters got it. They bred
+cows, or mated hunting falcons. If you mated excel-
+lent female and male falcons, the resulting next gen-
+eration of falcons would generally be better hunters
+than those resulting from random mating. In the
+20th century, many scientists and experimentalists
+got it.
+   Fabri: So you were only doing descriptive com-
+parisons in your Ph.D. thesis, and the notation of
+potential outcomes was not there.
+   Don: Partly correct. At that time, the notation of
+potential outcomes was in my mind, because that is
+the way that Cochran initiated discussions of ran-
+domized experiments in the class he taught in 1968.        Fig. 2. D. B. Rubin (on left) with his puppy friend Thor
+                                                           (on right), about 1967.
+Initially, it was all based on randomization, unbi-
+asedness, Fisher’s test, etc. But the concepts had to
+be flipped into ordinary least squares (OLS) regres-       the Social Relations Department wanted me to take
+sion and analysis of variance tables, because nobody       five years earlier, thereby driving me out of their de-
+could compute anything difficult back then. One of         partment! Bob had, and has, tremendous intuition
+the lessons in Bill’s class in regression and experi-      for experimental design and other practical issues,
+mental design was to use the abbreviated Dolittle          and we have written many things together.
+method to invert matrices, by hand! So you really
+couldn’t do randomization tests in any generality.         THE ETS DECADE: MISSING DATA, EM AND
+The other reason I was interested in experiments                     CAUSAL INFERENCE
+and social science was my family history. There was
+always this legal question lurking: “But for this al-         Fan: After that one year, you went for a position
+leged misconduct, what would have happened?”               at ETS in Princeton instead of a junior faculty posi-
+   Fan: What was your first job after getting your         tion in a research university. It was quite an unusual
+Ph.D. degree in 1970?                                      choice, given that you could probably have found a
+   Don: I stayed at Harvard for one more year, as          position in a respected university statistics depart-
+an instructor in the Statistics Department, partly         ment easily.
+supported by teaching, partly supported by the                Don: Right—many people thought I was goofy.
+Cambridge Project, which was an ARPA funded                I did have several good offers, one was to stay at
+Harvard–MIT joint effort; the idea was to bring the        Harvard, and another was to go to Dartmouth. But
+computer science technologies of MIT and the social        I met Al Beaton, who was later my boss at ETS
+sciences research of Harvard together to do wonder-        in Princeton, at a conference in Madison, Wiscon-
+ful things in the social sciences. In the Statistics De-   sin, and he offered me a job, which I took. Al had a
+partment, I was coteaching with Bob Rosenthal the          doctorate in education at Harvard, and had worked
+“Statistics for Psychologists” course that, ironically,    with Dempster on computational issues, such as the
+6                                          F. LI AND F. MEALLI
+
+“sweep operator.” He was a great guy with a deep        much of mathematical statistics as real math—much
+understanding of practical computing issues. Also,      of it is just so tedious. Can you keep track of these
+he appreciated my research. Because I was an un-        epsilons?
+dergrad at Princeton, it was almost like going home.       Fabri: There is no coincidence that all these pa-
+For several years, I taught one course at Princeton.    pers share the common theme of missing data.
+Between the jobs at ETS and Princeton, I was earn-         Don: That’s right. That theme arose when I was
+ing twice what the Harvard salary would have been,      a graduate student. The first paper I wrote on miss-
+which allowed me to buy a house on an acre and a        ing data, which is also my first sole-authored paper,
+half, with a garage for rebuilding an older Mercedes    was on analysis of variance designs, a quite algo-
+roadster, etc. A different style of life from that in   rithmic paper. It was always clear to me, from the
+Cambridge.                                              experimental design course from Cochran that you
+   Fan: You seem to have had a lot of freedom to        should set up experiments as missing data problems,
+pursue research at the ETS. What was your respon-       with all the potential outcomes under the not-taken
+sibility at ETS?                                        treatments missing. But nobody did observational
+   Don: The position at ETS was like an academic        studies that way, which seemed very odd to me. In-
+position with teaching responsibilities replaced by     deed, nobody was using potential outcomes outside
+consulting on ETS’s social science problems, in-        the context of randomized experiments, and even
+cluding psychological and educational testing ones.     there, most writers dropped potential outcomes in
+I found consulting much easier for me than teach-       favor of least squares when actually doing things.
+ing, and ETS had interesting problems. Also there          Fan: What was the state of research on missing
+were many very good people around, like Fred Lord,      data before you came into the scene?
+who was highly respected in psychometrics. The             Don: It was extremely ad hoc. The standard ap-
+Princeton faculty was great, too: Geoffrey Watson       proach to missing data then was comparing the bi-
+(of the Durbin–Watson statistic) was the chair; Pe-     ases of filling in the means, or of regression impu-
+ter Bloomfield was there as a junior faculty member     tation under different situations, but almost always
+before he moved to North Carolina; and of course        under an implicit “missing completely at random”
+Tukey was still there, even though he spent a lot of    assumption. The purely technical sides of these pa-
+time at Bell Labs. John was John, having a spectac-     pers are solid. But I found there were always counter
+ular but very unusual way of thinking—obviously a       examples to the propriety of the specific methods
+genius. Stuart Hunter was in the Engineering School     being considered, and to explore them, one almost
+then. These were fine times for me, with tremen-        needed a master’s thesis for each situation. I would
+dous freedom to pursue what I regarded as impor-        rather address the class of problems with some gen-
+tant work.                                              erality. There is a mechanism that creates missing
+   Fabri: By any measure, your accomplishments in       data, which is critical for deciding how to deal with
+the ETS years were astounding. In 1976, you pub-        the missing data. That idea of formal indicators for
+lished the paper “Inference and Missing Data” in        missing data goes way back in the contexts of exper-
+Biometrika (Rubin, 1976) that lays the foundation       imental design and survey design. I am consistently
+for modern analysis of missing data; in 1977, with      amazed how this was not used in observational stud-
+Arthur Dempster and Nan Laird, you published the        ies until I did so in the 1970s; maybe someone did,
+EM paper “Maximum Likelihood from Incomplete            but I’ve looked for years and haven’t found any-
+Data via the EM Algorithm” in JRSS-B (Demp-             thing. But probably because the missing data paper
+ster, Laird and Rubin, 1977); in 1974, 1977, 1978,      was done in a relatively new way, I had great diffi-
+you published a series of papers that lay the foun-     culty in getting it published (more details in Rubin,
+dation for the Rubin Causal Model (Rubin, 1974,         2014a).
+1977, 1978a). What was it like for you at that time?       Fan: The EM algorithm is another milestone in
+How come so many groundbreaking ideas exploded          modern statistics; it is also relevant in computer sci-
+in your mind at the same time?                          ence and one of the most important algorithm in
+   Don: Probably the most important reason is that I    data mining. Though similar ideas had been used in
+always worried about solving real problems. I didn’t    several specific contexts before, nobody had realized
+read the literature to uncover a hot topic to write     the generality of EM. How did Dempster, Laird and
+about. I always liked math, but I never regarded        you discover the generality?
+                                      A CONVERSATION WITH D. B. RUBIN                                              7
+
+   Don: In those early years at ETS, I had the free-         statistician, but also as an individual. There was
+dom to remain in close contact with the Harvard              a tremendous aura about him. Shortly after arriv-
+people, Cochran, Dempster, Holland and Rosenthal,            ing in Berkeley, I gave a talk on missing data and
+which was very important to me. I always enjoyed             causal inference. The next day, I went to lunch with
+talking to Dempster, who is a very principled and            Neyman and I said something like, “It seems to me
+deep thinker. I was able to arrange some consulting          that formulating causal problems in terms of miss-
+projects at ETS to bring him to Princeton. Once              ing potential outcomes is an obvious thing to do, not
+we were talking about some missing data problem,             just in randomized experiments, but also in observa-
+and we started discussing filling these values in, but       tional studies.” Neyman answered to the effect that
+I knew it wouldn’t work in generality. I pointed             (remarkable in hindsight because he did so without
+to a paper by Hartley and Hocking (1971), where              acknowledging that he was the person who first for-
+they deserted the approach of iteratively filling in         mulated potential outcomes), “No, causality is far
+missing values, as in Hartley (1956) for the counted         too speculative in nonrandomized settings.” He re-
+data case, and went to Newton–Raphson, I think, in           peated something like this quote from his biography,
+the normal case. Even though aspects of EM were              “. . .Without randomization an experiment has lit-
+known for years, and Hartley and others were sort            tle value irrespective of the subsequent treatment.”
+of nibbling around the edges of EM, apparently no-           (Also see my comment on this conversion in Ru-
+body put it all together as a general algorithm. Art         bin, 2010.) Then he went to say politely but firmly,
+and I realized that you have to fill in sufficient statis-   “Let’s not talk about that, let’s instead talk about
+tics. I had all these examples like t distributions,         astronomy.” He was very into astronomy at the time.
+factor analysis (the ETS guys loved that), latent               Fabri: You probably learned the reasons why he
+class models. And Art had a great graduate stu-              was so involved in the frequentist approach.
+dent, Nan Laird, available to work on parts of it,              Don: Yes. I remember we once had a conversation
+and we started writing it up. The EM paper was               about what confidence intervals really meant and
+accepted right away by JRSS-B, even with invited             why the formal Neyman–Pearson approach seemed
+discussions.                                                 irrelevant to me. He said something like, “You misin-
+   Fan: Now let’s talk more about causal inference.          terpret what we have done. We were doing the math-
+You are known for proposing the general poten-               ematics; go back and read my 1934 paper where I
+tial outcome framework. It was Neyman who first              first defined a confidence interval.” He defined it as a
+mentioned the notation of potential outcomes in              procedure that has the correct coverage for all prior
+his Ph.D. thesis (Neyman, 1990), but the notation            distributions (see page 589, Neyman, 1934). If you
+seemed to have long been neglected.                          think of that, you are forced to include all point mass
+   Don: Yes, it was ignored outside randomized               priors and, therefore, you are forced to do Neyman–
+experiments. Within randomized studies, the no-              Pearson. He went on to say (approximately), “If you
+tion became standard and used, for example, in               are a real scientist with a class of problems to work
+Kempthorne’s work, but as I mentioned earlier, ig-           on, you don’t care about all point-mass priors, you
+nored otherwise.                                             only care about the priors for the class of problems
+   Fan: Were you aware of Neyman’s work before?              you will be working on. But if you are doing the
+   Don: No. I wasn’t aware of his work defining po-          mathematics, you can’t talk about the problems you
+tential outcomes until 1990 when his Ph.D. thesis            or anyone is working on.” I tried to make this point
+was translated into English, although I attributed           in a comment (Rubin, 1995), but it didn’t seem to
+much of the perspective to him because of his work           resonate to others.
+on surveys in Neyman (1934) and onward (see Ru-                 Fabri: In his famous 1986 JASA paper, Paul Hol-
+bin, 1990a, followed by Rubin, 1990b).                       land coined the term “Rubin Causal Model (RCM),”
+   Fabri: You actually met Neyman when you visited           referring to the potential outcome framework to
+Berkeley in the mid-1970s. During all those lunches,         causal inference (Holland, 1986). Can you explain
+had you ever discussed causal inference and poten-           why, if you think so, the term “Rubin Causal Model”
+tial outcomes with him?                                      is a fair description of your contribution to this
+   Don: I did. In fact, I had an office right next to        topic?
+his. Neyman came to Berkeley in the late 30s. He                Don: Actually Angrist, Imbens and I had a re-
+was very impressive, not only as a mathematical              joinder in our 1996 JASA paper (Angrist, Imbens
+8                                             F. LI AND F. MEALLI
+
+and Rubin, 1996), where we explain why we think            received the attention that it deserves.” (Brillinger,
+it is fair. Neyman is pristinely associated with the       Jones and Tukey, 1978, Chapter 25, page F-5.)
+development of potential outcomes in randomized               Fabri: Here I am quoting an interesting question
+experiments, no doubt about that. But in the 1974          by Tom Belin regarding potential outcomes: “Do
+paper (Rubin, 1974), I made the potential outcomes         you believe potential outcomes exist in people as
+approach for defining causal effects front and cen-        fixed quantities, or is the notion that potential out-
+ter, not only in randomized experiments, but also in       comes are a device to facilitate causal inference?”
+observational studies, which apparently had never             Don: Definitely the latter. Among other things,
+been done before. As Neyman told me back in Berke-         a person’s potential outcomes could change over
+ley, in some sense, he didn’t believe in doing statisti-   time, and how do we know the people who were
+cal inference for causal effects outside of randomized     studied in the past are still exchangeable with peo-
+                                                           ple today? But there are lots of devices like that in
+experiments.
+                                                           science.
+   Fan: Also there are features in the RCM, such as
+                                                              Fan: In the RCM, cause/intervention should al-
+the definition of the assignment mechanism, that be-
+                                                           ways be defined before you start the analysis. In
+long to you.                                               other words, the RCM is a framework to investi-
+   Don: Yes, it was crucial to realize that random-        gate the “effects of a cause,” but not the “causes of
+ized experiments are embedded in a larger class of         an effect.” Some criticize this as a major limitation.
+assignment mechanisms, which was not in the liter-         Do you regard this as a limitation? Do you think
+ature. Also, in the 1978 paper (Rubin, 1978a), I pro-      it is ever possible to draw inference on the causes
+posed three integral parts to this RCM framework:          of effects from data, or is it, per se, an interesting
+potential outcomes, assignment mechanisms, and a           question worth further investigation?
+(Bayesian) model for the science (the potential out-          Don: I regard “the cause” of an event topic as
+comes and covariates). The last two parts were not         more of a cocktail conversation topic than a scien-
+only something that Neyman never did, he possibly          tific inquiry, because it leads to an essentially infinite
+wouldn’t even like the third part. In fact, I think        regress. Someone says, “He died of lung cancer be-
+it is unfair to attribute something to someone who         cause he smoked three packs a day”; then someone
+is dead, who may not approve of the content being          else counters, “Oh no, he died of lung cancer be-
+attributed. If the fundamental idea is clear, such as      cause both of his parents smoked three packs a day
+with Fisher’s randomization test of a sharp null hy-       and, therefore, there was no hope of his doing any-
+pothesis, sure, attribute that idea to Fisher no mat-      thing other than smoking three packs a day”; then
+ter what the test statistic, as in Brillinger, Jones       another one says, “No, no, his parents smoked be-
+and Tukey (1978). Panos Toulis (a fine Harvard             cause his grandparents smoked—they lived in North
+Ph.D. student) helped me track down this statement         Carolina where, back then, everyone smoked three
+that I remembered reading in my ETS days from a            packs a day, so the cause is where the grandparents
+manuscript John gave to me:                                lived,” and so on. How far back should you go? You
+   “In the precomputer era, the fact that almost all       can’t talk sensibly about the cause of an event; you
+                                                           can talk about “but for that cause (and there can
+work could be done once and for all was of great im-
+                                                           be many ‘but for’s), what would have happened?”
+portance. As a consequence, the advantages of ran-
+                                                           All these questions can be addressed hypothetically.
+domization approaches—except for those few cases
+                                                           But the cause? The notion is meaningless to me.
+where the randomization distributions could be dealt          Fabri: Do you feel that you benefit from knowing
+with once and for all—were not adequately valued.          about history of statistics when you are thinking
+   One reason for this undervaluation lay in the           about fundamentals of statistics?
+fact that, so long as randomization was confined              Don: I know some history, but not a large amount.
+to specially manageable key statistics, there seemed       The most important lessons occur when I feel that
+no way to introduce into the randomization ap-             I understand why one of the giants, like Fisher or
+proach the insights—some misleading and some im-           Neyman, got something wrong. When you under-
+portant and valuable—into what test statistics would       stand why a mediocre thinker got something wrong,
+be highly sensitive to the changes that it was most        you learn little, but when you understand why a ge-
+desired to detect. The disappearance of this situa-        nius got something wrong, you learn a tremendous
+tion with the rise of the computer seems not to have       amount.
+                                      A CONVERSATION WITH D. B. RUBIN                                              9
+
+                                                             still at ETS), as well as Susan Hinkins, who wrote
+                                                             a thesis on missing data at Montana State Univer-
+                                                             sity, and two others. That was shortly before the
+                                                             presidential election. Then the Democrats lost and
+                                                             Reagan was to come in, and everything seemed to
+                                                             be falling apart. All of a sudden, many of the peo-
+                                                             ple above my level at the EPA (most of whom were
+                                                             presidential appointments), had to prepare to turn
+                                                             in their resignations, and had to be concerned about
+                                                             their next positions.
+                                                                Fabri: So the EPA project ended before it even
+                                                             got started.
+                                                                Don: It didn’t start at all in some sense. I formally
+                                                             signed on at the beginning of December, and after
+                                                             one pay period, I turned in my resignation. But I
+                                                             felt responsible to find jobs for all these people I
+                                                             brought there. Eventually, Susan Hinkins got con-
+                                                             nected with Fritz Scheuren at the IRS; Paul Rosen-
+                                                             baum got a position at the University of Wisconsin
+Fig. 3. D. B. Rubin (on left) poses with the captain (on     at Madison; Rod got a job related to the Census.
+right) of Sy’s boat harbored in Bodrum, Turkey, mid-1970s.   One nice thing about that short period of time is
+                                                             that, through the projects I was in charge of, I made
+                                                             several good connections, such as to Herman Cher-
+BACK TO HARVARD: PROPENSITY SCORE,
+                                                             noff and George Box. George and I really hit it off,
+  MULTIPLE IMPUTATION AND MORE
+                                                             primarily because of his insistence on statistics hav-
+  Fabri: After those productive years at ETS, you            ing connections to real problems, but also because
+spent some time at the EPA (US Environmental                 of his wonderful sense of humor, which was witty
+Protection Agency). Why did you decide to move,              and ribald, and his love of good spirits. In any case,
+given that you were apparently doing very well at            the EPA position led to an invitation to visit Box at
+the ETS?                                                     the Math Research Center at the University of Wis-
+  Don: It started partly from my joking answer to            consin, which I gladly accepted. That gave me the
+the question, “How long have you been at ETS?”               chance to finish writing the propensity score papers
+I answered, “Too long.” The problems that I had              with Paul (Rosenbaum and Rubin, 1983a, 1983b,
+dealt with at ETS started to appear repetitive, and          1984a).
+I felt that I had made important contributions to               Fan: Since you mentioned propensity score, ar-
+them including EM and multiple imputation ideas,             guably the most popular causal inference technique
+which were being used to address some serious is-            in a wide range of applied disciplines, can you give
+sues, like test equating, and formulating the right          some insights on the “natural history” of propensity
+ways to collect data. So I wanted to try something           score?
+else. At the time, David Rosenbaum was the head                 Don: I first met Paul in 1978, when I came to Har-
+of the Office of Radiation Programs at the EPA. He           vard on a Guggenheim fellowship; he was a first-year
+had the grand idea of putting together a team of             Ph.D. student, extremely bright and devoted. Back
+applied mathematicians and statisticians. Somehow            in my Princeton days I did some consulting for a
+he found my name and invited me to D.C. to find              psychologist at Rutgers, June Reinisch, who later
+out whether I wanted to lead such a group. Basi-             became the first director of the Kinsey Institute af-
+cally, I had the freedom to hire several people of           ter Kinsey. She was very interested in studying the
+my choice, and I had a good government salary (at            nature-nurture controversy—what makes men and
+the level of “Senior Executive Service”). So I said,         women so different? She and her husband, who was
+“Let’s see whom I can get.” I was able to convince           also a psychologist, were doing experiments on rats
+both Rod Little (who was in England at that time)            and pigs. They injected hormones into the uteri of
+and Paul Rosenbaum (whom I advised while I was               pregnant animals, and thereby exposed the fetuses
+10                                          F. LI AND F. MEALLI
+
+to different prebirth environments; this kind of ran-    the collection of tools and resources to do the im-
+domized experiment is obviously unethical to do          putation, for example, using confidential informa-
+with humans. One of the problems Paul and I were         tion. My Ph.D. students, Trivellore Raghunathan
+working on for this project, also as part of Paul’s      (Raghu) and Jerry Reiter, have made wonderful con-
+thesis, was matching—matching background char-           tributions to confidentiality using MI. Of course,
+acteristics of exposed and unexposed. The covari-        other great Ph.D. students of mine Nat Schenker,
+ates included a lot of continuous and discrete vari-     Kim Hung Lee, Xiao-Li Meng, Joe Schafer, as well
+ables, some of which were rare events like certain       as many others, have also made major contributions
+serious diseases prior to, or during, early pregnancy.   to MI. The development of MI really reflects the col-
+Soon it became clear that standard matching ap-          lective efforts from these people and others like Rod
+proaches, like Mahalanobis matching, do not work         Little and his colleagues and students.
+well in such high dimensional settings. You have to         Fabri: Rod Little once half-jokingly said, “Want
+find some type of summaries of these variables and       to be highly cited? Coauthor a book with Rubin!”
+balance the summaries in the treatment and control       And indeed he wrote the book “Statistical Analy-
+groups, not individual to individual. Then we real-      sis with Missing Data” with you (Little and Rubin,
+ized if you have an assignment mechanism, you can        1987, 2002), which is now regarded as the classic
+match on the individual assignment probabilities,        textbook on missing data. There have been a lot
+which is essentially the Horvitz–Thompson idea, to       of new advances and changes in missing data since
+eliminate all systematic bias. I don’t remember the      then. Will we see a new edition of the book that
+exact details, but I think we first got the propen-      incorporates these developments sometime soon?
+sity score idea when working on a Duke data bank            Don: Oh yes, we are working on that now. The
+on coronary artery bypass surgery, but refined it for    main changes from 1987 to 2002 reflect the greater
+the Reinisch data, which is very similar in principle.   acceptability of Bayesian methods and MCMC type
+Again, the idea of the propensity score is motivated     computations. Rod is a fabulous coauthor, a much
+by addressing real problems, but with generality.        more fluid writer than I am. I believe this third edi-
+   Fan: Multiple Imputation (MI) is another very in-     tion will have even more major changes than the
+fluential contribution of yours. Your book “Multi-       2002 one did from the 1987 one, but again many
+ple Imputation for Nonresponse in Sample Surveys”        driven by computational advances.
+(Rubin, 1987a) has commonly been cited as the ori-
+gin of MI. But my understanding is that you first                          ON BAYESIAN
+developed the idea and coined the term much ear-            Fan: In the 1978 Annals paper (Rubin, 1978a),
+lier.                                                    you gave, for the first time, a rigorous formula-
+   Don: Correct, I first wrote about MI in an ASA        tion of Bayesian inference for causal effects. But the
+proceedings paper in 1978 (Rubin, 1972, 1978b).          Bayesian approach to causal inference did not have
+That’s where “the 18+ years” comes from when I           much following until very recently, and the field of
+wrote “Multiple Imputation After 18+ Years” (Ru-         causal inference is still largely frequentist. How do
+bin, 1996).                                              you view the role of Bayesian approach in causal
+   Fabri: MI has been developed in the context of        inference?
+missing data, but it applicability seems to be far          Don: I believe being Bayesian is the right way to
+beyond missing data.                                     approach things, because the basic frequentist ap-
+   Don: Yes, MI has been applied and will be, I think,   proach, such as the Fisherian tests and Neyman’s
+all over the place. The reason I titled the book that    unbiased estimates and confidence intervals, usually
+way, “Multiple Imputation for Nonresponse in Sam-        does not work in complicated problems with many
+ple Surveys,” is that it was obvious to me that in       nuisance unknowns. So you have to go Bayesian to
+the settings where you need to create public-use         create procedures. You can go partially Bayesian us-
+data sets, you had to have a separation between          ing things like posterior predictive checks, where
+the person who fixed up the missing data problem         you put down a null that you may discover evi-
+and the many people who might do analyses of the         dence against, or direct likelihood approaches as in
+data. So there was an obvious need to do some-           Frumento et al. (2012); if the data are consistent
+thing like this, because users could not possibly have   with a null that is interesting, you live with it. But
+                                       A CONVERSATION WITH D. B. RUBIN                                        11
+
+                                                          it is often easier, pedagogically, to motivate simple
+                                                          estimators and simple procedures, and not try to be
+                                                          efficient when you convey ideas. In causal inference,
+                                                          that corresponds to talking about unbiased or nearly
+                                                          unbiased estimates of causal estimands, as in Rubin
+                                                          (1977). There are other reasons having to do with
+                                                          the current education of most statisticians.
+                                                             Fan: After EM, starting from the early 1980s,
+                                                          you were heavily involved in developing methods
+                                                          for Bayesian computing, including the Bayesian
+                                                          bootstrap (Rubin, 1981), the sampling importance-
+                                                          resampling (SIR) algorithm (Rubin, 1987b), and
+                                                          (lesser-acknowledged) “approximate Bayesian com-
+                                                          putation (ABC)” (Rubin, 1984, Section 3.1).
+                                                             Don: It was clear then that computers were going
+                                                          to allow Bayes to work far more broadly than earlier.
+                                                          You, as well as others such as Simon Tavare, Chris-
+                                                          tian Robert and Jean-Michel Marin, are giving me
+                                                          credit for first proposing ABC. Thanks! Although,
+                                                          frankly, I never thought that would be a useful al-
+                                                          gorithm except in problems with simple sufficient
+                                                          statistics.
+                                                             Fabri: But you do not seem to have followed up
+      Fig. 4.   D. B. Rubin at Harvard, early 1980s.      much on these ideas later, even if you have used
+                                                          them. Also you do not label yourself as a Bayesian
+Neyman-style frequentist evaluations of Bayesian          or a frequentist, even if all these papers made ex-
+procedures are still relevant.                            traordinary contributions to Bayesian inference with
+   Fan: But why is the field of causal inference still    fundamental and big ideas.
+predominantly frequentist?                                   Don: First of all, fundamentally I am hostile to
+   Don: I think there are several reasons. First, there   all “religions.” I recently heard a talk by Raghu in
+are many Bayesian statisticians who are far more in-      Bamberg, Germany, where he said that in his world
+terested in MCMC algebra and algorithms, and do           they have zillions of gods, and I think that is right;
+not get into the science. Second, I regard the method     you should have zillions of gods, one for this good
+of moments (MOM) frequentist approach as peda-            idea, one for that good idea. And different people
+gogically easier for motivating and revealing sources     can create different gods to whatever extent they
+of information. Take the simple instrumental vari-        want to. I am not a fully-pledged member of the
+able setting with one-sided noncompliance. Here, it       Bayesian camp—I like being friends with them, but
+is very easy to look at the simple MOM estimate to        I never want to be religiously Bayesian. My attitude
+see where information comes from. With Bayesian           is that any complication that creates problems for
+methods, the answer is, in some sense, just there in      one form of inference creates problems for all forms
+front of you. But when you ask where the informa-         of inference, just in different ways. For example, the
+tion comes from, you have to start with any value,        fact that confounded treatment assignments cause
+and iterate using conditional expectations, or draws      problems for frequentist inference is obvious. Does
+from the current joint distributions. You have to         it generate problems for the Bayesian? Yeah, that
+have far more sophisticated mathematical thinking         point was made in the 1978 Annals paper: Random-
+to understand fully Bayesian ideas. There are these       ization matters to a Bayesian, although not in the
+problems with missing data (as in my discussion           same way as to a frequentist, that is, not as the basis
+of Efron, 1994) where there are unique, consistent        for inference, but it affects the likelihood function.
+estimates of some parameters using MOM, but for              There is something I am currently working on with
+which the joint MLE is on the boundary. So I think        a Ph.D. student, Viviana Garcia, that builds on a
+12                                           F. LI AND F. MEALLI
+
+paper I wrote with Paul Rosenbaum in 1984 (Rosen-         wrote Rubin (1983) partly during that period—
+baum and Rubin, 1984b), which is the only Bayesian        I think it’s a good paper with some good ideas, but
+paper that Paul has ever written, at least with me.       without a satisfying big picture. That dissatisfaction
+In that paper, we did some simulations to show there      led to that 1984 paper—what is the big picture? It
+is an effect on Bayesian inference of the stopping        took me a very long time to “get it right,” but it
+rule. We show that if you have a stopping rule and        all seems very obvious to me now. The idea of pos-
+use the “wrong” prior to do the analysis, like a uni-     terior predictive checks has been further articulated
+form improper prior, but the data are coming from a       and advanced in Meng (1994), Gelman, Meng and
+“correct” prior, and you look at the answer you get       Stern (1996), and the multiauthored book “Bayesian
+from the right prior and from the “wrong” prior,          Data Analysis” (Gelman et al., 1995, 2003, 2014).
+they are different. The portion of the right poste-          Fabri: Can you talk a little more about the
+rior that you cover using the “wrong” posterior is        “Bayesian Data Analysis” book, probably one of the
+incorrect. This extends to all situations and it is re-   most popular Bayesian textbooks?
+lated to all of these ignorability theorems, and it          Don: Yup, I think that the Gelman et al. book
+means that you need to have the right model with          might be THE most popular Bayesian text. It
+respect to the right measure. Of course achieving         started out as notes by John Carlin for a Bayesian
+this is impossible in practice and, therefore, leads to   course that he taught when I was Chair sometime
+the need for frequentist (Neymanian) evaluations of       in the mid or late 1980s. Andy must have been a
+the operating characteristics of Bayesian procedures      Ph.D. student at that time, with tremendous en-
+when using incorrect models (Rubin, 1984). Bayes          ergy for scholarship. John was heading back to Aus-
+works, in principle, there is no doubt, but it can be     tralia, which is his homeland, and somehow the de-
+                                                          partment had some extra teaching money, and we
+so hard! It can work, in practice, but you must have
+                                                          wanted to keep John around for a year—I do not
+some other principles floating around somewhere to
+                                                          remember the details. But I do remember that the
+evaluate the consequences—how wrong your conclu-
+                                                          idea of turning the notes for the course into a full
+sions can be. So you must have something to fall
+                                                          text was percolating. Also Hal Stern was an Asso-
+back on, and I think that is where these frequentist
+                                                          ciate Professor with us at that time, and so the four
+evaluations are extremely useful, not the uncondi-
+                                                          of us decided to make it happen. We basically di-
+tional Neyman–Pearson frequentist evaluations for
+                                                          vided up chapters and started writing. Even though
+all point mass priors (which were critical as mathe-
+                                                          John’s initial notes were the starting basis, things
+matical demonstrations that we cannot achieve the         changed as soon as Andy “took charge.” Quickly,
+ideal goal in any generality), but evaluations for the    Andy and Hal were the most active. Andy, with
+class of problems that you are dealing with in your       Hal, were even more dominant in the second edition,
+situation.                                                where I added some parts, edited others, but clearly
+   Fan: The 1984 Annals paper “Bayesianly Justi-          this was Andy’s show. The third edition, which just
+fiable and Relevant Frequency Calculations for the        came out in early 2014, was even more extreme, with
+Applied Statistician” (Rubin, 1984) is one of my all-     Andy adding two coauthors (David Dunson and Aki
+time favorite papers. This paper, as the earlier paper    Vehtari) because he liked their work, and they had
+by George Box (Box, 1980), deals with the “cali-          been responsive to Andy’s requests. As the old man
+brated Bayes” paradigm with generality, which can         of the group, I just requested that I be the last au-
+be viewed as a compromising or mid-ground between         thor; Andy obviously was the first author, and the
+the Bayesian and frequentist paradigms. It has a          second and third were as in the first edition. In some
+profound influence on many of us. In particular, Rod      ways, I feel like I’m an associate editor of a journal
+Little has strongly advocated “calibrated Bayes” as       that has Andy as the editor! We get along fine, and
+the 21st century roadmap of statistics in several of      clearly it’s a successful book.
+his prominent talks, including the 2005 ASA Presi-           Fan: A revolutionary development in statistics
+dent’s Invited Address and the 2012 Fisher Lecture.       since the early 90s was the MCMC methodology.
+What was the background and reasons for you to            You left your mark in this with Gelman, proposing
+write that paper?                                         the Gelman–Rubin statistic for convergence check
+   Don: Interesting question. I was visiting Box at       (Gelman and Rubin, 1992), which seems to be very
+the Mathematics Research Center in 1981–1982 and          much connected to some of your previous work.
+                                    A CONVERSATION WITH D. B. RUBIN                                          13
+
+  Don: Correct. We embedded the convergence               great. That eventually led to the instrument vari-
+check problem into the combination of the multiple        ables paper (Angrist, Imbens and Rubin, 1996) and
+imputation and multiple chains frameworks, using          the later Bayesian paper (Imbens and Rubin, 1997).
+the idea of the combining rules for MI. The idea of         A closely related development was a project I
+using multiple chains—that comes from physics—            was consulting on for AMGEN at about the same
+and was Andy’s knowledge, not mine. My contri-            time, for a product for the treatment of ALS (amy-
+bution was to suggest using modified MI combining         otrophic lateral sclerosis), or Lou Gehrig’s disease,
+rules to help do the assessment of convergence. The       which is a progressive neuromuscular disease that
+idea is powerful because it is so simple. If the start-   eventually destroys motor neurons, and death fol-
+ing value does not matter, which is the whole point,      lows. The new product was to be compared to the
+then it doesn’t matter, period. The real issue should     control treatment where the primary outcome was
+be how you choose the functions of the estimands          quality of life (QOL) two years post-randomization,
+that you are assessing, and as always, you want con-      as measured by “forced vital capacity” (FVC), es-
+vergence to asymptotic normality to be good for           sentially, how big a balloon you can blow up. In
+these functions, so that the simple justification for     fact, many people do not reach the end-point of two-
+                                                          year post-randomization survival, and so two-year
+the Gelman–Rubin statistic is roughly accurate.
+                                                          QOL is “truncated” or “censored” by death. Peo-
+                                                          ple were trying to fit this problem into a “missing
+     THE 1990S: COLLABORATING WITH
+                                                          data” framework, but I realized right away that it
+               ECONOMISTS
+                                                          was something different.
+   Fabri: In the 1990s, you started to work with            Fan: Essentially both ideas are special cases of the
+economists. With Joshua Angrist, and particularly         general idea of Principal Stratification, which we can
+with Guido Imbens, you wrote a series of very in-         discuss in a moment.
+fluential papers, connecting the potential outcomes         Don: Yes, indeed. These meetings with Guido and
+framework to causal inference with instrumental           this way of thinking were so much more articulated
+variables. Can you tell us how this collaboration         and close to the thinking of European economists in
+started?                                                  the 30s and 40s, like Tinbergen and Haavelmo, than
+   Don: Absolutely. I always liked economics; many        many subsequent economists who seemed sometimes
+economists are great characters! It was in the early      to be too into their OLS algebra in some sense.
+90s when Guido came to my office as a junior fac-         There was some correspondence between one of the
+ulty member in the Harvard Economics Department           two—Haavelmo, I think—and Neyman on these hy-
+                                                          pothetical experiments on supply and demand. Eu-
+and basically said, “I think I have something that
+                                                          ropean brains were talking to each other, and not
+may interest you.” I had never met him before, and
+                                                          simply exchanging technical mathematics!
+he was asking if the concept of instrumental vari-
+                                                            Fabri: I know that many years before you met
+ables already had a history in statistics. Guido and
+                                                          Guido, with other statisticians, like Tukey, you had
+Josh Angrist had already defined the LATE (local
+                                                          discussions about the way economists were treating
+average treatment effect) in an Econometrica pa-          selection problems, or missing data problems. But
+per (Imbens and Angrist, 1994)—although I think           you had some adventurous, to say the least, previ-
+CACE (Complier Average Causal Effect) is a much           ous experiences with economists dealing with prob-
+better name because it is more descriptive and more       lems that you had worked on, which they had almost
+precise—local can be local for anything, local for        neglected completely.
+Boston, local for females, etc. Then I asked in re-         Don: Yes, James Heckman was tracking my work
+turn, “Well tell me the setup, I have never heard of      in the early 1980s when I came to Chicago after
+it in statistics before” and while he was explaining I    ETS. The public exchange came out in the ETS
+started thinking, “Gosh, there is something impor-        volume edited by Howard Wainer (which is where
+tant here! I have never seen it before,” and then I       Glynn, Laird and Rubin, 1986, appears), with com-
+said, “Let’s meet tomorrow and talk about it more,”       ments from Heckman, Tukey, Hartigan and others.
+because these kinds of assumptions (monotonicity            Fabri: Economics is a field where the idea of
+and the “exclusion restriction”) were fascinating to      causality is crucial; did you find interest in eco-
+me, and it was clear that there was something there       nomics also for this very reason? The problems they
+that I had never really thought hard about; it was        have are usually very interesting.
+14                                            F. LI AND F. MEALLI
+
+
+
+
+                                   Fig. 5.   In classroom at Harvard, late 1980s.
+
+
+  Don: There are often interesting questions from          is on the causal effect of racial affirmative action
+social science students that come up in class. One         in law school admissions on some outcomes versus
+recent example is how do we answer questions like          the same proportion of affirmative action admissions
+“What would the Americas be like if they were              but counter-factually based on socioeconomic sta-
+not settled by Europeans?” I asked the questioner,         tus. This is not just for cocktail conversation—it was
+“Who would they be settled by instead? By the Chi-
+                                                           a case recently before the US Supreme Court, Fisher
+nese? By the Africans? What are you talking about?
+What are we comparing the current American world           v. University of Texas, which was kicked back to the
+to?” Another example comes from an undergradu-             lower court to reconsider, and additionally the issue
+ate thesis that I directed, by Alice Xiang, which won      was recently affected by a state law in Michigan.
+both the Hoopes Prize and the economics’ Harris            There is an amicus brief sent to the US Supreme
+Prize for an outstanding honors thesis. The thesis         Court to which Guido (Imbens), former Ph.D. stu-
+
+
+
+
+                   Fig. 6.   (Left to right) Guido Imbens, Don Rubin, Josh Angrist. March, 2014.
+                                    A CONVERSATION WITH D. B. RUBIN                                            15
+
+dents, Dan Ho, Jim Greiner and I (with others) con-          Fan: What do you think is the most remarkable
+tributed.                                                 thing about the development of Principal Stratifica-
+   Such careful formulation of questions is something     tion?
+critical, and to me is central to the field of statis-       Don: It is a whole new collection of ways of think-
+tics. It is crucial to formulate clearly your causal      ing about what the real information is in causal
+question. What is the alternative intervention you        problems. Once you understand what the real in-
+are considering, when you talk about the causal ef-       formation is, you can start thinking about how you
+fect of affirmative action on graduation rates or bar-    can get the answers to questions that you want
+passage rates? Immediately formulating the problem        to extract from that information; you always have
+as an OLS regression is the wrong way to do this,         to make assumptions, and it forces you to expli-
+at least to me.                                           cate what these assumptions are, not in terms of
+   Fan: You apparently have a long interest in law;       OLS, which no social scientist or doctor would re-
+besides the aforementioned “affirmative action” the-      ally understand—but in terms of scientific or medi-
+sis, you have done some interesting work in applied       cal entities. And because you have to make assump-
+statistics in law.                                        tions, be honest and state them clearly. For exam-
+   Don: Yes. Paul Rosenbaum was, I think, the first       ple, I like your papers (Mealli and Pacini, 2013;
+of my Harvard students who did something about            Mattei, Li and Mealli, 2013) about multiple post-
+statistics in law. Either his qualifying paper or a       randomization outcomes, where you discuss that for
+class paper in 1978 was on the effect of the death        some outcomes, exclusion restriction or other struc-
+penalty. Jim Greiner, another great Ph.D. student         tural assumptions may be more plausible.
+of mine, who had a law degree before entering Har-           Fabri: Principal Stratification is sometimes com-
+vard Statistics, wrote his Ph.D. thesis (and subse-       pared to other tools for doing so-called mediation
+quently several important papers) on potential out-       analysis—what is your view about inferring on me-
+comes and causal effects of immutable characteris-        diation effects?
+tics. He is now a full professor at the Harvard Law          Don: I think we (Don and Fabri) discussed a paper
+School. There were also several previous undergrad-       recently in JRSS-A, and those discussions summa-
+uate students of mine who were interested in statis-      rize my–our view on that. Essentially, some of the
+tics and law, but (sadly) most went to law school.        people writing about mediation seem to misunder-
+Since 1980, I have been involved in many legal top-       stand what a function is. They write down some-
+ics.                                                      thing that has two arguments inside parenthesis,
+                                                          with a comma separating them, and they seem to
+     THE NEW MILLENNIUM: PRINCIPAL                        think that therefore something is well defined!
+            STRATIFICATION                                   Fan: Even though causal inference has gained in-
+   Fabri: The work you did with Guido, as well as         creasing attention in statistics and beyond, there
+the work on censoring due to death, led to your pa-       seems to be a lot of misunderstanding, misuse, mis-
+per on Principal Stratification (Frangakis and Ru-        interpretation and mystifying of causal inference.
+bin, 2002), coauthored with this brilliant student of     Why? And what needs to be done to change?
+yours, Constantine Frangakis, who happens to be              Don: I think it is partly because causal inference is
+Fan’s advisor.                                            a very different topic from many topics in statistics
+   Don: Yes, Constantine is fabulous, but the origi-      in that it does not demand a lot of technical ad-
+nal title of that paper was very long, same with the      vanced mathematical knowledge, but does demand
+title of his thesis. It went on and on, with proba-       a lot of conceptual and basic mathematical sophisti-
+bly a few Latin, a few Italian, a few French and a        cation. Principal Stratification is one such example.
+few Greek words! Of course I was exasperated, so I        Writing down notation does not take the place of
+convinced him to simplify the paper’s title to “Prin-     understanding what the notation means and how
+cipal Stratification in Causal Inference.” He is bril-    to prove things mathematically. Also partly because
+liant, so good that he has no trouble dealing with        causal inference has become a popular topic, it has
+all the complexity in his own mind, but therefore he      been flooded with publications that are often done
+struggles at times pulling out the kernels of all these   casually. For some fields, it is important to bridge
+ideas, making them simple.                                the “old” (everything-based-on-OLS) thinking with
+16                                            F. LI AND F. MEALLI
+
+the newer ideas. That’s a battle Guido and I con-          vard. All of my Ph.D. students are talented in many,
+stantly had to deal with when writing our book (Im-        and sometimes different, dimensions: among them
+bens and Rubin, 2015).                                     there are two COPSS award winners, one president
+   Fan: You mentioned the book; when will it finally       of the ASA, one president of ENAR, two JSM pro-
+come out? It has been forthcoming for the last ten         gram chairs, and other such honors, and many of
+years or so.                                               them made substantial contributions to government,
+   Don: (Laughing) Come on, Fan, that’s not fair!          academia and industry.
+Has it only been ten years? We have promised the              Fan: You also have advised a large number of un-
+publisher (Cambridge University Press) that it will        dergraduate students on a wide range of topics. This
+be ready by September 30, 2013.1 It will be about          is quite uncommon because some people find men-
+500 pages, 25 chapters. It will be followed by another     toring undergraduates more challenging and less re-
+volume, dealing with topics that we could not get to       warding than mentoring graduate students. What is
+in the volume due to length, such as principal strat-      your take on this?
+ification beyond IV settings, or because we believe           Don: I am not completely innocent on this charge.
+the topics have not been sharply and cleanly formu-        I have no interest in “babysitting” and trying to
+lated yet, such as regression discontinuity designs,       motivate unmotivated students, either undergrad-
+or using propensity scores with multiple treatments.       uate or graduate. But Harvard does attract some
+Also in this volume, we didn’t discuss so-called case–     extremely talented and motivated undergraduates,
+control studies, which are the meat of much of epi-        some of whom I had the pleasure to advise. Five
+demiology; it is very important to embed these stud-       have won Hoopes and other prizes for outstanding
+ies into a framework that makes sense, not just teach      undergraduate theses.
+them as a bag of tricks.                                      Fabri: Now let’s talk about writing, which both
+                                                           Fan and I, as many others, have some quite mem-
+       MENTORING, CONSULTING AND                           orable first-hand experience. You are known as a
+              EDITORSHIP                                   perfectionist in writing. As you mentioned, you are
+  Fabri: You have advised over 50 Ph.D. students           willing to withdraw accepted papers if you are not
+and many BA students as well. This sounds like a           a hundred percent satisfied with them.
+job interview, but what is your teaching philosophy?          Don: Yes, as you guys know, I am generally a pain
+  Don: My view is that one should approach teach-          in the neck as a coauthor. I have withdrawn three ac-
+ing very differently depending on the kind of stu-         cepted papers, and tried to improve them; all even-
+dents you have and their goals. Harvard has tremen-        tually got reaccepted. One of these is the paper with
+dous undergraduate and graduate students, but              you guys and others on multiple imputation for the
+their strengths vary and their objectives vary. A long     CDC Anthrax vaccine trial (Li et al., 2014). You
+time ago I decided that I don’t have the desire or         were not too happy about it initially.
+ability to be an entertainer in class, that is, to en-        Fabri: (Laughing) Yeah, we tried to revolt with-
+tertain to get their attention. If they find me enter-     out success. A different question: How do you ap-
+taining, fine; but it is better if they find the topic I   proach rejections? Do you have some advice for
+am presenting entertaining.                                young statisticians on that?
+  Fabri: Many of your students went on to become              Don: Over the years I had many papers immedi-
+leaders and not only in academia. And you often            ately rejected or rejected with the suggestion that it
+say that the thing that you are the most proud of is       would not be wise to resubmit. However, in almost
+your students. Though it is clearly impossible to talk     all of these cases, this treatment led to markedly
+about them here one by one, can you share some of          improved publications, somewhere. In fact, I think
+your fond memories of the students?                        that the drafts that have been repeatedly rejected
+  Don: Fabri, that is a killer question unless we have     possibly represent my best contributions. Certainly,
+another day for this. What I can say is that it has        the repeated rejections, combined with my trying
+been a great pleasure to supervise so many very tal-       to address various comments, led to better exposi-
+ented students. I could start listing my superb Ph.D.      tion and sometimes better problem formulation, too.
+students at the University of Chicago and at Har-          The most important idea is: Do not think that peo-
+                                                           ple who are critics are hostile. In the vast majority
+  1
+  As of April 1, 2014, the book can be preordered on       of cases, editors and reviewers are giving up their
+Amazon.com.                                                time to try to help authors, and, I believe, are often
+                                       A CONVERSATION WITH D. B. RUBIN                                               17
+
+
+
+
+     Fig. 7.   D. B. Rubin (on left) with Tom Belin (on right) and Tom’s daughter Janet (middle), Cambridge, 2008.
+
+
+
+especially generous and helpful to younger or inex-          the previous editor didn’t get a good reviewer or
+perienced authors. Do not read into rejection letters        they overlooked mistakes, does not mean the paper
+personal attacks, which are extremely rare. So my            should appear. But I was not very popular, at least
+advice is: Quality trumps quantity, and stick with           at first.
+good ideas even when you have to do polite bat-                 Fabri: You have done a wide range of consulting.
+tle with editors and reviewers—they are not perfect          What is the role that consulting plays in your re-
+judges, but they are, almost uniformly, on your side.        search?
+More details of these are given in Rubin (2014b).               Don: To me consulting is always a stimulating
+   Fan: In 1978, you became the Coordinating and             source of problems. As I mentioned before, for exam-
+Applications Editor of JASA. Is there anything par-          ple, propensity score technology partly came from
+ticularly unique about your editorship?                      the consulting work we did for June Reinisch.
+   Don: As author, I am willing to withdraw accepted            Fabri: One of the more controversial cases in which
+papers. As a new editor, at least then, I was also will-
+                                                             you are involved as a consultant is the US tobacco
+ing to suggest to authors that they withdraw papers
+                                                             litigation case, in which you represented the tobacco
+accepted by the previous editors! I took some heat
+                                                             companies as an expert witness. Would you mind
+for that at the beginning. I read through all the pa-
+                                                             sharing some of your thoughts on this case?
+pers that the previous editorial board had accepted
+                                                                Don: Happy to. This comes from my family back-
+and were awaiting copyediting for publication; for
+the ones that I thought were bad (I remember there           ground dealing with lawyers. We have a legal system
+were about eight), I wrote, “Dear authors, I think           where certain things are legal, certain things are not.
+you should consider withdrawing this paper,” with            You should generally obey laws even if you don’t like
+long explanations of why I thought it would be an            them, or you should try to change them. If a com-
+embarrassment to them if the paper were published.           pany is making a legal product, and they are ad-
+Fabri knows that I can be brutally frank about such          vertising it legally under current laws, then accept
+suggestions.                                                 it or work to change the laws. If they lie, punish
+   Fan: Did they comply?                                     them for lying, if that is legal to do. You never see a
+   Don: Yes, all but one. This one author fought, and        commercial for sporty cars that show the cars going
+I kept saying, “You have to fix this up.” Eventually,        around corners extremely slowly and safely. How do
+the changes made the paper OK. For the other ones,           they advertise cars? They usually show them sweep-
+the authors agreed with my criticisms: Just because          ing around corners, and say “Don’t do this on your
+18                                                F. LI AND F. MEALLI
+
+
+
+
+Fig. 8. Celebrating Don’s 70th birthday at the Yenching Restaurant, Harvard Square, March 29, 2014. Front (left to right):
+Alan Zaslavsky, Elizabeth Stuart, Xiao-Li Meng, TE Raghunathan; Back (left to right): Fan Li, Elizabeth Zell, Fabrizia Mealli,
+Don Rubin. The restaurant has a dish named in Don’s honor, the “Rubin.”
+
+
+own.” Things that are enjoyable typically have un-              tobacco industry a trillion dollar fine for lying about
+certainties or risks associated with them. Flying to            its products, I would be amazed but mute. But these
+Europe to visit Fabri has risks!                                reports were using statistical arguments to set the
+   Certainly I do not doubt that no matter how I                numbers—is it acceptable to use bad statistics to set
+would intervene to reduce cigarette smoking, lung               numbers because we “know” the defendant is guilty?
+cancer rates would drop. But what intervention that             What sort of precedent does that imply? The ethics
+would reduce smoking would involve reducing ille-               of this consulting is discussed at some length in Ru-
+gal conduct of the cigarette industry—that is the               bin (2002).
+essence of the legal question.                                     Fabri: We have talked quite a lot about statistics.
+   When I was first contacted by a tobacco lawyer,              Let’s talk about some of your other passions in life,
+I was very reluctant to consult for them, and I feared          for example, music, audio systems and sports cars.
+strong pressure to be dishonest, which was absent                  Don: There are other passions, too, and their order
+throughout. The original topic was simply to com-               is very age dependent (I leave more to your percep-
+ment on the ways the plaintiffs’ experts were han-              tions). When a kid, for example, sports cars, both
+dling missing data. On examination, their methods               driving them and rebuilding them, was the top of
+seemed to me to be not the best available and, at               those three hobbies. But age (poorer vision, slower
+worst, silly (e.g., when missing “marital status,” call         reflexes, more aches and pains, etc.) shifted the bal-
+them “married”). As I continued to read these ini-              ance more to music, both live and recorded—luckily
+tial reports, I was appalled that hundreds of billions          my ears are still good enough to enjoy these, but as
+of dollars could be sought on the basis of such anal-           more age catches up, things may shift.
+yses. From a broader perspective, the logic underly-               Fan and Fabri: Well, it has been nearly three hours
+ing most of the analyses also seemed to me entirely             since we started the conversation. Here is the final
+confused. For example, alleged misconduct seemed                question before letting you go for dinner: What is
+to play no role in nearly all calculations, and phrases         your short advice to young researchers in statistics?
+such as “caused by” or “attributable to,” were used                Don: Have fun! Don’t be grumpy. If lucky, you
+nearly interchangeably and often apparently with-               may live to have a wonderful 70th birthday celebra-
+out thought. Should nearly a trillion dollars in dam-           tion!2
+ages be awarded on the basis of faulty logic and bad
+statistical analyses because we “know” the defen-                 2
+                                                                   Video of the celebration is available at: http://www.stat.
+dant is evil and guilty? If the issue were assessing the        harvard.edu/DonRubin70/
+                                          A CONVERSATION WITH D. B. RUBIN                                                      19
+
+               ACKNOWLEDGMENTS                                    Imbens, G. W. and Angrist, J. (1994). Identification and
+                                                                     estimation of local average treatment effects. Econometrica
+   We thank Elizabeth Zell, Guido Imbens, Tom Be-                    62 467–475.
+lin, Rod Little, Dale Rinkel and Alan Zaslavsky for               Imbens, G. W. and Rubin, D. B. (1997). Bayesian inference
+helpful suggestions. This work is partially funded by                for causal effects in randomized experiments with noncom-
+NSF-SES Grant 1155697.                                               pliance. Ann. Statist. 25 305–327. MR1429927
+                                                                  Imbens, G. W. and Rubin, D. B. (2015). Causal Inference
+                                                                     for Statistics, Social, and Biomedical Sciences: An Intro-
+                     REFERENCES                                      duction. Cambridge Univ. Press, New York.
+Angrist, J., Imbens, G. W. and Rubin, D. B. (1996).               Li, F., Baccini, M., Mealli, F., Zell, E. R., Fran-
+  Identification of causal effects using instrumental variables      gakis, C. E. and Rubin, D. B. (2014). Multiple impu-
+  (with discussion and rejoinder). J. Amer. Statist. Assoc. 91       tation by ordered monotone blocks with application to
+  444–472.                                                           the anthrax vaccine research program. J. Comput. Graph.
+Box, G. E. P. (1980). Sampling and Bayes’ inference in sci-          Statist. 23 877–892. MR3224660
+  entific modelling and robustness. J. Roy. Statist. Soc. Ser.    Little, R. J. A. and Rubin, D. B. (1987). Statistical Anal-
+  A 143 383–430. MR0603745                                           ysis with Missing Data. Wiley, New York. MR0890519
+Brillinger, D. R., Jones, L. V. and Tukey, J. W. (1978).          Little, R. J. A. and Rubin, D. B. (2002). Statistical Anal-
+  The management of weather resources. In The Role of                ysis with Missing Data, 2nd ed. Wiley, Hoboken, NJ.
+  Statistics in Weather Resources Management II. Report of           MR1925014
+  the Statistical Task Force to the Weather Modification Ad-      Mattei, A., Li, F. and Mealli, F. (2013). Exploiting mul-
+  visory Board. US Government Printing Office, Washington,           tiple outcomes in Bayesian principal stratification analysis
+  DC.                                                                with application to the evaluation of a job training pro-
+Dempster, A. P., Laird, N. M. and Rubin, D. B. (1977).               gram. Ann. Appl. Stat. 7 2336–2360. MR3161725
+  Maximum likelihood from incomplete data via the EM al-          Mealli, F. and Pacini, B. (2013). Using secondary out-
+  gorithm. J. R. Stat. Soc. Ser. B Stat. Methodol. 39 1–38.          comes to sharpen inference in randomized experiments
+  MR0501537                                                          with noncompliance. J. Amer. Statist. Assoc. 108 1120–
+Frangakis, C. E. and Rubin, D. B. (2002). Principal                  1131. MR3174688
+  stratification in causal inference. Biometrics 58 21–29.        Meng, X.-L. (1994). Posterior predictive p-values. Ann.
+  MR1891039                                                          Statist. 22 1142–1160. MR1311969
+Frumento, P., Mealli, F., Pacini, B. and Rubin, D. B.             Neyman, J. (1990). On the application of probability theory
+  (2012). Evaluating the effect of training on wages in the          to agricultural experiments. Essay on principles. Section 9.
+  presence of noncompliance, nonemployment, and miss-                Statist. Sci. 5 465–472. Translated from the Polish and
+  ing outcome data. J. Amer. Statist. Assoc. 107 450–466.            edited by D. M. Da̧browska and T. P. Speed. MR1092986
+  MR2980057                                                       Neyman, J. (1934). On the two different aspects of the rep-
+Gelman, A. and Rubin, D. B. (1992). Inference from itera-            resentative method: The method of stratified sampling and
+  tive simulation using multiple sequences (with discussion).        the method of purposive selection. J. Roy. Statist. Soc. 97
+  Statist. Sci. 7 457–472.
+                                                                     558–625.
+Gelman, A., Meng, X. L. and Stern, H. (1996). Posterior
+                                                                  Rosenbaum, P. R. and Rubin, D. B. (1983a). The central
+  predictive assessment of model fitness via realized discrep-
+                                                                     role of the propensity score in observational studies for
+  ancies. Statist. Sinica 6 733–760. MR1422404
+                                                                     causal effects. Biometrika 70 41–55. MR0742974
+Gelman, A., Carlin, J. B., Stern, H. S. and Rubin, D. B.
+                                                                  Rosenbaum, P. R. and Rubin, D. B. (1983b). Assessing
+  (1995). Bayesian Data Analysis. Chapman & Hall, London.
+                                                                     sensitivity to an unobserved binary covariate in an obser-
+  MR1385925
+                                                                     vational study with binary outcome. J. R. Stat. Soc. Ser.
+Gelman, A., Carlin, J., Stern, H. and Rubin, D. B.
+  (2003). Bayesian Data Analysis, 2nd ed. CRC Press, New             B Stat. Methodol. 45 212–218.
+  York.                                                           Rosenbaum, P. R. and Rubin, D. B. (1984a). Reducing
+Gelman, A., Carlin, J., Stern, H., Dunson, D., Ve-                   bias in observational studies using subclassification on the
+  htari, A. and Rubin, D. B. (2014). Bayesian Data Anal-             propensity score. J. Amer. Statist. Assoc. 79 516–524.
+  ysis, 3rd ed. CRC Press, New York.                              Rosenbaum, P. R. and Rubin, D. B. (1984b). Sensitivity of
+Glynn, R., Laird, N. M. and Rubin, D. B. (1986). Se-                 Bayes inference with data-dependent stopping rules. Amer.
+  lection modelling versus mixture modelling with nonignor-          Statist. 38 106–109.
+  able nonresponse. In Drawing Inferences from Self-Selected      Rubin, D. B. (1972). A non-iterative algorithm for least
+  Samples (H. Wainer, ed.) 119–146. Springer, New York.              squares estimation of missing values in any analysis of vari-
+Hartley, H. O. (1956). A plan for programming analysis               ance design. J. R. Stat. Soc. Ser. C. Appl. Stat. 21 136–141.
+  of variance for general purpose computers. Biometrics 12           MR0311040
+  110–122. MR0079359                                              Rubin, D. B. (1974). Estimating causal effects of treatments
+Hartley, H. O. and Hocking, R. R. (1971). The analysis               in randomized and nonrandomized studies. J. Educational
+  of incomplete data. Biometrics 27 783–823.                         Psychology 66 688–701.
+Holland, P. W. (1986). Statistics and causal inference. J.        Rubin, D. B. (1976). Inference and missing data. Biometrika
+  Amer. Statist. Assoc. 81 945–970. MR0867618                        63 581–592. MR0455196
+20                                                 F. LI AND F. MEALLI
+
+Rubin, D. B. (1977). Assignment to treatment group on the          “The calculation of posterior distributions by data aug-
+  basis of a covariate. J. Educational Statistics 2 1–26.          mentation” by M. Tanner and W. H. Wong. J. Amer.
+Rubin, D. B. (1978a). Bayesian inference for causal ef-            Statist. Assoc. 82 543–546.
+  fects: The role of randomization. Ann. Statist. 6 34–58.       Rubin, D. B. (1990a). Formal modes of statistical inference
+  MR0472152                                                        for causal effects. J. Statist. Plann. Inference 25 279–292.
+Rubin, D. B. (1978b). Multiple imputations in sample             Rubin, D. B. (1990b). Comment on “Neyman (1923) and
+  surveys—A phenomenological Bayesian approach to non-             causal inference in experiments and observational studies.”
+  response (with discussion and reply). In The Proceedings of      Statist. Sci. 5 472–480. MR1092987
+  the Survey Research Methods Section of the American Sta-       Rubin, D. B. (1994). Comment on “Missing data, impu-
+  tistical Association 20–34. Also in Imputation and Editing       tation, and the bootstrap” by Bradley Efron. J. Amer.
+  of Faulty or Missing Survey Data. U.S. Dept. Commerce,           Statist. Assoc. 89 475–478.
+  Bureau of the Census, Washington, DC.                          Rubin, D. B. (1995). Bayes, Neyman, and calibration. Dis-
+Rubin, D. B. (1981). The Bayesian bootstrap. Ann. Statist.         cussion of Berk, Western and Weiss. Sociological Method-
+  9 130–134. MR0600538                                             ology 25 473–479.
+Rubin, D. B. (1983). A case study of the robustness of           Rubin, D. B. (1996). Multiple imputation after 18+ years
+  Bayesian methods of inference: Estimating the total in a fi-     (with discussion and rejoinder). J. Amer. Statist. Assoc.
+  nite population using transformations to normality. In Sci-      91 473–517.
+  entific Inference, Data Analysis, and Robustness (Madison,     Rubin, D. B. (2002). The ethics of consulting for the tobacco
+  Wis., 1981). Publ. Math. Res. Center Univ. Wisconsin 48          industry. Special issue on “Ethics, statistics and statisti-
+  213–244. Academic Press, Orlando, FL. MR0772771                  cians”. Stat. Methods Med. Res. 11 373–380.
+Rubin, D. B. (1984). Bayesianly justifiable and relevant         Rubin, D. B. (2010). Reflections stimulated by the comments
+  frequency calculations for the applied statistician. Ann.        of Shadish (2010) and West and Thoemmes (2010). Psy-
+  Statist. 12 1151–1172. MR0760681                                 chol. Methods 15 38–46.
+Rubin, D. B. (1987a). Multiple Imputation for Nonresponse        Rubin, D. B. (2014a). Converting rejections into positive
+  in Surveys. Wiley, New York.                                     stimuli. In Past, Present, and Future of Statistical Science
+Rubin, D. B. (1987b). A noniterative sampling/importance           (X. Lin et al., eds.) 593–603. CRC Press, New York.
+  resampling alternative to the data augmentation algorithm      Rubin, D. B. (2014b). The importance of mentors. In Past,
+  for creating a few imputations when fractions of missing         Present, and Future of Statistical Science (X. Lin et al.,
+  information are modest: The SIR algorithm. Discussion of         eds.) 605–613. CRC Press, New York.
+

@@ -1,0 +1,345 @@
+7                                                     Section ofOccupational Medicine                295
+
+
+                                                      Meeting January 141965
+
+                                                      President's Address
+The Environment and Disease:                          observed association to a verdict of causation?
+Association or Causation?                             Upon what basis should we proceed to do so?
+by Sir Austin Bradford Hill CBE DSC FRCP(hOn) FRS        I have no wish, nor the skill, to embark upon a
+(Professor Emeritus ofMedical Statistics,             philosophical discussion of the meaning of
+University ofLondon)                                  'causation'. The 'cause' of illness may be imme-
+                                                      diate and direct, it may be remote and indirect
+                                                      underlying the observed association. But with
+Amongst the objects of this newly-founded Section     the aims of occupational, and alnost synony-
+of Occupational Medicine are firstly 'to provide a    mously preventive, medicine in mind the decisive
+means, not readily afforded elsewhere, whereby        question is whether the frequency of the un-
+physicians and surgeons with a special knowledge      desirable event B will be influenced by a change
+of the relationship between sickness and injury       in the environmental feature A. How such a
+and conditions of work may discuss their prob-        change exerts that influence may call for a great
+lems, not only with each other, but also with         deal of research. However, before deducing
+colleagues in other fields, by holding joint meet-    'causation' and taking action we shall not
+ings with other Sections of the Society'; and,        invariably have to sit around awaiting the
+secondly, 'to make available information about        results of that research. The whole chain may
+the physical, chemical and psychological hazards      have to be unravelled or a few links may suffice.
+of occupation, and in particular about those that     It will depend upon circumstances.
+are rare or not easily recognized'.
+                                                        Disregarding then any such problem in
+  At this first meeting of the Section and before,    semantics we have this situation. Our observa-
+with however laudable intentions, we set about        tions reveal an association between two variables,
+instructing our colleagues in other fields, it will   perfectly clear-cut and beyond what we would
+be proper to consider a problem fundamental to        care to attribute to the play of chance. What
+our own. How in the first place do we detect          aspects of that association should we especially
+these relationships between sickness, injury and      consider before deciding that the most likely
+conditions of work? How do we determine what          interpretation of it is causation?
+are physical, chemical and psychological hazards
+of occupation, and in particular those that are       (1) Strength. First upon my list I would put the
+rare and not easily recognized?                       strength of the association. To take a very old
+                                                      example, by comparing the occupations of
+  There are, of course, instances in which we         patients with scrotal cancer with the occupations
+can reasonably answer these questions from the        of patients presenting with other diseases,
+general body of medical knowledge. A particular,      Percival Pott could reach a correct conclusion
+and perhaps extreme, physical environment can-        because of the enormous increase of scrotal
+ not fail to be harmful; a particular chemical is     cancer in the chimney sweeps. 'Even as late as the
+known to be toxic to man and therefore suspect        second decade of the twentieth century', writes
+on the factory floor. Sometimes, alternatively,       Richard Doll (1964), 'the mortality of chimney
+we may be able to consider what might a par-          sweeps from scrotal cancer was some 200 times
+-ticular environment do to man, and then see          that of workers who were not specially exposed
+whether such consequences are indeed to be            to tar or mineral oils and in the eighteenth
+found. But more often than not we have no such        century the relative difference is likely to have
+guidance, no such means of proceeding; more           been much greater.'
+ often than not we are dependent upon our
+ observation and enumeration of defined events          To take a more modern and more general
+for which we then seek antecedents. In other          example upon which I have now reflected for
+words we see that the event B is associated with      over fifteen years, prospective inquiries into
+ the environmental feature A, that, to take a         smoking have shown that the death rate from
+specific example, some form of respiratory illness    cancer of the lung in cigarette smokers is nine to
+ is associated with a dust in the environment. In     ten times the rate in non-smokers and the rate in
+ what circumstances can we pass from this             heavy cigarette smokers is twenty to thirty times
+296 Proceedings ofthe Royal Society of Medicine                                                          8
+
+as great. On the other hand the death rate from        the grounds that the observed association
+coronary thrombosis in smokers is no more than         appears to be slight. There are many occasions in
+twice, possibly less, the death rate in non-           medicine when this is in truth so. Relatively few
+smokers. Though there is good evidence to              persons harbouring the meningococcus fall sick
+support causation it is surely much easier in this     of meningococcal meningitis. Relatively few
+case to think of some features of life that may go     persons occupationally exposed to rat's urine
+hand-in-hand with smoking - features that might        contract Weil's disease.
+conceivably be the real underlying cause or, at
+the least, an important contributor, whether it be     (2) Consistency: Next on my list of features to be
+lack of exercise, nature of diet or other factors.     specially considered I would place the consistency
+But to explain the pronounced excess in cancer of      of the observed association. Has it been repeatedly
+the lung in any other environmental terms              observed by different persons, in different places,
+requires some feature of life so intimately linked     circumstances and times?
+with cigarette smoking and with the amount of
+smoking that -such a feature should be easily            This requirement may be of special importance
+detectable. If we cannot detect it or reasonably       for those rare hazards singled out in the Section's
+infer a specific one, then in such circumstances I     terms of reference. With many alert minds at
+think we are reasonably entitled to reject the         work in industry today many an environmental
+vague contention of the armchair critic 'you can't     association may be thrown up. Some of them on
+prove it, there may be such a feature'.                the customary tests of statistical significance will
+                                                       appear to be unlikely to be due to chance. Never-
+   Certainly in this situation I would reject the      theless whether chance is the explanation or
+argument sometimes advanced that what matters          whether a true hazard has been revealed may
+is the absolute difference between the death rates     sometimes be answered only by a repetition of
+of our various groups and not the ratio of one to      the circumstances and the observations.
+other. That depends upon what we want to know.
+If we want to know how many extra deaths from             Returning to my more general example, the
+cancer of the lung will take place through smok-       Advisory Committee to the Surgeon-General of
+ing (i.e. presuming causation), then obviously we      the United States Public Health Service found
+must use the absolute differences between the          the association of smoking with cancer of the
+death rates - 0 -07 per 1,000 per year in non-         lung in 29 retrospective and 7 prospective
+smoking doctors, 0'57 in those smoking 1-14            inquiries (US Department of Health, Education
+cigarettes daily, 1 39 for 15-24 cigarettes daily      & Welfare 1964). The lesson here is that broadly
+and 2-27 for 25 or more daily. But it does not         the same answer has been reached in quite a wide
+follow here, or in more specifically occupational      variety of situations and techniques. In other
+problems, that this best measure of the effect upon    words we can justifiably infer that the association
+mortality is also the best measure in relation to      is not due to some constant error or fallacy that
+atiology. In this respect the ratios of 8, 20 and 32   permeates every inquiry. And we have indeed to
+to 1 are far more informative. It does not, of         be on our guard against that.
+course, follow that the differences revealed by
+ratios are of any practical importance. Maybe           Take, for instance, an example given by Heady
+they are, maybe they are not; but that is another     (1958). Patients admitted to hospital for opera-
+point altogether.                                     tion for peptic ulcer are questioned about recent
+                                                      domestic anxieties or crises that may have pre-
+  We may recall John Snow's classic analysis of cipitated the acute illness. As controls, patients
+the opening weeks of the cholera epidemic of 1854 admitted for operation for a simple hernia are
+(Snow 1855). The death rate that he recorded in similarly quizzed. But, as Heady points out, the
+the customers supplied with the grossly polluted two groups may not be in pari materia. If your
+water of the Southwark and Vauxhall Company wife ran off with the lodger last week you still
+was in truth quite low - 71 deaths in each 10,000 have to take your perforated ulcer to hospital
+houses. What stands out vividly is the fact that without delay. But with a hernia you might
+the small rate is 14 times the figure of 5 deaths per prefer to stay at home for a while - to mourn (or
+10,000 houses supplied with the sewage-free celebrate) the event. No number of exact repeti-
+water of the rival Lambeth Company.                   tions would remove or necessarily reveal that
+                                                      fallacy.
+  In thus putting emphasis upon the strength of
+an association we must, nevertheless, look at the        We have, therefore, the somewhat paradoxical
+obverse of the coin. We must not be too ready to position that the different results of a different
+dismiss a cause-and-effect hypothesis merely on inquiry certainly cannot be held to refute the
+9                                                         Section oj Occupational Medicine                297
+original evidence; yet the same results from pre-         (3) Specificity: One reason, needless to say, is the
+cisely the same form of inquiry will not invariably       specificity of the association, the third character-
+greatly strengthen the original evidence. I would         istic which invariably we must consider. If, as
+myself put a good deal of weight upon similar             here, the association is limited to specific workers
+results reached in quite different ways, e.g. pros-       and to particular sites and types of disease and
+pectively and retrospectively.                            there is no association between the work and
+                                                          other modes of dying, then clearly that is a strong
+   Once again looking at the obverse of the coin          argument in favour of causation.
+there will be occasions when repetition is absent
+or impossible and yet we should not hesitate to         We must not, however, over-emphasize the
+draw conclusions. The experience of the nickel        importance of the characteristic. Even in my
+refiners of South Wales is an outstanding             present example there is a cause and effect rela-
+example. I quote from the Alfred Watson               tionship with two different sites of cancer - the
+Memorial Lecture that I gave in 1962 to the           lung and the nose. Milk as a carrier of infection
+Institute of Actuaries:                               and, in that sense, the cause of disease can pro-
+                                                      duce such a disparate galaxy as scarlet fever,
+'The population at risk, workers and pensioners, diphtheria, tuberculosis, undulant fever, sore
+numbered about one thousand. During the ten years throat, dysentery and typhoid fever. Before the
+1929 to 1938, sixteen of them had died from cancer of discovery of the underlying factor, the bacterial
+the lung, eleven of them had died from cancer of the origin of disease, harm would have been done by
+nasal sinuses. At the age specific death rates of
+England and Wales at that time, one might have pushing too firmly the need for specificity as a
+anticipated one death from cancer of the lung (to necessary feature before convicting the dairy.
+compare with the 16), and a fraction of a death from
+cancer of the nose (to compare with the 11). In all         Coming to modern times the prospective
+other bodily sites cancer had appeared on the death       investigations of smoking and cancer of the lung
+certificate 11 times and one would have expected it to    have been cr_iticized for not showing specificity -
+do so 10-11 times. There had been 67 deaths from all      in other words the death rate of smokers is
+other causes of mortality and over the ten years'         higher than the death rate of non-smokers from
+period 72 would have been expected at the national        many causes of death (though in fact the results
+death rates. Finally division of the population at risk   of Doll & Hill, 1964, do not show that). But here
+in relation to their jobs showed that the excess of
+cancer of the lung and nose had fallen wholly upon        surely one must return to my first characteristic,
+the workers employed in the chemical processes.           the strength of the association. If other causes of
+                                                          death are raised 10, 20 or even 50% in smokers
+   'More recently my colleague, Dr Richard Doll, has      whereas cancer of the lung is raised 900-1,000 %
+brought this story a stage further. In the nine years     we have specificity - a specificity in the magnitude
+1948 to 1956 there had been, he found, 48 deaths from     of the association.
+cancer of the lung and 13 deaths from cancer of the
+nose. He assessed the numbers expected at normal            We must also keep in mind that diseases may
+rates of mortality as, respectively 10 and 0 1.           have more than one cause. It has always been
+   'In 1923, long before any special hazard had been      possible to acquire a cancer of the scrotum
+recognized, certain changes in the refinery took          without sweeping chimneys or taking to mule-
+place. No case of cancer of the nose has been observed    spinning in Lancashire. One-to-one relationships
+in any man who first entered the works after that         are not frequent. Indeed I believe that multi-
+year, and in these men there has been no excess of        causation is generally more likely than single
+cancer of the lung. In other words, the excess in both    causation though possibly if we knew all the
+sites is uniquely a feature in men who entered the        answers we might get back to a single factor.
+refinery in, roughly, the first 23 years of the present
+century.                                                     In short, if specificity exists we may be able to
+   'No causal agent of these neoplasms has been           draw conclusions without hesitation; if it is not
+identified. Until recently no animal experimentation      apparent, we are not thereby necessarily left
+had given any clue or any support to this wholly          sitting irresolutely on the fence.
+statistical evidence. Yet I wonder if any of us would
+                                                 (4) Temporality: My fourth characteristic is the
+hesitate to accept it as proof of a grave industrial
+hazard?' (Hill 1962).                            temporal relationship of the association --which
+                                                 is the cart and which the horse? This is a question
+  In relation to my present discussion I know of which might be particularly relevant with diseases
+no parallel investigation. We have (or certainly of slow development. Does a particular diet lead
+had) to make up our minds on a unique event; to disease or do the early stages of the disease
+and there is no difficulty in doing so.          lead to those peculiar dietetic habits? Does a
+                                                                      9
+ 298 Proceedings of the Royal Society of Medicine                                                        10
+ particular occupation or occupational environ-          In short, the association we observe may be
+ ment promote infection by the tubercle bacillus       one new to science or medicine and we must not
+or are the men and women who select that kind          dismiss it too light-heartedly as just too odd. As
+of work more liable to contract tuberculosis           Sherlock Holmes advised Dr Watson, 'when you
+whatever the environment - or, indeed, have they       have eliminated the impossible, whatever remains,
+already contracted it? This temporal problem           however improbable, must be the truth.'
+may not arise often but it certainly needs to be
+remembered, particularly with selective factors        (7) Coherence: On the other hand the cause-and-
+at work in industry.                                   effect interpretation of our data should not
+                                                       seriously conflict with the generally known facts
+ (5) Biological gradient: Fifthly, if the association  of the natural history and biology of the disease
+ is one which can reveal a biological gradient, or     - in the expression of the Advisory Committee
+ dose-response curve, then we should look most         to the Surgeon-General it should have coherence.
+ carefully for such evidence. For instance, the
+ fact that the death rate from cancer of the lung            Thus in the discussion of lung cancer the
+ rises linearly with the number of cigarettes Committee finds its association with cigarette
+ smoked daily, adds a very great deal to the smoking coherent with the temporal rise that has
+ simpler evidence that cigarette smokers have a taken place in the two variables over the last
+ higher death rate than non-smokers. That com- generation and with the sex difference in
+ parison would be weakened, though not neces- mortality - features that might well apply in an
+ sarily destroyed, if it depended upon, say, a much occupational problem. The known urban/rural
+ heavier death rate in light smokers and a lower ratio of lung cancer mortality does not detract
+ rate in heavier smokers. We should then need to from coherence, nor the restriction of the effect
+ envisage some much more complex relationship to the lung.
+ to satisfy the cause-and-effect hypothesis. The
+ clear dose-response curve admits of a simple               Personally, I regard as greatly contributing to
+ explanation and obviously puts the case in a coherence the histopathological evidence from
+ clearer light.                                           the bronchial epithelium of smokers and the
+                                                          isolation from cigarette smoke of factors car-
+    The same would clearly be true of an alleged cinogenic for the skin of laboratory animals.
+ dust hazard in industry. The dustier the environ- Nevertheless, while such laboratory evidence can
+ ment the greater the incidence of disease we enormously strengthen the hypothesis and,
+ would expect to see. Often the difficulty is to indeed, may determine the actual causative agent,
+secure some satisfactory quantitative measure of the lack of such evidence cannot nullify the
+the environment which will permit us to explore epidemiological observations in man. Arsenic
+this dose-response. But we should invariably can undoubtedly cause cancer of the skin in man
+ seek it.                                                but it has never been possible to demonstrate
+                                                         such an effect on any other animal. In a wider
+(6) Plausibility: It will be helpful if the causation field John Snow's epidemiological observations on
+we suspect is biologically plausible. But this is a the conveyance of cholera by the water from the
+feature I am convinced we cannot demand. What Broad Street pump would have been put almost
+is biologically plausible depends upon the bio- beyond dispute if Robert Koch had been then
+logical knowledge of the day.                            around to isolate the vibrio from the baby's
+                                                         nappies, the well itself and the gentleman in
+    To quote again from my Alfred Watson delicate health from Brighton. Yet the fact that
+Memorial Lecture (Hill 1962), there was                  Koch's work was to be awaited another thirty
+                                                         years did not really weaken the epidemiological
+'. . . no biological knowledge to support (or to refute) case though it made it more difficult to establish
+Pott's observation in the 18th century of the excess of against the criticisms of the day - both just and
+cancer in chimney sweeps. It was lack of biological unjust.
+knowledge in the 19th that led a prize essayist writing
+on the value and the fallacy of statistics to conclude, (8) Experiment: Occasionally it is possible to
+amongst other "absurd" associations, that "it could appeal to experimental, or semi-experimental,
+be no more ridiculous for the stranger who passed the evidence. For example, because of an observed
+night in the steerage of an emigrant ship to ascribe association some      preventive action is taken. Does
+the typhus, which he there contracted, to the vermin
+with which bodies of the sick might be infected". And it in fact prevent? The dust in the workshop is
+coming to nearer times, in the 20th century there was reduced, lubricating oils are changed, persons
+no biological knowledge to support the evidence stop smoking cigarettes. Is the frequency of the
+against rubella.'                                        associated events affected? Here the strongest
+11                                                    Section ofOccupational Medicine                 299
+
+support for the causation hypothesis may be              All this has rightly passed into the limbo of
+revealed.                                             forgotten things. What interests me today is this:
+                                                      My results were set out for men and women
+(9) Analogy: In some circumstances it would be        separately and for half a dozen age groups in 36
+fair to judge by analogy. With the effects of         tables. So there were plenty of sums. Yet I cannot
+thalidomide and rubella before us we would            find that anywhere I thought it necessary to use a
+surely be ready to accept slighter but similar        test of significance. The evidence was so clear-cut,
+evidence with another drug or another viral           the differences between the groups were mainly so
+disease in pregnancy.                                 large, the contrast between respiratory and non-
+                                                      respiratory causes of illness so specific, that no
+   Here then are nine different viewpoints from all   formal tests could really contribute anything of
+of which we should study association before we        value to the argument. So why use them?
+cry causation. What I do not believe - and this
+has been suggested - is that we can usefully lay        Would we think or act that way today ? I
+down some hard-and-fast rules of evidence that        rather doubt it. Between the two world wars there
+must be obeved before we accept cause ard             was a strong case for emphasizing to the clinician
+effect. None of my nine viewpoints can bring          and other research workers the importance of not
+indisputable evidence for or against the cause-       overlooking the effects of the play of chance upon
+and-effect hypothesis and none can be required        their data. Perhaps too often generalities were
+as a sine qua non. What they can do, with greater     based upon two men and a laboratory dog while
+or less strength, is to help us to make up our        the treatment of choice was deduced from a
+minds on the fundamental question - is there any      difference between two bedfuls of patients and
+other way of explaining the set of facts before us,   might easily have no true meaning. It was there-
+is there any other answer equally, or more, likely    fore a useful corrective for statisticians to stress,
+than cause and effect?                                and to teach the need for, tests of significance
+                                                      merely to serve as guides to caution before draw-
+                                                      ing a conclusion, before inflating the particular
+Tests ofSignificance                                  to the general.
+No formal tests of significance can answer those
+questions. Such tests can, and should, remind us         I wonder whether the pendulum has not swung
+of the effects that the play of chance can create,    too far - not only with the attentive pupils but
+and they will instruct us in the likely magnitude     even with the statisticians themselves. To decline
+of those effects. Beyond that they contribute         to draw conclusions without standard errors can
+nothing to the 'proof' of our hypothesis.             surely be just as silly? Fortunately I believe we
+                                                      have not yet gone so far as our friends in the
+  Nearly forty years ago, amongst the studies of      USA where, I am told, some editors of journals
+occupational health that I made for the Industrial    will return an article because tests of significance
+Health Research Board of the Medical Research         have not been applied. Yet there are innumerable
+Council was one that concerned the workers in         situations in which they are totally unnecessary -
+the cotton-spinning mills of Lancashire (Hill         because the difference is grotesquely obvious,
+1930). The question that I had to answer, by the      because it is negligible, or because, whether it be
+use of the National Health Insurance records of       formally significant or not, it is too small to be of
+that time, was this: Do the workers in the card-      any practical importance. What is worse the
+room of the spinning mill, who tend the machines      glitter of the t table diverts attention from the
+that clean the raw cotton, have a sickness experi-    inadequacies of the fare. Only a tithe, and an
+ence in any way different from that of other          unknown tithe, of the factory personnel volunteer
+operatives in the same mills who are relatively       for some procedure or interview, 20 % of patients
+unexposed to the dust and fibre that were             treated in some particular way are lost to sight,
+features of the cardroom? The answer was an           30 % of a randomly-drawn sample are never con-
+unqualified 'Yes'. From age 30 to age 60 the          tacted. The sample may, indeed, be akin to that
+cardroom workers suffered over three times as         of the man who, according to Swift, 'had a mind
+much from respiratory causes of illness whereas       to sell his house and carried a piece of brick in his
+from non-respiratory causes their experience was      pocket, which he showed as a pattern to en-
+not different from that of the other workers.         courage purchasers'. The writer, the editor and
+This pronounced difference with the respiratory       the reader are unmoved. The magic formulae are
+causes was derived not from abnormally long           there.
+periods of sickness but rather from an excessive
+number of repeated absences from work of the            Of course I exaggerate. Yet too often I suspect
+cardroom workers.                                     we waste a deal of time, we grasp the shadow and
+300 Proceedings of the Royal Society ofMedicine                                                                     12
+lose the substance, we weaken our capacity to          to a non-carcinogenic oil in a limited environment
+interpret data and to take reasonable decisions        and without too much injustice if we are wrong.
+whatever the value of P. And far too often we          But we should need very strong evidence before
+deduce 'no difference' from 'no significant            we made people burn a fuel in their homes that
+difference'. Like fire, the X2 test is an excellent    they do not like or stop smoking thecigarettes and
+servant and a bad master.                              eating the fats and sugar that they do like. In
+                                                       asking for very strong evidence I would, however,
+The Case for Action                                    repeat emphatically that this does not imply
+Finally, in passing from association to causation      crossing every 't', and swords with every critic,
+I believe in 'real life' we shall have to consider     before we act.
+what flows from that decision. On scientific              All scientific work is incomplete - whether it be
+grounds we should do no such thing. The evi-           observational or experimental. All scientific work
+dence is there to be judged on its merits and the      is liable to be upset or modified by advancing
+judgment (in that sense) should be utterly             knowledge. That does not confer upon us a free-
+independent of what hangs upon it - or who             dom to ignore the knowledge we already have, or
+hangs because of it. But in another and more           to postponethe action that it appears to demand at
+practical sense we may surely ask what is involved     a given time.
+in our decision. In occupational medicine our             Who knows, asked Robert Browning, but the
+object is usually -to take action. If this be opera-   world may end tonight? True, but on available
+tive cause and that be deleterious effect, then we     evidence most of us make ready to commute on
+shall wish to intervene to abolish or reduce           the 8.30 next day.
+death or disease.
+   While that is a commendable ambition it
+almost inevitably leads us to introduce differen-
+tial standards before we convict. Thus on              REFERENCES
+relatively slight evidence we might decide to          Doll R (1964) In: Medical Surveys and Clinical Trials. Ed. L J
+                                                       Witts. 2nd ed. London; p 333
+restrict the use of a drug for early-moMing sick-      Doll R & Hill A B (1964) Brit. med. J. i, 1399, 1460
+ness in pregnant women. If we are wrong in             Heady J A (1958) Med. World, Lond. 89, 305
+                                                       Hill A B
+deducing causation from association no great           (1930) Sickness amongst Operatives in Lancashire Spinning Mills.
+harm will be done. The good lady and the               Industrial Health Research Board Report No. 59. HMSO, London
+pharmaceutical industry will doubtless survive.        (1962) J. Inst. Actu. 88, 178
+                                                       Snow J (1855) On the Mode of Communication of Cholera. 2nd
+   On fair evidence we might take action on what       ed. London (Reprinted 1936, New York)
+appears to be an occupational hazard, e.g. we          US Department of Health, Education & Welfare (1964) Smoking
+                                                       and Health. Public Health Service Publication No. 1103. Washing-
+might change from a probably carcinogenic oil          ton
+

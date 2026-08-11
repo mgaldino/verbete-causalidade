@@ -1,0 +1,863 @@
+[
+  {
+    "author": [
+      {
+        "family": "Yule",
+        "given": "George Udny"
+      }
+    ],
+    "container-title": "Journal of the Royal Statistical Society",
+    "id": "yule1899",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          1899
+        ]
+      ]
+    },
+    "page": "249-295",
+    "title": "An investigation into the causes of changes in pauperism in England, chiefly during the last two intercensal decades (Part I)",
+    "type": "article-journal",
+    "volume": "62"
+  },
+  {
+    "author": [
+      {
+        "family": "Hill",
+        "given": "Austin Bradford"
+      }
+    ],
+    "container-title": "Proceedings of the Royal Society of Medicine",
+    "id": "hill1965",
+    "issue": "5",
+    "issued": {
+      "date-parts": [
+        [
+          1965
+        ]
+      ]
+    },
+    "page": "295-300",
+    "title": "The environment and disease: Association or causation?",
+    "title-short": "The environment and disease",
+    "type": "article-journal",
+    "volume": "58"
+  },
+  {
+    "author": [
+      {
+        "family": "Cox",
+        "given": "David R."
+      }
+    ],
+    "container-title": "Journal of the Royal Statistical Society: Series A",
+    "id": "cox1992",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          1992
+        ]
+      ]
+    },
+    "page": "291-301",
+    "title": "Causality: Some statistical aspects",
+    "title-short": "Causality",
+    "type": "article-journal",
+    "volume": "155"
+  },
+  {
+    "DOI": "10.1353/obs.2022.0008",
+    "author": [
+      {
+        "family": "Robins",
+        "given": "James M."
+      }
+    ],
+    "container-title": "Observational Studies",
+    "id": "robins2022interview",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "page": "37-76",
+    "title": "Interview with jamie robins",
+    "type": "article-journal",
+    "volume": "8"
+  },
+  {
+    "DOI": "10.1214/ss/1177012031",
+    "author": [
+      {
+        "family": "Neyman",
+        "given": "Jerzy"
+      }
+    ],
+    "container-title": "Statistical Science",
+    "id": "neyman1923",
+    "issue": "4",
+    "issued": {
+      "date-parts": [
+        [
+          1990
+        ]
+      ]
+    },
+    "note": "Original publicado em 1923; tradução de Dorota M. Dabrowska e Terence P. Speed",
+    "page": "465-472",
+    "title": "On the application of probability theory to agricultural experiments: Essay on principles, section 9",
+    "title-short": "On the application of probability theory to agricultural experiments",
+    "type": "article-journal",
+    "volume": "5"
+  },
+  {
+    "author": [
+      {
+        "family": "Rubin",
+        "given": "Donald B."
+      }
+    ],
+    "container-title": "Journal of Educational Psychology",
+    "id": "rubin1974",
+    "issue": "5",
+    "issued": {
+      "date-parts": [
+        [
+          1974
+        ]
+      ]
+    },
+    "page": "688-701",
+    "title": "Estimating causal effects of treatments in randomized and nonrandomized studies",
+    "type": "article-journal",
+    "volume": "66"
+  },
+  {
+    "DOI": "10.1214/14-STS489",
+    "author": [
+      {
+        "family": "Li",
+        "given": "Fan"
+      },
+      {
+        "family": "Mealli",
+        "given": "Fabrizia"
+      }
+    ],
+    "container-title": "Statistical Science",
+    "id": "limealli2014",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "page": "439-457",
+    "title": "A conversation with donald b. rubin",
+    "type": "article-journal",
+    "volume": "29"
+  },
+  {
+    "DOI": "10.1353/obs.2022.0009",
+    "author": [
+      {
+        "family": "Rubin",
+        "given": "Don"
+      }
+    ],
+    "container-title": "Observational Studies",
+    "id": "rubin2022interview",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "page": "77-94",
+    "title": "Interview with don rubin",
+    "type": "article-journal",
+    "volume": "8"
+  },
+  {
+    "author": [
+      {
+        "family": "Holland",
+        "given": "Paul W."
+      }
+    ],
+    "container-title": "Journal of the American Statistical Association",
+    "id": "holland1986",
+    "issue": "396",
+    "issued": {
+      "date-parts": [
+        [
+          1986
+        ]
+      ]
+    },
+    "page": "945-960",
+    "title": "Statistics and causal inference",
+    "type": "article-journal",
+    "volume": "81"
+  },
+  {
+    "author": [
+      {
+        "family": "Pearl",
+        "given": "Judea"
+      }
+    ],
+    "edition": "2",
+    "id": "pearl2009",
+    "issued": {
+      "date-parts": [
+        [
+          2009
+        ]
+      ]
+    },
+    "publisher": "Cambridge University Press",
+    "publisher-place": "Cambridge",
+    "title": "Causality: Models, reasoning, and inference",
+    "title-short": "Causality",
+    "type": "book"
+  },
+  {
+    "DOI": "10.1353/obs.2022.0007",
+    "author": [
+      {
+        "family": "Pearl",
+        "given": "Judea"
+      }
+    ],
+    "container-title": "Observational Studies",
+    "id": "pearl2022interview",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "page": "23-36",
+    "title": "Interview with judea pearl",
+    "type": "article-journal",
+    "volume": "8"
+  },
+  {
+    "DOI": "10.1257/jel.20191597",
+    "author": [
+      {
+        "family": "Imbens",
+        "given": "Guido W."
+      }
+    ],
+    "container-title": "Journal of Economic Literature",
+    "id": "imbens2020",
+    "issue": "4",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "1129-1179",
+    "title": "Potential outcome and directed acyclic graph approaches to causality: Relevance for empirical practice in economics",
+    "title-short": "Potential outcome and directed acyclic graph approaches to causality",
+    "type": "article-journal",
+    "volume": "58"
+  },
+  {
+    "DOI": "10.1257/jel.48.2.399",
+    "author": [
+      {
+        "family": "Imbens",
+        "given": "Guido W."
+      }
+    ],
+    "container-title": "Journal of Economic Literature",
+    "id": "imbens2010",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          2010
+        ]
+      ]
+    },
+    "page": "399-423",
+    "title": "Better LATE than nothing: Some comments on deaton (2009) and heckman and urzua (2009)",
+    "title-short": "Better LATE than nothing",
+    "type": "article-journal",
+    "volume": "48"
+  },
+  {
+    "author": [
+      {
+        "family": "Leamer",
+        "given": "Edward E."
+      }
+    ],
+    "container-title": "The American Economic Review",
+    "id": "leamer1983",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          1983
+        ]
+      ]
+    },
+    "page": "31-43",
+    "title": "Let’s take the con out of econometrics",
+    "type": "article-journal",
+    "volume": "73"
+  },
+  {
+    "author": [
+      {
+        "family": "Angrist",
+        "given": "Joshua D."
+      },
+      {
+        "family": "Pischke",
+        "given": "Jörn-Steffen"
+      }
+    ],
+    "container-title": "Journal of Economic Perspectives",
+    "id": "angristpischke2010",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          2010
+        ]
+      ]
+    },
+    "page": "3-30",
+    "title": "The credibility revolution in empirical economics: How better research design is taking the con out of econometrics",
+    "title-short": "The credibility revolution in empirical economics",
+    "type": "article-journal",
+    "volume": "24"
+  },
+  {
+    "DOI": "10.1177/00031224211004187",
+    "author": [
+      {
+        "family": "Lundberg",
+        "given": "Ian"
+      },
+      {
+        "family": "Johnson",
+        "given": "Rebecca"
+      },
+      {
+        "family": "Stewart",
+        "given": "Brandon M."
+      }
+    ],
+    "container-title": "American Sociological Review",
+    "id": "lundberg2021",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "532-565",
+    "title": "What is your estimand? Defining the target quantity connects statistical evidence to theory",
+    "type": "article-journal",
+    "volume": "86"
+  },
+  {
+    "author": [
+      {
+        "family": "Card",
+        "given": "David"
+      }
+    ],
+    "container-title": "American Economic Review",
+    "id": "card2022",
+    "issue": "6",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "page": "1773-1781",
+    "title": "Design-based research in empirical microeconomics",
+    "type": "article-journal",
+    "volume": "112"
+  },
+  {
+    "author": [
+      {
+        "family": "Card",
+        "given": "David"
+      },
+      {
+        "family": "Krueger",
+        "given": "Alan B."
+      }
+    ],
+    "container-title": "American Economic Review",
+    "id": "cardkrueger1994",
+    "issue": "4",
+    "issued": {
+      "date-parts": [
+        [
+          1994
+        ]
+      ]
+    },
+    "page": "772-793",
+    "title": "Minimum wages and employment: A case study of the fast-food industry in New Jersey and Pennsylvania",
+    "title-short": "Minimum wages and employment",
+    "type": "article-journal",
+    "volume": "84"
+  },
+  {
+    "DOI": "10.3982/ECTA11520",
+    "author": [
+      {
+        "family": "Fujiwara",
+        "given": "Thomas"
+      }
+    ],
+    "container-title": "Econometrica",
+    "id": "fujiwara2015",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "page": "423-464",
+    "title": "Voting technology, political responsiveness, and infant health: Evidence from Brazil",
+    "title-short": "Voting technology, political responsiveness, and infant health",
+    "type": "article-journal",
+    "volume": "83"
+  },
+  {
+    "DOI": "10.1590/S0011-52582012000400005",
+    "author": [
+      {
+        "family": "Avelino",
+        "given": "George"
+      },
+      {
+        "family": "Biderman",
+        "given": "Ciro"
+      },
+      {
+        "family": "Barone",
+        "given": "Leonardo S."
+      }
+    ],
+    "container-title": "Dados",
+    "id": "avelinobidermanbarone2012",
+    "issue": "4",
+    "issued": {
+      "date-parts": [
+        [
+          2012
+        ]
+      ]
+    },
+    "page": "987-1013",
+    "title": "Articulações intrapartidárias e desempenho eleitoral no Brasil",
+    "type": "article-journal",
+    "volume": "55"
+  },
+  {
+    "DOI": "10.1590/1981-3821202000010002",
+    "author": [
+      {
+        "family": "Suong",
+        "given": "Clara H."
+      },
+      {
+        "family": "Desposato",
+        "given": "Scott"
+      },
+      {
+        "family": "Gartzke",
+        "given": "Erik"
+      }
+    ],
+    "container-title": "Brazilian Political Science Review",
+    "id": "suongetal2020",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "e0002",
+    "title": "How “democratic” is the democratic peace? A survey experiment of foreign policy preferences in Brazil and China",
+    "type": "article-journal",
+    "volume": "14"
+  },
+  {
+    "DOI": "10.1016/j.socscimed.2017.12.005",
+    "author": [
+      {
+        "family": "Deaton",
+        "given": "Angus"
+      },
+      {
+        "family": "Cartwright",
+        "given": "Nancy"
+      }
+    ],
+    "container-title": "Social Science & Medicine",
+    "id": "deatoncartwright2018",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "page": "2-21",
+    "title": "Understanding and misunderstanding randomized controlled trials",
+    "type": "article-journal",
+    "volume": "210"
+  },
+  {
+    "DOI": "10.1146/annurev-polisci-032624-013736",
+    "author": [
+      {
+        "family": "Williams",
+        "given": "Martin J."
+      }
+    ],
+    "container-title": "Annual Review of Political Science",
+    "id": "williams2026",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "page": "215-234",
+    "title": "Causal inference, agency, and the problem of inherent endogeneity",
+    "type": "article-journal",
+    "volume": "29"
+  },
+  {
+    "DOI": "10.1177/10944281231219274",
+    "author": [
+      {
+        "family": "Hünermund",
+        "given": "Paul"
+      },
+      {
+        "family": "Louw",
+        "given": "Beyers"
+      }
+    ],
+    "container-title": "Organizational Research Methods",
+    "id": "hunermundlouw2025",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "page": "138-151",
+    "title": "On the nuisance of control variables in causal regression analysis",
+    "type": "article-journal",
+    "volume": "28"
+  },
+  {
+    "DOI": "10.48550/arXiv.2601.11542",
+    "URL": "https://arxiv.org/abs/2601.11542",
+    "author": [
+      {
+        "family": "Torreblanca",
+        "given": "Carolina"
+      },
+      {
+        "family": "Dinneen",
+        "given": "William"
+      },
+      {
+        "family": "Grossman",
+        "given": "Guy"
+      },
+      {
+        "family": "Xu",
+        "given": "Yiqing"
+      }
+    ],
+    "id": "torreblancaetal2026",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "title": "The credibility revolution in political science",
+    "type": ""
+  },
+  {
+    "author": [
+      {
+        "family": "Galdino",
+        "given": "Manoel"
+      },
+      {
+        "family": "Martins da Silva",
+        "given": "Rodrigo"
+      }
+    ],
+    "container-title": "Paper apresentado no 15º encontro da associação brasileira de ciência política, 4 de agosto de 2026",
+    "id": "galdinomartins2026",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "title": "Depois do calcanhar metodológico: Inferência e identificação causal na ciência política brasileira",
+    "title-short": "Depois do calcanhar metodológico",
+    "type": "paper-conference"
+  },
+  {
+    "DOI": "10.1515/9781400821211",
+    "author": [
+      {
+        "family": "King",
+        "given": "Gary"
+      },
+      {
+        "family": "Keohane",
+        "given": "Robert O."
+      },
+      {
+        "family": "Verba",
+        "given": "Sidney"
+      }
+    ],
+    "id": "kingetal1994",
+    "issued": {
+      "date-parts": [
+        [
+          1994
+        ]
+      ]
+    },
+    "publisher": "Princeton University Press",
+    "publisher-place": "Princeton",
+    "title": "Designing social inquiry: Scientific inference in qualitative research",
+    "title-short": "Designing social inquiry",
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Mackie",
+        "given": "J. L."
+      }
+    ],
+    "container-title": "American Philosophical Quarterly",
+    "id": "mackie1965",
+    "issue": "4",
+    "issued": {
+      "date-parts": [
+        [
+          1965
+        ]
+      ]
+    },
+    "page": "245-264",
+    "title": "Causes and conditions",
+    "type": "article-journal",
+    "volume": "2"
+  },
+  {
+    "author": [
+      {
+        "family": "Fairfield",
+        "given": "Tasha"
+      },
+      {
+        "family": "Charman",
+        "given": "Andrew"
+      }
+    ],
+    "id": "fairfieldcharman2022",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "publisher": "Cambridge University Press",
+    "publisher-place": "Cambridge",
+    "title": "Social inquiry and bayesian inference",
+    "type": "book"
+  },
+  {
+    "DOI": "10.1017/9781316718636",
+    "author": [
+      {
+        "family": "Humphreys",
+        "given": "Macartan"
+      },
+      {
+        "family": "Jacobs",
+        "given": "Alan M."
+      }
+    ],
+    "id": "humphreysjacobs2023",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "publisher": "Cambridge University Press",
+    "publisher-place": "Cambridge",
+    "title": "Integrated inferences: Causal models for qualitative and mixed-method research",
+    "title-short": "Integrated inferences",
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Cunha Rezende",
+        "given": "Flávio",
+        "non-dropping-particle": "da"
+      }
+    ],
+    "container-title": "Revista de Sociologia e Política",
+    "id": "rezende2017",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "103-138",
+    "title": "Transformações na cientificidade e o ajuste inferencial na ciência política: Argumento e evidências na produção de alto fator de impacto",
+    "title-short": "Transformações na cientificidade e o ajuste inferencial na ciência política",
+    "type": "article-journal",
+    "volume": "25"
+  },
+  {
+    "author": [
+      {
+        "family": "Sposito",
+        "given": "Italo Beltrão"
+      },
+      {
+        "family": "Gabriel",
+        "given": "João Paulo Nicolini"
+      },
+      {
+        "family": "Artioli",
+        "given": "Marcel"
+      }
+    ],
+    "container-title": "Revista de Sociologia e Política",
+    "id": "spositoetal2022",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "page": "e022",
+    "title": "Como selecionar casos a partir de diferentes alegações de causalidade",
+    "type": "article-journal",
+    "volume": "30"
+  },
+  {
+    "URL": "https://bibanpocs.emnuvens.com.br/revista/article/view/175",
+    "author": [
+      {
+        "family": "Figueiredo Filho",
+        "given": "Dalson Britto"
+      },
+      {
+        "family": "Fernandes",
+        "given": "Antônio"
+      },
+      {
+        "family": "Borba",
+        "given": "Lucas"
+      },
+      {
+        "family": "Aguiar",
+        "given": "Thaís Helena"
+      }
+    ],
+    "container-title": "BIB - Revista Brasileira de Informação Bibliográfica em Ciências Sociais",
+    "id": "figueiredoetal2021",
+    "issue": "94",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "title": "Metodologias de pesquisa em ciência política: Uma breve introdução",
+    "title-short": "Metodologias de pesquisa em ciência política",
+    "type": "article-journal"
+  },
+  {
+    "URL": "https://repositorio.enap.gov.br/bitstream/1/3330/4/Livro_desenho_de_pesquisa%20(2).pdf",
+    "author": [
+      {
+        "dropping-particle": "da",
+        "family": "Silva",
+        "given": "Glauco Peres"
+      }
+    ],
+    "collection-title": "Coleção metodologias de pesquisa",
+    "edition": "Edição revisada",
+    "id": "silva2023",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "publisher": "ENAP",
+    "publisher-place": "Brasília",
+    "title": "Desenho de pesquisa",
+    "type": "book"
+  }
+]

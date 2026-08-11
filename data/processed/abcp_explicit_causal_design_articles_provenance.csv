@@ -1,0 +1,3 @@
+source_id,source_path,file_size_bytes,modified_at,md5,expected_md5,snapshot_status
+paper_method_long_current,/Users/manoelgaldino/Documents/DCP/Papers/metodos_CP/data/processed/paper_analysis/paper_method_long_current.csv,462532,2026-07-19T00:18:15-0300,c369d40a9b892db7700f0f3a3020e3b4,c369d40a9b892db7700f0f3a3020e3b4,MATCH
+paper_analysis_dataset_current,/Users/manoelgaldino/Documents/DCP/Papers/metodos_CP/data/processed/paper_analysis/paper_analysis_dataset_current.csv,8148194,2026-07-19T00:18:15-0300,87b70bce32df44c80eb6c873dd46e5d8,87b70bce32df44c80eb6c873dd46e5d8,MATCH

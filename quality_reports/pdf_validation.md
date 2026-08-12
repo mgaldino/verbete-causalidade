@@ -1,10 +1,10 @@
 # Validação programática do PDF
 
-- Data: 2026-08-05 14:33:14 -03
+- Data: 2026-08-11 23:14:12 -03
 - Arquivo: `output/verbete-causalidade.pdf`
-- Tamanho: 80498 bytes
+- Tamanho: 80488 bytes
 - Páginas: 8
-- Palavras extraídas: 4956
+- Palavras extraídas: 4946
 - Marcadores textuais ausentes: nenhum
 
 ## Checks

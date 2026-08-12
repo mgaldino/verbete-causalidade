@@ -1,28 +1,27 @@
 {r setup, include=FALSE} knitr::opts_chunk$set(   echo = FALSE,   message = FALSE,   warning = FALSE,   fig.path = "../output/figures/",   dpi = 150 )
 
-Causalidade permite perguntar não apenas se dois fenômenos variam
-juntos, mas se modificar um deles alteraria o outro e, em caso
-afirmativo, em que direção e magnitude. Nas ciências sociais, essa
-distinção sustenta explicações sobre políticas, instituições, conflitos,
-desigualdades e comportamento político. Isso impõe uma dificuldade
-fundamental: saber se uma causa produziu determinado resultado exigiria
-comparar o mundo observado com outro, idêntico nos aspectos relevantes,
-no qual essa causa estivesse ausente ou assumisse valor diferente. Como
-apenas um desses mundos é observado, os dados não revelam diretamente
-efeitos causais.
+Causalidade, no contexto da estatística, é a demonstração crível de que
+um fenômeno causa outro na média, sem ser confundido com explicações
+alternativas. Nas ciências sociais, dela dependem perguntas como: uma
+reforma eleitoral altera o sistema partidário? Educação reduz
+desigualdade de renda? Todas esbarram numa dificuldade fundamental:
+saber se uma causa produziu certo resultado exigiria comparar o mundo
+observado com outro, idêntico nos aspectos relevantes, sem essa causa.
+Como apenas um desses mundos é observado, os dados não revelam
+diretamente efeitos causais.
 
-A inferência causal moderna organiza esse problema por meio de
-contrafactuais, estimandos e suposições de identificação. Sua
-contribuição não foi reduzir toda causalidade a uma técnica, mas mudar o
-ônus da prova: uma alegação causal precisa dizer qual efeito está em
-jogo e por que o desenho de pesquisa permite aprendê-lo. Este verbete
-focaliza a tradição contrafactual de estimação de efeitos; não pretende
-esgotar mecanismos, process tracing, análise qualitativa comparativa
-(QCA) ou outras tradições. Reconstrói essa transformação, apresenta sua
-lógica de aplicação, discute ganhos e limites e examina exemplos
-observacionais. Ao final, situa a revolução da credibilidade na
-fronteira internacional e a contrasta com sua incorporação nos
-periódicos brasileiros analisados.
+A inferência causal moderna organiza esse problema por meio da
+comparação de contrafactuais, tipicamente entre o tratamento e o
+controle — termos tomados da medicina. Sua contribuição foi explicitar o
+que uma alegação causal precisa conter: qual é o efeito causal de
+interesse, sob quais pressupostos ele é estimável sem viés e por que
+esses pressupostos são críveis no caso estudado. Este verbete focaliza a
+tradição contrafactual de estimação de efeitos; não pretende esgotar
+mecanismos, process tracing, análise qualitativa comparativa (QCA) ou
+outras tradições. Reconstrói essa transformação, sua lógica, ganhos,
+limites e exemplos, e contrasta a difusão internacional da revolução da
+credibilidade com sua incorporação nos periódicos brasileiros
+analisados.
 
 Sumário
 
@@ -39,40 +38,40 @@ Sumário
 
 Causalidade tem uma longa história, que remonta pelo menos a
 Aristóteles. Em sua formulação científica contemporânea, porém, o debate
-sobre tabagismo e câncer de pulmão talvez ofereça o episódio histórico
+sobre tabagismo e câncer de pulmão talvez constitua o episódio histórico
 mais informativo para compreender a dificuldade de realizar inferência
-causal com dados observacionais. Em meados do século XX, estudos
-conduzidos em diferentes populações encontravam associações fortes e
-consistentes, mas não seria aceitável atribuir pessoas aleatoriamente ao
-consumo prolongado de cigarros (Hill 1965). A dificuldade era também
-conceitual: se uma causa fosse entendida como algo que produzisse
-invariavelmente o mesmo resultado, fumantes que nunca desenvolveram
-câncer e não fumantes que o desenvolveram pareceriam contradizer a
-afirmação causal. A conclusão da saúde pública precisou apoiar-se na
-convergência de diferentes linhas de evidência, não em um experimento ou
-teste decisivo. Em 1965, o estatístico e professor emérito de
-estatística médica Austin Bradford Hill organizou esse julgamento em
-nove pontos de vista: força, consistência, especificidade,
-temporalidade, gradiente biológico, plausibilidade, coerência,
-experimento e analogia (Hill 1965). Hill não os apresentou como
-requisitos cumulativos: advertiu que nenhum fornecia prova indiscutível
-e nenhum era condição necessária. Eram uma heurística para avaliar
-explicações rivais, não um algoritmo de identificação. Um gradiente
-dose–resposta, por exemplo, favorece uma interpretação simples, mas
-relações não lineares não deixam por isso de ser causais.
+causal fora do contexto experimental, com os assim chamados dados
+observacionais. Em meados do século XX, estudos conduzidos em diferentes
+populações encontravam associações fortes e consistentes (Hill 1965),
+mas não seria aceitável atribuir pessoas aleatoriamente ao consumo
+prolongado de cigarros. A dificuldade era também conceitual: se uma
+causa fosse entendida como algo que produzisse invariavelmente o mesmo
+resultado, fumantes que nunca desenvolveram câncer e não fumantes que o
+desenvolveram pareceriam contradizer a afirmação causal. A conclusão da
+saúde pública precisou apoiar-se na convergência de diferentes linhas de
+evidência, não em um experimento ou teste decisivo. Em 1965, o
+estatístico Austin Bradford Hill organizou esse julgamento em nove
+pontos de vista: força, consistência, especificidade, temporalidade,
+gradiente biológico, plausibilidade, coerência, experimento e analogia
+(Hill 1965). Hill não os apresentou como requisitos cumulativos:
+advertiu que nenhum fornecia prova indiscutível e nenhum era condição
+necessária. Eram uma heurística para avaliar explicações rivais, não um
+algoritmo de identificação. Um gradiente dose–resposta, por exemplo,
+favorece uma interpretação simples, mas relações não lineares não deixam
+por isso de ser causais.
 
 A mudança formal que serve de fio condutor a este verbete começou em
 outro contexto. Em 1923, Jerzy Neyman representou, em experimentos
-agrícolas aleatorizados, o rendimento que cada parcela teria sob cada
-variedade possível; a tradução inglesa dessa parte de seu trabalho só
-seria publicada em 1990 (Neyman 1990). A inflexão decisiva ocorreu nos
-anos 1970. O gênio de Donald Rubin esteve em colocar a linguagem dos
+agrícolas aleatorizados, o rendimento que cada parcela teria sob
+diferentes condições; a tradução inglesa dessa parte de seu trabalho só
+seria publicada em 1990 (D. Rubin 2022). A inflexão decisiva ocorreu nos
+anos 1970. O gênio de Donald Rubin consistiu em colocar a linguagem dos
 resultados potenciais no centro da definição de efeitos causais e,
 crucialmente, estender seu uso à análise de dados observacionais (D. B.
-Rubin 1974; D. Rubin 2022). Ao convertê-la de uma ferramenta do
-experimento em linguagem geral para definir efeitos e explicitar o
-problema da atribuição, Rubin ajudou a destravar uma agenda de pesquisa
-que formalizaria a inferência causal observacional. Essa linguagem teria
+Rubin 1974). Ao convertê-la de uma ferramenta do experimento em
+linguagem geral para definir efeitos e explicitar o problema da
+atribuição, Rubin ajudou a destravar uma agenda de pesquisa que
+formalizaria a inferência causal observacional. Essa linguagem teria
 permitido formular com maior precisão a controvérsia sobre tabagismo e
 câncer: que alguns fumantes jamais desenvolvessem a doença não
 invalidaria que fumar elevasse causalmente o risco na população. É
@@ -81,39 +80,30 @@ convergência científica, embora não substituísse a evidência acumulada
 nem resolvesse por si só os problemas de identificação.
 
 Aplicada ao tabagismo, essa linguagem dissolve a aparente contradição.
-Fixados uma definição da exposição e um horizonte temporal, seja
-X_(i) = 1 se a pessoa i efetivamente fumou no período relevante e
-X_(i) = 0 caso contrário. A variável X_(i) registra o que de fato
-ocorreu. Já Y_(i)(1) = 1 significa que a pessoa i desenvolveria câncer
-caso fumasse, e zero caso contrário; Y_(i)(0) define analogamente o
-desfecho que teria caso não fumasse. Os resultados potenciais não dizem
-se a pessoa fumou, mas o que lhe aconteceria sob cada uma das duas
-exposições possíveis. O efeito individual é a diferença
-Y_(i)(1) − Y_(i)(0) e pode variar entre pessoas: para algumas, os dois
-resultados seriam iguais; para outras, não. Como o desfecho observado é
-Y_(i) = Y_(i)(X_(i)), apenas um dos dois resultados potenciais é
-conhecido para cada pessoa. Separar a exposição efetivamente recebida
-dos resultados que ocorreriam sob cada exposição possível é a chave
-conceitual que permite definir efeitos causais com precisão e sustenta a
-riqueza da agenda quantitativa de inferência causal. Na população, o
-efeito causal médio E(Y_(i)(1) − Y_(i)(0))[1] equivale à diferença de
-riscos Pr (Y_(i)(1) = 1) − Pr (Y_(i)(0) = 1). Dizer que o tabagismo
-causa câncer não exige, assim, que todo fumante desenvolva a doença, mas
-que a exposição aumente esse risco na população definida. A formalização
-não produz o contrafactual, mas esclarece o que se quer estimar e quais
-condições permitiriam usar outras pessoas para representá-lo.
+Cada pessoa tem dois desfechos possíveis: o que teria se fumasse no
+período relevante e o que teria se não fumasse. Apenas um deles chega a
+ocorrer, e é o único que os dados registram; o outro permanece
+contrafactual. O efeito do tabagismo sobre aquela pessoa é a diferença
+entre os dois, e pode ser nulo para algumas e grande para outras. Dizer
+que o tabagismo causa câncer não exige, portanto, que todo fumante
+desenvolva a doença: exige que a proporção que desenvolveria câncer
+fumando seja maior do que a que desenvolveria não fumando. Separar o que
+de fato aconteceu do que teria acontecido sob a outra alternativa é a
+chave conceitual que permite definir efeitos causais com precisão e
+sustenta a agenda quantitativa de inferência causal.
 
 Em paralelo, desenvolveu-se a tradição dos modelos causais estruturais e
-dos grafos acíclicos direcionados, com antecedentes nos diagramas de
-trajetórias de Sewall Wright e formalização moderna associada a Judea
-Pearl. Resultados potenciais e DAGs diferem em ênfases e notação, mas
-são complementares: a primeira linguagem define diretamente efeitos e
-estimandos; a segunda torna visíveis estruturas de dependência e
-consequências do condicionamento. Por limitação de espaço, este verbete
-usa resultados potenciais como eixo. A virada decisiva, compartilhada
-pelas duas tradições, foi mudar o ônus da prova: uma análise causal deve
-declarar a comparação contrafactual e as suposições que conectam os
-dados observados a ela.
+dos grafos acíclicos direcionados (DAGs, na sigla em inglês), com
+antecedentes nos diagramas de trajetórias de Sewall Wright e
+formalização moderna associada a Judea Pearl (Pearl 2009). Resultados
+potenciais e DAGs diferem em ênfases e notação, mas são complementares:
+a primeira linguagem define diretamente efeitos e estimandos; a segunda
+torna visíveis estruturas de dependência e consequências do
+condicionamento. Por limitação de espaço, este verbete usa resultados
+potenciais como eixo. A virada decisiva, compartilhada pelas duas
+tradições, foi explicitar o que uma análise causal deve declarar: a
+comparação contrafactual e as suposições que conectam os dados
+observados a ela.
 
 2. Lógica de aplicação e decisões de desenho
 
@@ -132,12 +122,12 @@ a unidade i apresentaria sob tratamento e Y_(i)(0), sob controle. O
 efeito individual é a diferença Y_(i)(1) − Y_(i)(0), mas apenas um dos
 termos pode vir a ser observado. Sob a condição de consistência, se
 X_(i) = x, então Y_(i) = Y_(i)(x): o resultado potencial correspondente
-à exposição efetivamente recebida é igual ao resultado observado. Essa
+ao tratamento efetivamente recebido é igual ao resultado observado. Essa
 relação não elimina a distinção conceitual. Y_(i)(1) designa o resultado
 que a unidade teria sob tratamento, tenha sido ela tratada ou não;
 Y_(i) ∣ X_(i) = 1 denota a distribuição do resultado observado entre as
 unidades que efetivamente receberam o tratamento. Portanto, em geral,
-E(Y_(i)(1)) não é igual a E(Y_(i) ∣ X_(i) = 1); essa igualdade exige
+E(Y_(i)(1))[1] não é igual a E(Y_(i) ∣ X_(i) = 1); essa igualdade exige
 suposições de comparabilidade. A notação torna visível precisamente a
 diferença entre uma quantidade causal e uma associação observada.
 
@@ -151,32 +141,40 @@ Essa decisão precede a escolha da técnica: o desenho deve ser capaz de
 identificar a quantidade-alvo, e o estimador deve ser apropriado para
 estimá-la. O estimador é a regra aplicada à amostra; a estimativa é o
 valor numérico efetivamente calculado. A inferência estatística usa essa
-estimativa para aprender sobre o estimando. Efeito médio na população,
-efeito médio entre os tratados e efeitos locais são, portanto,
-estimandos distintos, não diferentes nomes para o mesmo objeto.
+estimativa para aprender sobre o estimando. Retomando o tabagismo: se a
+quantidade-alvo é o efeito do cigarro entre os que fumam, esse é um
+estimando. Se é o efeito sobre toda a população, incluindo os que não
+fumam, caso passassem a fumar, a quantidade é outra. Os dois só
+coincidiriam se o cigarro fizesse o mesmo estrago em todo mundo ou se os
+fumantes fossem um recorte aleatório da população. Como nenhuma das duas
+coisas vale, são estimandos distintos, com estimadores possivelmente
+diferentes e estimativas desiguais. A diferença persiste ainda que ambos
+sejam estimados sem viés.
 
 Variáveis instrumentais mostram por que essa distinção importa. Sob as
 suposições usuais, o estimando que elas permitem identificar é
 frequentemente o efeito causal médio local (Local Average Treatment
 Effect, LATE): o efeito apenas entre os compliers, unidades cuja
 exposição ao tratamento muda na direção induzida pelo instrumento
-(Angrist e Pischke 2010; Imbens 2010). Imagine um programa público de
-capacitação com vagas distribuídas por sorteio, mas adesão imperfeita:
-alguns sorteados não participam e alguns não sorteados conseguem acesso
-por outra via. Usar o resultado do sorteio como instrumento para a
-participação identifica o efeito entre as pessoas que participariam se
-sorteadas e não participariam se não sorteadas. A condição de
-monotonicidade exclui os “do contra”: ninguém deve deixar de participar
-por ter sido sorteado quando participaria sem o sorteio. O LATE não
-informa necessariamente o efeito entre todos os elegíveis nem o efeito
-de uma expansão universal do programa. Para decisões de política
-pública, saber a quem o efeito se refere é tão importante quanto
-conhecer sua magnitude.
+(Imbens 2010). Imagine um programa público de capacitação com vagas
+distribuídas por sorteio, mas adesão imperfeita: alguns sorteados não
+participam e alguns não sorteados conseguem acesso por outra via. Usar o
+resultado do sorteio como instrumento para a participação identifica o
+efeito entre as pessoas que participariam se sorteadas e não
+participariam se não sorteadas. A condição de monotonicidade exclui os
+“do contra”: ninguém deve deixar de participar por ter sido sorteado
+quando participaria sem o sorteio. O LATE não informa necessariamente o
+efeito entre todos os elegíveis nem o efeito de uma expansão universal
+do programa. Para decisões de política pública, saber a quem o efeito se
+refere é tão importante quanto conhecer sua magnitude.
 
 Definir o estimando não garante que ele possa ser aprendido.
 Identificação é a demonstração de que, sob determinadas suposições, a
 quantidade causal pode ser expressa em termos da distribuição dos dados
-observados. Em um experimento ideal, a atribuição aleatória faz com que
+observados. Em outras palavras, um efeito identificado pode ser
+aprendido dos dados, enquanto um efeito não identificado não é
+recuperável nem com amostra infinita; tipicamente o estimador é
+enviesado. Em um experimento ideal, a atribuição aleatória faz com que
 grupos tratados e de controle sejam comparáveis em média. Em estudos
 observacionais, a comparabilidade precisa ser defendida de outras
 formas. Ausência de confundimento após condicionamento, tendências
@@ -306,10 +304,10 @@ Campanhas, epidemias, redes sociais e políticas territoriais
 frequentemente produzem transbordamentos: o tratamento de uma unidade
 modifica o resultado de outra. Nesses casos, Y_(i)(1) e Y_(i)(0) são
 descrições incompletas, pois o resultado depende também da exposição
-alheia. A solução não é sempre eliminar a interferência, mas redefinir
-tratamentos e estimandos para representar os padrões de exposição
-relevantes. Ignorá-la pode atenuar comparações ou fazê-las responder a
-uma combinação indeterminada de efeitos diretos e indiretos.
+alheia. A solução nem sempre é eliminar a interferência; frequentemente
+é redefinir tratamentos e estimandos para representar os padrões de
+exposição relevantes. Ignorá-la pode atenuar comparações ou fazê-las
+responder a uma combinação indeterminada de efeitos diretos e indiretos.
 
 Erro de mensuração também pode mudar a pergunta causal. Indicadores
 administrativos podem registrar acesso ao programa, não tratamento
@@ -335,8 +333,8 @@ Há ainda limites de escopo. A linguagem de tratamentos é poderosa para
 perguntar o que ocorreria sob intervenções ou exposições alternativas,
 mas nem toda explicação social assume naturalmente essa forma. Relações
 constitutivas, significados, processos históricos e mecanismos complexos
-podem exigir outras unidades de análise. A resposta não é abandonar a
-inferência causal, mas delimitar o que o estimando representa.
+podem exigir outras unidades de análise. A resposta é delimitar o que o
+estimando representa.
 
 Por fim, nomear um desenho não comprova suas condições. Tendências
 anteriores semelhantes apoiam, mas não demonstram, tendências paralelas
@@ -371,9 +369,8 @@ mensuração desigual do emprego podem enfraquecê-la. Nos resultados
 principais reportados, os autores não encontraram a redução do emprego
 prevista pelo modelo competitivo simples. A inferência, por sua vez,
 precisa refletir a estrutura do desenho e a dependência entre as
-observações usadas no contraste. O estudo tornou-se paradigmático não
-por encerrar o debate sobre salário mínimo, mas por deslocá-lo para a
-qualidade da comparação.
+observações usadas no contraste. O estudo tornou-se paradigmático por
+deslocar o debate sobre salário mínimo para a qualidade da comparação.
 
 Em uma aplicação brasileira, Avelino, Biderman e Barone perguntam se
 eleger um prefeito aumenta posteriormente a votação de seu partido no
@@ -391,8 +388,8 @@ A janela de disputas decididas por menos de um ponto percentual reúne
 estimada de 3,7 pontos percentuais na votação subsequente para deputado
 federal; com controle pela votação para vereador, a estimativa é de 3,4
 pontos. O contraste é observacional, embora a identificação explore
-variação aproximadamente aleatória perto do limiar. A lógica
-identificadora do RDD e seu alcance devem ser formulados localmente:
+variação aproximadamente aleatória perto do limiar. A lógica de
+identificação do RDD e seu alcance devem ser formulados localmente:
 partidos em disputas muito apertadas não representam automaticamente
 todos os municípios. A inferência também deve acompanhar a estimação e a
 janela escolhida em torno do limiar. Além disso, a especificação
@@ -411,9 +408,9 @@ controles, parte da economia e, depois, da Ciência Política passou a
 valorizar experimentos, experimentos naturais e desenhos quase
 experimentais cuja fonte de variação pudesse ser explicada. Angrist e
 Pischke interpretaram essa mudança como resposta à baixa credibilidade
-da econometria aplicada (Angrist e Pischke 2010). Seu legado não é uma
-hierarquia simples de métodos, mas a expectativa de que a comparação
-empírica seja defendida antes da estimação.
+da econometria aplicada (Angrist e Pischke 2010). Seu legado é a
+expectativa de que a credibilidade do desenho de pesquisa seja defendida
+antes da estimação.
 
 Uma crítica recorrente alerta para uma redução da ambição substantiva:
 diante dos incentivos de publicação, pesquisadores podem escolher
@@ -421,17 +418,18 @@ estrategicamente perguntas menores com variação exógena evidente e
 transformar a robustez do desenho no principal critério de qualidade. O
 risco é real. Imbens o reconhece em Better LATE Than Nothing, mas
 defende que validade interna e delimitação da população elevaram a
-credibilidade da pesquisa: um efeito local crível é preferível a um
-efeito geral pouco crível (Imbens 2010). Não é, porém, defeito
-necessário da revolução, mas resposta evitável da comunidade científica
-à elevação da barra. Periódicos, pareceristas e pesquisadores podem
-exigir simultaneamente relevância substantiva e respostas críveis.
-Tampouco está demonstrado que a agenda tenha se tornado menos relevante
-ou ambiciosa; demonstrá-lo exigiria medi-las antes e depois da mudança
-metodológica, o que o debate citado não faz. Elevar a barra é desejável.
-O desafio é não reduzir a pergunta para alcançá-la, mas mobilizar
-criatividade para encontrar variações informativas, combinar desenhos e
-construir novas bases de dados.
+credibilidade da pesquisa: em sua formulação, um efeito local crível é
+preferível a um efeito geral pouco crível (Imbens 2010). Esse
+estreitamento não é defeito necessário da revolução; é resposta evitável
+da comunidade científica à elevação da barra. Periódicos, pareceristas e
+pesquisadores podem exigir simultaneamente relevância substantiva e
+respostas críveis. Tampouco está demonstrado que a agenda tenha se
+tornado menos relevante ou ambiciosa; demonstrá-lo exigiria medir
+relevância e ambição antes e depois da mudança metodológica, o que o
+debate citado não faz. Elevar a barra é desejável. O desafio é não
+reduzir a pergunta para alcançá-la, mas mobilizar criatividade para
+encontrar variações informativas, combinar desenhos e construir novas
+bases de dados.
 
 Torreblanca e colaboradores permitem dimensionar a difusão dessa
 expectativa na Ciência Política internacional (Torreblanca et al. 2026).
@@ -439,24 +437,24 @@ O estudo classifica 91.632 artigos publicados entre 2003 e 2023 em 156
 periódicos. Os autores encontram crescimento de pesquisas baseadas em
 desenho e associação positiva com citações. A transformação, contudo, é
 parcial e desigual: concentra-se em periódicos de maior prestígio e em
-instituições mais bem posicionadas nas classificações, é impulsionada em
-grande medida por experimentos de levantamento e convive com o uso ainda
+instituições mais bem posicionadas nas classificações, é impulsionada
+sobretudo por experimentos de levantamento e convive com o uso ainda
 raro de testes de placebo e cálculos de poder estatístico. Neste
 verbete, “fronteira internacional” designa os segmentos editoriais e
 institucionais influentes cobertos pelo estudo, não a disciplina
-inteira. Os resultados documentam uma difusão parcial e desigual da
-atenção a estimandos, desenhos e identificação.
+inteira. Os resultados documentam difusão desigual da atenção a
+estimandos, desenhos e identificação.
 
 O contraste brasileiro precisa respeitar universos e denominadores
 distintos. Galdino e Martins da Silva analisam o texto integral de 4.144
 artigos elegíveis publicados entre 2005 e 2025 em nove periódicos
 brasileiros indexados no SciELO (Galdino e Martins da Silva 2026). Entre
-1.994 artigos quantitativos, 743, ou 37,3%, quantificam formalmente a
-incerteza. Em todo o corpus, apenas 59 artigos, ou 1,4%, mencionam uma
-estratégia explícita de identificação causal. Em uma categoria distinta,
-1.885 artigos, equivalentes a 45,5% do corpus, combinam linguagem causal
-ou explicativa e análise quantitativa sem mencionar estratégia explícita
-de identificação.
+1.994 artigos quantitativos com inferência classificada, 743, ou 37,3%,
+quantificam formalmente a incerteza. Em todo o corpus, apenas 59
+artigos, ou 1,4%, mencionam uma estratégia explícita de identificação
+causal. Em uma categoria distinta, 1.885 artigos, equivalentes a 45,5%
+do corpus, combinam linguagem causal ou explicativa e análise
+quantitativa sem mencionar estratégia explícita de identificação.
 
 Essas medidas descrevem práticas textualmente registradas, não a
 qualidade de sua execução. A presença de termos como RDD ou
@@ -493,8 +491,9 @@ histórico-comparativa, QCA e outras abordagens configuracionais também
 formulam perguntas causais, frequentemente concentradas em mecanismos,
 sequências, condições necessárias ou combinações suficientes. Um verbete
 precisa escolher o que desenvolver. Aqui, essas tradições são
-delimitadas por espaço e porque exigiriam apresentar outras unidades de
-evidência e lógicas inferenciais; não são excluídas por irrelevância.
+delimitadas pelo espaço disponível e pela necessidade de apresentar
+outras unidades de evidência e lógicas inferenciais; não são excluídas
+por irrelevância.
 
 Essa delimitação preserva uma distinção importante. Causas podem ser
 tratadas como intervenções, mas também como condições dentro de
@@ -510,17 +509,17 @@ sociais. Ela elevou o padrão mínimo para uma classe importante de
 alegações: quando uma pesquisa afirma que mudar X alteraria Y, precisa
 definir a quantidade causal, justificar a comparação que representa o
 contrafactual e separar identificação de incerteza estatística. Métodos
-podem mudar e diagnósticos podem se tornar mais exigentes. O ônus
+podem mudar e diagnósticos podem se tornar mais exigentes. A exigência
 permanece: dizer qual efeito está em jogo e por que os dados permitem
 aprendê-lo.
 
 6. Referências e leituras adicionais
 
 Textos fundadores: Hill organiza o julgamento causal observacional;
-Neyman introduz resultados potenciais no experimento aleatorizado; Rubin
-os coloca no centro de estudos experimentais e observacionais e
-reconstrói essa passagem em entrevista (Hill 1965; Neyman 1990; D. B.
-Rubin 1974; D. Rubin 2022).
+Rubin coloca os resultados potenciais no centro de estudos experimentais
+e observacionais e reconstrói em entrevista a genealogia que remonta a
+Neyman; Pearl dá aos grafos causais sua formalização moderna (Hill 1965;
+D. B. Rubin 1974; D. Rubin 2022; Pearl 2009).
 
 Desenho e estimandos: Angrist e Pischke sintetizam a revolução da
 credibilidade; Imbens defende o ganho de validade interna; Lundberg,
@@ -573,9 +572,8 @@ Your Estimand? Defining the Target Quantity Connects Statistical
 Evidence to Theory”. American Sociological Review 86 (3): 532–65.
 https://doi.org/10.1177/00031224211004187.
 
-Neyman, Jerzy. 1990. “On the Application of Probability Theory to
-Agricultural Experiments: Essay on Principles, Section 9”. Statistical
-Science 5 (4): 465–72. https://doi.org/10.1214/ss/1177012031.
+Pearl, Judea. 2009. Causality: Models, Reasoning, and Inference. 2º ed.
+Cambridge: Cambridge University Press.
 
 Rubin, Don. 2022. “Interview with Don Rubin”. Observational Studies 8
 (2): 77–94. https://doi.org/10.1353/obs.2022.0009.

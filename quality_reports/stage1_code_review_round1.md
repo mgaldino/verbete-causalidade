@@ -1,53 +1,103 @@
 # Revisão de código R — Estágio 1, rodada 1
 
+## Snapshot e escopo
+
+- Data da revisão: 2026-08-17.
+- Arquivos avaliados: `code/01_extract_abcp_causal_design_cases.R`, `code/02_validate_manuscript.R` e `code/99_run_all.R`.
+- Instruções consultadas: `CLAUDE.md`, `README.md`, `rules-docs/quality-gates.md` e a skill `review-r`.
+- O conteúdo do manuscrito não foi revisado. A alteração não commitada em `paper/verbete-causalidade.Rmd` foi tratada como entrada pré-existente do teste, não como mudança a ser corrigida.
+- Não foram editados scripts, manuscrito, dados, referências ou arquivos fora deste relatório.
+
 ## Resumo executivo
 
-Os três scripts têm sintaxe válida e uma organização legível, mas o pipeline ainda não é portável nem comprova integralmente os gates que declara validar. O principal bloqueio é o caminho absoluto para outro repositório; além disso, há um erro na construção dos rótulos de artigos com mais de um método, e `99_run_all.R` não executa toda a cadeia reproduzível. A validação de palavras é razoável, mas as checagens de citações, referências e estrutura são mais fracas do que o nome e o relatório sugerem.
+Os três scripts têm sintaxe válida, usam caminhos relativos/configuráveis, carregam ou verificam as dependências necessárias e implementam uma cadeia coerente de extração, validação do manuscrito, renderização e validação pós-renderização. A extração foi executada com sucesso em cópia temporária e produziu 59 artigos, 59 `pid` únicos e nove casos multimétodo.
 
-## Escopo e evidência
-
-- Arquivos avaliados: `code/01_extract_abcp_causal_design_cases.R`, `code/02_validate_manuscript.R` e `code/99_run_all.R`.
-- Verificação executada: `parse()` com R para os três scripts; todos passaram na checagem sintática.
-- Os scripts completos não foram executados porque isso escreveria dados, relatórios e PDF, enquanto esta rodada autoriza o revisor a escrever somente este parecer. Portanto, não há evidência dinâmica de execução ou compilação nesta revisão.
+O pipeline completo não terminou no snapshot atual: a etapa de validação detectou corretamente 5.006 palavras no manuscrito, acima do limite de 5.000, e interrompeu antes da renderização. Essa falha pertence ao estado pré-existente do Rmd e não foi atribuída como defeito dos scripts. Restam uma fragilidade de portabilidade na localidade exigida e duas validações defensivas que poderiam ser explicitadas no código.
 
 ## Pontuação
 
-Pontuação inicial: **100**.
+Pontuação inicial: **100/100**.
 
-| Severidade | Dedução | Problema |
+| Severidade | Dedução | Evidência e justificativa |
 |---|---:|---|
-| Crítico | -20 | Caminhos absolutos hardcoded para o repositório `metodos_CP` em `01_extract_abcp_causal_design_cases.R` (linhas 15–22). Isso impede reprodução em outra máquina e contraria explicitamente a rubrica. |
-| Major | -5 | Os métodos são agregados com `"; "` nas linhas 70–71, mas depois separados com regex de vírgula na linha 103. Para artigos com mais de um método vindos de `method_summary`, `recode()` recebe a cadeia inteira e `method_labels` deixa de conter os rótulos traduzidos esperados. |
-| Major | -5 | `99_run_all.R` não executa `01_extract_abcp_causal_design_cases.R`; ele apenas valida e renderiza. Assim, uma execução limpa não reconstrói o dado derivado em que o projeto se apoia, apesar do nome `run_all`. |
-| Major | -5 | A validação não comprova plenamente citações, referências e estrutura. As seções são aceitas apenas por prefixos (`# 1.`, ..., `# 8.`), de modo que títulos errados passam. As chaves são extraídas por regex do Rmd bruto, podendo contar ocorrências em comentários ou blocos que não chegam ao texto renderizado; a existência da chave no `.bib` não verifica integridade mínima dos metadados bibliográficos. |
-| Major | -3 | Depois de `rmarkdown::render()`, não há gate que confirme existência, tamanho não nulo, extração de texto, número de páginas ou legibilidade do PDF. O script prova, no máximo, que `render()` retornou sem erro. |
-| Minor | -2 | O pipeline imprime `sessionInfo()` apenas no console e não registra versões em artefato persistente nem usa ambiente travado (`renv`). A reprodução futura fica dependente do estado local dos pacotes e do Pandoc/LaTeX. |
+| Major | -5 | `code/02_validate_manuscript.R:6–9` exige o nome específico `en_US.UTF-8` e encerra a execução se ele não estiver disponível. A localidade funcionou nesta máquina, mas imagens Linux, Windows e ambientes mínimos podem oferecer apenas outro alias UTF-8, como `C.UTF-8`. Isso reduz a portabilidade do gate. |
+| Minor | -2 | `code/02_validate_manuscript.R:104–118` identifica o preâmbulo tomando o último fence literal antes de `# Sumário`. Isso é correto para a estrutura atual, mas pode deslocar silenciosamente o início contado se o preâmbulo receber outro bloco cercado por crases. |
+| Minor | -2 | `code/01_extract_abcp_causal_design_cases.R:103–140` valida colunas e tipos lógicos, mas não impõe explicitamente que `year` seja inteiro em um intervalo plausível, que `period_3` pertença ao domínio esperado e que `strict_design_method`/`tough_call` não contenham `NA`. A checagem independente do snapshot passou, mas uma atualização autorizada dos dados poderia introduzir valores incompatíveis sem uma mensagem específica. |
 
-**Pontuação final: 65/100.**
+**Pontuação final: 91/100.**
 
-## Problemas bloqueadores
+Pelo limiar da rubrica, o código está acima de 80; isso não autoriza commit, que permanece fora do escopo desta revisão. Não implementei nenhuma alteração.
 
-1. Tornar configuráveis e portáveis os dois arquivos-fonte de `metodos_CP`, idealmente por parâmetro ou variável de ambiente documentada, com alternativa relativa/versionada no repositório.
-2. Corrigir a inconsistência entre o delimitador usado na agregação e o delimitador usado ao reconstruir `method_labels`; em seguida, adicionar uma asserção ou teste para ao menos um artigo multimétodo.
-3. Fazer o orquestrador reconstruir explicitamente os dados derivados necessários ou renomeá-lo e documentar com precisão o estado prévio exigido.
-4. Fortalecer os gates: comparar os headings exatos normalizados; obter as citações a partir da representação processada pelo Pandoc ou combinar a regex com uma checagem do output citeproc; validar campos bibliográficos mínimos; e inspecionar programaticamente o PDF gerado.
+## Problemas críticos
+
+Nenhum encontrado.
+
+- Os três arquivos passaram em `parse()` com R.
+- Não há caminhos absolutos hardcoded nos scripts; `METODOS_CP_ROOT` é configurável e o padrão relativo `../metodos_CP` está documentado.
+- Não há estimação econométrica, controles ou erros-padrão nos scripts avaliados; portanto, esses itens da rubrica metodológica não são aplicáveis.
+- Não há aleatorização; a ausência de `set.seed()` não é um problema neste escopo.
 
 ## Melhorias importantes
 
-- Proteger a mudança de diretório de `02_validate_manuscript.R` com `on.exit(setwd(original_working_directory), add = TRUE)` para restaurar o estado mesmo se `system2()` gerar uma condição inesperada.
-- Validar o esquema das entradas antes do processamento: colunas obrigatórias, `pid` não ausente, domínios de `method_class` e `method_type`, e tipo lógico de `tough_call`.
-- Vincular o denominador fixo de 59 artigos a uma versão, data ou hash das fontes `*_current.csv`. O `stopifnot(nrow(cases) == 59L)` é um bom alarme contra deriva, mas sem a identidade do input não distingue atualização legítima de erro.
-- Ampliar os marcadores editoriais detectados (`TODO`, `FIXME`, `XXX`, texto entre colchetes e chunks de demonstração), de preferência com lista centralizada e reportando números de linha.
+1. Tornar a seleção de localidade UTF-8 adaptativa, tentando aliases disponíveis e reportando qual foi escolhida.
+2. Validar explicitamente `year`, `period_3` e a consistência entre ambos antes do `join`; também rejeitar `NA` nos campos lógicos que determinam o denominador.
+3. Substituir a heurística do último fence por uma identificação explícita do chunk de configuração ou por uma extração estrutural mais robusta.
+4. Manter a proteção por MD5 e as invariantes de 59 artigos. Elas são adequadas para impedir que uma deriva silenciosa da fonte seja confundida com o snapshot auditado.
+
+## Avaliação por dimensão
+
+### Correção metodológica e lógica de dados
+
+`01_extract_abcp_causal_design_cases.R` filtra a classificação `strict_design_method`, agrega os métodos por artigo, reconstrói rótulos em português e verifica unicidade do `pid`. Os domínios de `method_class` e `method_type` são checados, e a comparação de MD5 protege o denominador fixo de 59 artigos.
+
+No teste independente das fontes atuais, os dois arquivos tinham anos inteiros de 2005 a 2025, períodos `2005-2011`, `2012-2018` e `2019-2025`, consistência ano–período em todas as linhas e nenhum `NA` nos campos lógicos examinados. O ponto de melhoria é que essas regras de datas e valores não estão codificadas como validações explícitas.
+
+### Qualidade e convenções do código
+
+- O pipe nativo `|>` é usado consistentemente; não há mistura com `%>%`.
+- As seleções observadas usam `dplyr::select`, conforme a convenção local.
+- Os nomes são, em geral, descritivos e o processamento é vetorizado; não há loops por linha desnecessários.
+- `tidyr` é carregado em `01_extract...` sem uso aparente; pode ser removido ou empregado explicitamente em uma futura refatoração.
+- As mensagens e comentários estão em português com acentuação correta, e as decisões mais importantes — snapshot, hashes e denominador — estão documentadas.
+
+### Reprodutibilidade e portabilidade
+
+Há boa rastreabilidade: os inputs são identificados por MD5, a proveniência registra caminho, tamanho, data de modificação e status do snapshot, e `99_run_all.R` persiste versões de R, pacotes, Pandoc e ferramentas PDF em `quality_reports/sessionInfo.txt`. O README documenta o diretório de execução e a variável `METODOS_CP_ROOT`.
+
+O pipeline chama as quatro etapas em ordem e interrompe antes da renderização quando uma validação falha. A principal limitação de portabilidade é a localidade específica descrita na pontuação.
+
+### Performance e apresentação
+
+Para as fontes observadas — 1.428 linhas de métodos e 4.144 artigos — as operações são apropriadas e não há indicação de gargalo. A saída da extração é CSV com proveniência; os gates produzem relatórios Markdown legíveis. Não há modelos, tabelas de resultados ou gráficos nesses scripts, portanto as exigências de formatação de resultados de estimação não se aplicam.
+
+## Testes e checagens efetivamente realizados
+
+1. `parse()` dos três scripts: **PASS**.
+2. Verificação de dependências: `dplyr`, `readr`, `stringr`, `tidyr`, `rmarkdown`, `stringi`, `jsonlite` e `yaml` disponíveis; Pandoc 3.7.0.2, XeLaTeX, `pdfinfo` e `pdftotext` disponíveis.
+3. Checagem estática: nenhum caminho absoluto de usuário, nenhum `%>%`, uso de `|>` e seleções qualificadas com `dplyr::select`; `git diff --check` sem erro.
+4. Execução de `01_extract...` em cópia temporária, com as fontes reais e `METODOS_CP_ROOT` correto: **PASS**. Resultado: 59 artigos, 59 `pid` únicos, nove multimétodo, nenhum rótulo cru com underscore e proveniência `MATCH`.
+5. Execução de `02_validate_manuscript.R` em cópia temporária do snapshot atual: todos os checks, exceto `word_limit`, passaram; o processo terminou com status 1 após registrar 5.006 palavras e preâmbulo de 190 palavras.
+6. Execução de `99_run_all.R` em cópia temporária: chegou à etapa `[2/4]`, reproduziu a falha do `word_limit` e não avançou para a renderização.
+7. Teste isolado de `validate_pdf()` em cópia temporária de um PDF já existente: **PASS** para arquivo de 80.488 bytes, oito páginas, 4.946 palavras extraídas e todos os marcadores requeridos.
+8. Checagem independente das datas/valores nas duas fontes atuais: **PASS** para formato dos períodos, consistência ano–período, anos inteiros e ausência de `NA` nos campos lógicos examinados.
+
+## Limites da revisão
+
+- O pipeline completo não foi concluído no snapshot atual porque o gate do manuscrito bloqueou a renderização em razão das 5.006 palavras. Isso foi registrado sem alterar o Rmd.
+- O teste de PDF usou um artefato existente copiado para ambiente temporário; não comprova uma nova renderização a partir do Rmd atual.
+- Não foi feita inspeção visual de layout do PDF nesta revisão; a validação textual/programática não substitui esse gate editorial.
+- Não foram testadas fontes artificialmente corrompidas para exercitar cada mensagem de erro; a avaliação de robustez dos domínios foi estática e baseada na checagem do snapshot real.
 
 ## Pontos positivos
 
-- Todos os scripts passaram na checagem de sintaxe.
-- O código usa pipe nativo de forma consistente, nomes descritivos e chamadas qualificadas como `dplyr::select`, reduzindo problemas de masking.
-- `01_extract_abcp_causal_design_cases.R` salva uma saída derivada previsível e possui invariantes explícitas para número de linhas e unicidade de `pid`.
-- `02_validate_manuscript.R` falha explicitamente quando faltam manuscrito, bibliografia, Pandoc ou `stringi`, e interrompe o pipeline se algum check falhar.
-- A contagem por `stringi::stri_count_words()` aplicada ao texto plano produzido com citeproc é uma escolha adequada para texto em português e, desde que o YAML bibliográfico esteja correto, tende a incluir as referências renderizadas no teto de 5.000 palavras.
-- `99_run_all.R` cria um ambiente novo para renderização e deixa o `sessionInfo()` visível, ainda que esse registro deva ser persistido.
+- Extração e proveniência são reprodutíveis e protegidas contra deriva de input por hashes.
+- Invariantes explícitas verificam denominador, unicidade e tratamento multimétodo.
+- A validação usa AST do Pandoc, citeproc, CSL JSON, metadados YAML e contagem Unicode, em vez de depender apenas de regex no texto bruto.
+- O gate pós-render verifica existência, tamanho, leitura, páginas, extração textual e marcadores obrigatórios.
+- Falhas interrompem o fluxo com relatório auditável; no teste atual, o limite de palavras foi detectado antes de produzir um novo PDF.
 
 ## Veredito
 
-**REPROVADO [65]**
+**APROVADO COM RECOMENDAÇÕES [91/100].**
+
+O código está apto a avançar quanto aos gates de qualidade, desde que o estado do manuscrito seja tratado em etapa própria. As melhorias de portabilidade e validação defensiva devem ser consideradas antes de reutilizar o pipeline em outro ambiente ou com um novo snapshot de dados.

@@ -1,110 +1,105 @@
-# Leitura de seção — Seção 2: Lógica de aplicação e decisões de desenho
+# Section Read — 2. Lógica de aplicação e decisões de desenho
 
-## 1. Tese da seção
+## Tese da seção
 
-A interpretação causal deve resultar de uma cadeia argumentativa explícita que começa pela pergunta e pelo objeto causal, passa pela definição do estimando, pela estrutura causal, pelo desenho e pelas suposições de identificação, e só depois chega ao estimador e à inferência estatística. Técnicas e modelos não produzem identificação automaticamente: sua interpretação depende da comparação contrafactual e de afirmações substantivas sobre o processo gerador dos dados. Resultados potenciais e DAGs são apresentados como linguagens complementares para explicitar essas escolhas e suposições.
+A análise causal deve ser construída a partir de decisões substantivas e explicitamente ordenadas: definir a pergunta causal, o objeto causal e o estimando; explicitar a estrutura causal e as suposições de identificação; e só então escolher desenho, estimador e procedimento de inferência. A seção sustenta que técnicas estatísticas não produzem identificação por si mesmas: a interpretação causal depende da comparação contrafactual, da origem da variação e de suposições sobre o processo que gerou os dados. Resultados potenciais, estimandos e DAGs funcionam como linguagens para tornar essa cadeia visível e auditável.
 
-## 2. Claims explícitos
+## Claims explícitos
 
-| ID | Linha/parágrafo | Claim explícito | Evidência ou apoio apresentado na própria seção |
-|---|---|---|---|
-| C1 | Linha 57, parágrafo 1 | Uma pesquisa causal começa antes da escolha de uma técnica. | O parágrafo decompõe a pergunta vaga sobre se uma política “funciona” em população, versões da intervenção, resultado, horizonte temporal e comparação contrafactual. |
-| C2 | Linha 57, parágrafo 1 | Resultados e versões distintas da intervenção correspondem a perguntas causais distintas. | Os exemplos são reforma eleitoral com efeitos sobre comparecimento, composição do eleitorado ou representação partidária, e política entendida como elegibilidade, oferta, adesão ou exposição efetiva. |
-| C3 | Linha 57, parágrafo 1 | As escolhas substantivas definem o objeto causal e não podem ser delegadas ao modelo estatístico. | Apoio argumentativo pelos exemplos anteriores; não há citação nesse parágrafo. |
-| C4 | Linha 59, parágrafo 2 | Em uma formulação binária de resultados potenciais, o efeito individual é a diferença entre os resultados sob tratamento e controle, mas um dos dois permanece contrafactual. | Definição notacional de $Y_i(1)$, $Y_i(0)$ e $Y_i(1)-Y_i(0)$; não há citação nesse parágrafo. |
-| C5 | Linha 59, parágrafo 2 | Efeitos agregados, como efeito médio populacional, efeito entre tratados e efeito local próximo de um limiar, são estimandos. | Os três casos aparecem como exemplos de quantidades-alvo. |
-| C6 | Linha 59, parágrafo 2 | Estimando, estimador e estimativa são objetos distintos. | O texto define estimando como quantidade-alvo, estimador como regra aplicada à amostra e estimativa como valor numérico produzido. |
-| C7 | Linha 59, parágrafo 2 | Confundir esses objetos encobre decisões substantivas. | A seção afirma que estimadores diferentes podem perseguir o mesmo estimando e que a mesma regressão pode ter interpretações causais diferentes ou nenhuma, conforme o desenho. |
-| C8 | Linha 61, parágrafo 3 | Definir um estimando não garante sua identificação. | Identificação é definida como a demonstração de que, sob suposições, a quantidade causal pode ser expressa pela distribuição dos dados observados. |
-| C9 | Linha 61, parágrafo 3 | A atribuição aleatória torna grupos comparáveis em expectativa em um experimento ideal. | Afirmação conceitual sem citação local. |
-| C10 | Linha 61, parágrafo 3 | Em estudos observacionais, a comparabilidade precisa de defesa específica. | O texto enumera ausência de confundimento após condicionamento, tendências paralelas, continuidade no limiar e restrições de exclusão como suposições associadas a desenhos diferentes. |
-| C11 | Linha 61, parágrafo 3 | Suposições de identificação não são propriedades automáticas de técnicas. | A seção contrapõe regressão, pareamento, diferença-em-diferenças, RDD e variáveis instrumentais a afirmações sobre o processo gerador dos dados e o mundo social. |
-| C12 | Linha 63, parágrafo 4 | Identificação causal e inferência estatística respondem a perguntas distintas. | A primeira é associada à interpretação causal da comparação; a segunda, à variação da estimativa sob incerteza amostral ou outras fontes modeladas. |
-| C13 | Linha 63, parágrafo 4 | Precisão estatística não corrige falta de identificação. | Os exemplos são erros-padrão pequenos que não corrigem confundimento e intervalos estreitos ao redor de quantidade enviesada. |
-| C14 | Linha 63, parágrafo 4 | Um argumento de identificação plausível pode produzir estimativas imprecisas. | Contraste conceitual com C13; não há evidência empírica ou citação local. |
-| C15 | Linha 63, parágrafo 4 | Credibilidade causal e precisão estatística são dimensões diferentes e necessárias. | Síntese explícita do contraste desenvolvido no parágrafo. |
-| C16 | Linha 65, parágrafo 5 | O desenho explica a origem da variação usada para aproximar o contrafactual e liga estimando a dados. | A seção distingue atribuição pela pesquisadora, regras institucionais, mudanças temporais, limiares e ajuste de causas comuns. |
-| C17 | Linha 65, parágrafo 5 | A revolução da credibilidade valorizou o desenho porque complexidade de especificação não reparava comparações frágeis. | Apoio bibliográfico explícito em `@angristpischke2010`. |
-| C18 | Linha 65, parágrafo 5 | A atenção ao desenho não aboliu os modelos; reposicionou-os dentro do argumento sobre a origem da variação. | Afirmação de síntese apoiada no enquadramento do parágrafo e na citação `@angristpischke2010`. |
-| C19 | Linha 67, parágrafo 6 | DAGs podem tornar auditável o argumento causal. | O parágrafo mostra como o grafo representa confundidores, colisores e variáveis pós-tratamento. |
-| C20 | Linha 67, parágrafo 6 | Condicionar em confundidores pode ser necessário, enquanto condicionar em colisores pode criar associação; controlar variáveis pós-tratamento pode alterar a pergunta. | Apoio por explicação gráfica verbal; não há citação local. |
-| C21 | Linha 67, parágrafo 6 | O operador `do(X = x)` distingue observação de intervenção. | O parágrafo contrasta observar unidades com $X=x$ e imaginar uma intervenção que fixa $X$. |
-| C22 | Linha 67, parágrafo 6 | A validade de um grafo depende da defensabilidade das relações causais postuladas. | Afirmação explícita ao final do parágrafo; não há citação local. |
-| C23 | Linha 69, parágrafo 7 | Resultados potenciais destacam estabilidade da intervenção e ausência de interferência, enquanto grafos ajudam a localizar caminhos de falha dessas condições. | Contraste conceitual entre as duas linguagens; não há citação local. |
-| C24 | Linha 69, parágrafo 7 | A linguagem deve ser escolhida em função do problema, não por lealdade de escola. | Afirmação normativa seguida do ganho comum atribuído às duas linguagens: reduzir ambiguidades e expor dependência de conhecimento externo aos dados. |
-| C25 | Linha 71, parágrafo 8 | Há uma sequência lógica: pergunta causal, estimando, estrutura causal, desenho, suposições de identificação, estimador e inferência. | A ordem é enumerada explicitamente. |
-| C26 | Linha 71, parágrafo 8 | Essa sequência é disciplina argumentativa, não receita mecânica, e admite revisão iterativa. | O texto afirma que teoria e evidência podem levar à revisão de etapas anteriores. |
-| C27 | Linha 71, parágrafo 8 | A sequência reduz o risco de acrescentar interpretação causal depois de encontrar significância estatística. | Consequência argumentada da obrigação de explicitar objeto e comparação antes do resultado. |
-| C28 | Linha 71, parágrafo 8 | Estimandos claros conectam teoria, evidência e análise, mas não substituem a defesa da identificação. | Apoio bibliográfico explícito em `@lundberg2021`. |
+| Claim | Linhas/parágrafos | Evidência |
+|---|---|---|
+| Uma pesquisa causal começa antes da escolha de uma técnica. | Linha 55, parágrafo iniciado por “Uma pesquisa causal começa”. | O texto exige definir população, versões da intervenção, resultado, horizonte temporal e comparação contrafactual antes de perguntar se uma política “funciona”. |
+| Essas escolhas definem o objeto causal e não podem ser delegadas ao modelo estatístico. | Linha 55, mesmo parágrafo. | O exemplo da reforma eleitoral contrasta o sistema anterior com o sistema de outra região como possíveis contrafactuais e atribui às escolhas a definição do objeto causal. |
+| Na notação binária de resultados potenciais, \(Y_i(1)\) e \(Y_i(0)\) representam os resultados da unidade sob tratamento e controle. | Linha 57, parágrafo iniciado por “Na notação de resultados potenciais”. | A seção define diretamente os símbolos e explica que os números entre parênteses indicam mundos potenciais cuja diferença relevante é o tratamento ou o controle. |
+| O efeito individual é \(Y_i(1)-Y_i(0)\), mas somente um resultado potencial é observado. | Linha 59, parágrafo iniciado por “O efeito individual”. | O texto afirma que apenas um dos termos pode ser observado e relaciona o resultado observado ao tratamento efetivamente recebido por \(Y_i=Y_i(x)\). |
+| Resultado potencial e resultado observado entre tratados são quantidades distintas. | Linha 59, mesmo parágrafo. | A seção distingue \(E(Y_i(1))\) de \(E(Y_i\mid X_i=1)\) e afirma que, em geral, não são iguais; a primeira quantidade é potencial e a segunda é observada. |
+| O estimando é a quantidade-alvo, definida independentemente do modelo ou procedimento usado para calculá-la. | Linha 61, parágrafo iniciado por “Esse arcabouço tornou central”. | O texto define o estimando como o efeito que se pretende conhecer para uma população ou subpopulação e afirma que toda pesquisa deve dizer qual efeito pretende estimar e para quem. |
+| Estimando, estimador e estimativa são objetos diferentes. | Linha 61, mesmo parágrafo. | A seção define o estimador como regra aplicada à amostra, a estimativa como valor numérico calculado e a inferência como uso dessa estimativa para aprender sobre o estimando. |
+| Populações ou subpopulações diferentes podem corresponder a estimandos distintos, mesmo quando a pergunta substantiva parece semelhante. | Linha 61, mesmo parágrafo. | O exemplo contrasta o efeito do cigarro entre fumantes com o efeito sobre toda a população caso todos passassem a fumar; o texto diz que as quantidades só coincidiriam sob condições específicas. |
+| Variáveis instrumentais frequentemente identificam um LATE, não necessariamente o efeito para todos os elegíveis ou para uma expansão universal. | Linha 63, parágrafo iniciado por “Variáveis instrumentais mostram”. | O programa de capacitação ilustra o subgrupo dos *compliers*; a monotonicidade exclui os “do contra”, e a conclusão delimita o alcance do LATE. |
+| Definir o estimando não garante que ele possa ser aprendido dos dados. | Linha 65, parágrafo iniciado por “Definir o estimando não garante”. | Identificação é definida como a expressão da quantidade causal em termos da distribuição observada sob determinadas suposições; a seção afirma que uma quantidade não identificada não é recuperável nem com amostra infinita. |
+| A credibilidade do desenho depende da ponte entre estimando e dados e das suposições que sustentam a comparação. | Linha 67, parágrafo iniciado por “Assim, uma vez definido”. | O experimento ideal é apresentado como caso de atribuição aleatória; nos estudos observacionais, a comparabilidade precisa ser defendida por suposições como ausência de confundimento após condicionamento, tendências paralelas, continuidade e restrições de exclusão. |
+| Suposições de identificação não são propriedades automáticas de regressões, pareamento, diferença-em-diferenças, RDD ou variáveis instrumentais. | Linha 67, mesmo parágrafo. | A seção as descreve como afirmações sobre o processo que gerou os dados e sobre o mundo social estudado. |
+| Identificação causal e inferência estatística respondem a perguntas diferentes. | Linha 69, parágrafo iniciado por “Essa distinção também separa”. | A primeira pergunta se o desenho e suas suposições autorizam uma interpretação causal; a segunda quantifica a variação da estimativa sob incerteza amostral ou outras fontes explicitamente modeladas. |
+| Precisão estatística não corrige falta de identificação, e identificação plausível pode coexistir com imprecisão. | Linha 69, mesmo parágrafo. | O texto contrasta erros-padrão pequenos que não corrigem confundimento, intervalos estreitos que podem cercar uma quantidade enviesada e desenhos plausíveis que produzem estimativas imprecisas. |
+| Em estudos observacionais, a identificação depende de medir e ajustar adequadamente causas comuns do tratamento e do resultado; especificações mais complexas não resolvem por si só comparações frágeis. | Linha 71, parágrafo iniciado por “Em estudos observacionais”. | A seção apresenta essa dependência e associa a chamada “revolução da credibilidade” à valorização do desenho frente à complexidade da especificação, com citação a `@angristpischke2010`. |
+| Um coeficiente de regressão múltipla não é automaticamente o efeito causal da variável correspondente. | Linha 73, parágrafo iniciado por “Essa arquitetura também torna claro”. | O texto exige definir o estimando de cada variável e justificar separadamente controles e origem da variação; afirma que um mesmo ajuste raramente sustenta interpretações causais críveis para todos os coeficientes. |
+| As demais variáveis de uma análise entram, em regra, como auxiliares à identificação ou à precisão do estimando focal, não como efeitos adicionais prontos para interpretação causal. | Linha 73, mesmo parágrafo. | A seção descreve a concentração em uma variável ou pequeno conjunto por vez e registra a recomendação de omitir coeficientes de controles ou marcá-los como não causais, com citação a `@hunermundlouw2025`. |
+| DAGs ajudam a tornar auditável a estrutura causal, mas sua utilidade depende das relações causais postuladas. | Linha 75, parágrafo iniciado por “DAGs ajudam”. | O texto distingue confundidores, colisores e variáveis pós-tratamento; termina afirmando que o grafo só é tão defensável quanto as relações causais nele postuladas. |
+| Condicionar em variáveis com papéis causais diferentes pode produzir consequências diferentes para a pergunta respondida. | Linha 75, mesmo parágrafo. | Confundidores podem exigir bloqueio, colisores podem criar associação quando condicionados e variáveis pós-tratamento podem representar mecanismos, efeitos intermediários ou novos colisores. |
+| Intervir em \(X\) não equivale a observar unidades com \(X=x\). | Linha 75, mesmo parágrafo. | A seção explicita a distinção entre intervenção e observação na linguagem dos modelos causais estruturais. |
+| A formulação por resultados potenciais requer um tratamento suficientemente preciso e que o resultado de uma unidade não dependa inadvertidamente do tratamento recebido por outras. | Linha 77, parágrafo iniciado por “Resultados potenciais tornam”. | O texto apresenta o pressuposto SUTVA (*Stable Unit Treatment Value Assignment*) nesses termos e atribui aos grafos a função de localizar caminhos pelos quais as condições podem falhar. |
+| A ordem lógica da análise é pergunta causal, estimando, estrutura causal, desenho, suposições, estimador e inferência. | Linha 79, parágrafo iniciado por “De um ponto de vista lógico”. | A sequência é enumerada explicitamente e descrita como disciplina argumentativa que impede acrescentar a interpretação causal apenas depois de um coeficiente estatisticamente significativo. |
+| Essa ordem é revisável na prática e não substitui a defesa da identificação. | Linha 79, mesmo parágrafo. | O texto afirma que teoria e evidência podem levar à revisão de etapas anteriores e que estimandos claros conectam teoria, evidência e análise, mas não substituem a defesa da identificação, com citação a `@lundberg2021`. |
 
-## 3. Escopo e hedges
+## Escopo e hedges
 
-- A notação apresentada na linha 59 tem escopo binário: tratamento versus controle. A seção não declara que essa notação cobre tratamentos multivalorados, contínuos ou dinâmicos.
-- “Por exemplo” (linha 57), “geralmente” (linha 59) e “são exemplos” (linha 59) preservam caráter ilustrativo e evitam apresentar as listas como exaustivas.
-- A identificação é condicionada a “determinadas suposições” (linha 61); a seção não trata as quantidades causais como recuperáveis sem hipóteses.
-- A comparabilidade experimental é limitada ao “experimento ideal” e ocorre “em expectativa” (linha 61).
-- As suposições enumeradas na linha 61 são ditas “associadas a desenhos diferentes”, sem alegação de que a lista seja completa ou de que cada suposição pertença exclusivamente a uma técnica.
-- Na linha 63, a inferência inclui incerteza amostral “ou outras fontes explicitamente modeladas”; portanto, o escopo não é restrito formalmente à amostragem.
-- “Podem gerar comparações informativas” (linha 65), “pode exigir bloqueio”, “pode criar associação” e “podem representar” (linha 67) evitam afirmar consequências invariáveis de regras, limiares ou ajustes.
-- O operador de intervenção é “frequentemente” escrito como `do(X = x)` (linha 67), formulação que não reivindica exclusividade de notação.
-- O argumento de identificação é qualificado como “plausível” (linha 63), não comprovado automaticamente.
-- A sequência final é explicitamente qualificada como não mecânica e revisável (linha 71).
+- A seção trabalha com tratamento e controle binários: a notação apresentada é \(Y_i(1)\), \(Y_i(0)\) e \(Y_i(x)\) (linhas 57–59). Não encontrei extensão explícita para tratamentos multivalorados, contínuos ou dinâmicos.
+- O exemplo inicial é introduzido como “por exemplo” (linha 55), e a seção usa “tipicamente” (linha 59) ao falar de médias populacionais. Esses termos mantêm os exemplos como ilustrativos, não exaustivos.
+- A distinção entre resultado potencial e observado é qualificada por “em geral” (linha 59): a seção não afirma que as duas quantidades sejam sempre diferentes.
+- A identificação é condicionada a “determinadas suposições” (linha 65); o texto não apresenta identificação como propriedade sem hipóteses.
+- O caso experimental é limitado a “um experimento ideal” e à comparabilidade “em média” (linha 67).
+- As suposições observacionais são introduzidas como condições “associadas a desenhos diferentes” (linha 67), sem a afirmação de que a enumeração seja completa ou que cada suposição pertença exclusivamente a uma técnica.
+- O LATE é apresentado “sob as suposições usuais” e “frequentemente” como o estimando identificado por variáveis instrumentais (linha 63). A seção destaca monotonicidade, mas não enumera todas as suposições usuais.
+- A seção usa “não necessariamente” ao limitar o LATE (linha 63), preservando a distinção entre o efeito local e efeitos para todos os elegíveis ou para uma expansão universal.
+- Na distinção entre identificação e inferência, a incerteza inclui a amostral “ou outras fontes explicitamente modeladas” (linha 69).
+- Em regressão múltipla, “raramente” e “em regra” (linha 73) qualificam, respectivamente, a possibilidade de interpretar causalmente todos os coeficientes e o papel auxiliar das demais variáveis.
+- Ao tratar DAGs, “pode exigir”, “pode criar” e “podem representar” (linha 75) apresentam consequências dependentes do papel causal da variável, não efeitos invariáveis do condicionamento.
+- SUTVA é formulado com “suficientemente preciso” e “inadvertidamente” (linha 77), sem uma especificação mais detalhada das versões do tratamento ou dos mecanismos de interferência.
+- A sequência da linha 79 é apresentada como ordem lógica, mas é qualificada por “na prática” e pela possibilidade de revisão provocada por teoria e evidência; portanto, a seção não a descreve como procedimento mecânico.
 
-## 4. O que a seção explicitamente não afirma
+## O que a seção NÃO afirma
 
-- Não afirma que uma técnica específica seja suficiente para identificar efeitos causais.
-- Não afirma que resultados estatisticamente significativos ou intervalos estreitos estabeleçam causalidade.
-- Não afirma que estudos observacionais sejam incapazes de sustentar inferência causal.
-- Não afirma que modelos estatísticos sejam dispensáveis; afirma expressamente que foram reposicionados dentro do argumento de desenho.
-- Não afirma que DAGs descubram relações causais diretamente nos dados.
-- Não afirma que resultados potenciais e DAGs sejam idênticos, rivais ou que uma linguagem seja universalmente superior à outra.
-- Não apresenta SCM como termo ou sigla e não define formalmente um modelo causal estrutural; apresenta apenas o operador `do` e relações gráficas.
-- Não oferece derivação matemática, algoritmo de estimação, teste diagnóstico ou receita completa para nenhum desenho citado.
-- Não analisa uma aplicação empírica específica nem apresenta resultados numéricos.
-- Não afirma que as listas de resultados, versões de tratamento, estimandos, suposições ou desenhos sejam exaustivas.
-- Não encontrei, nessas linhas, afirmação sobre validade externa, generalização entre populações ou transporte de efeitos.
-- Não encontrei, nessas linhas, discussão explícita de viés de seleção amostral, erro de mensuração, attrition ou missing data.
+- Não afirma que escolher uma técnica, ajustar uma regressão ou obter um coeficiente significativo seja suficiente para identificar um efeito causal (linhas 55, 67, 69 e 73).
+- Não afirma que \(E(Y_i(1))\) seja igual a \(E(Y_i\mid X_i=1)\); afirma o contrário como regra geral (linha 59).
+- Não afirma que o LATE seja o efeito entre todos os elegíveis ou o efeito de uma expansão universal do programa (linha 63).
+- Não afirma que uma amostra infinita recupere uma quantidade não identificada (linha 65).
+- Não afirma que uma lista de suposições, por si só, seja verdadeira em uma aplicação; apresenta as suposições como afirmações sobre o processo gerador dos dados e o mundo social (linha 67).
+- Não afirma que erros-padrão pequenos ou intervalos estreitos corrijam confundimento ou eliminem viés (linha 69).
+- Não afirma que todos os coeficientes de uma regressão múltipla sejam efeitos causais (linha 73).
+- Não afirma que um DAG seja defensável apenas por ter sido desenhado; sua defensabilidade é condicionada às relações causais postuladas (linha 75).
+- Não encontrei, nas linhas 53–80, uma aplicação empírica com dados, estimativas numéricas, teste diagnóstico ou algoritmo de estimação.
+- Não encontrei, nas linhas 53–80, uma afirmação sobre validade externa, generalização ou transporte dos efeitos para outra população.
+- Não encontrei, nas linhas 53–80, uma discussão explícita de erro de mensuração, atrito, dados ausentes ou validade da mensuração dos conceitos.
 
-## 5. Ambiguidades reais
+## Ambiguidades reais
 
-1. **Necessidade de precisão:** a frase “dimensões necessárias, mas diferentes” (linha 63) não esclarece em que sentido precisão estatística é sempre necessária. Pode significar que a incerteza deve ser avaliada, ou que apenas estimativas suficientemente precisas são informativas; são claims distintos.
-2. **Abrangência de “outros estudos observacionais”:** a linha 65 diz que, nesses estudos, a identificação depende de medir e ajustar adequadamente causas comuns. Não fica claro se “outros” restringe o enunciado aos desenhos de ajuste por confundidores ou se pretende abranger todo estudo observacional não enquadrado como experimento natural/quase experimento.
-3. **Fronteira entre experimento natural e quase experimento:** os dois termos aparecem lado a lado na linha 65, mas a seção não define a relação entre eles nem seus critérios de distinção.
-4. **Estabilidade e ausência de interferência:** a linha 69 pode ser lida como exigência geral de qualquer linguagem de resultados potenciais ou como condição da formulação simples adotada na seção. Não explicita que resultados causais também podem ser definidos sob interferência quando ela é incorporada ao estimando.
-5. **SCM implícito:** `do(X = x)` aparece na linha 67, mas “SCM”, “modelo causal estrutural” e a relação entre DAGs e SCM não aparecem. O leitor pode não saber qual estrutura dá sentido ao operador.
-6. **Escopo do bloqueio:** “pode exigir bloqueio” (linha 67) é corretamente condicional, mas a seção não explicita que a decisão de ajuste depende do conjunto completo de caminhos e da pergunta causal, e não apenas de uma classificação variável a variável.
-7. **“Efeito local para unidades próximas de um limiar”:** a linha 59 indica a localidade, mas não especifica se o alvo é o efeito no ponto de corte ou numa vizinhança. A formulação pode ser suficiente pedagogicamente, porém deixa o estimando exato indeterminado.
-8. **Fonte de variação e contrafactual:** a linha 65 trata origem da variação como núcleo do desenho, mas não explicita se isso é uma definição de desenho ou uma de suas funções. A distinção pode importar para a consistência terminológica do verbete.
+- **Escopo de \(x\) na notação observada:** a seção apresenta tratamento e controle como mundos \(1\) e \(0\) (linha 57), mas escreve \(Y_i=Y_i(x)\) para \(X_i=x\) (linha 59) sem explicitar se \(x\) continua restrito a esses dois valores.
+- **Nomes dos estimandos no exemplo do tabagismo:** a linha 61 distingue o efeito entre fumantes do efeito sobre toda a população, mas não nomeia formalmente essas duas quantidades.
+- **“Suposições usuais” no IV:** a linha 63 identifica o LATE sob as suposições usuais e detalha monotonicidade, mas deixa sem especificação local quais outras suposições compõem esse conjunto.
+- **Referente de “efeito causal médio” no experimento ideal:** a linha 67 afirma que a atribuição aleatória identifica o efeito causal médio, mas o referente populacional desse efeito não é repetido naquele parágrafo.
+- **Abrangência da identificação observacional:** a linha 71 diz que, em estudos observacionais, a identificação depende de medir e ajustar causas comuns; o trecho não delimita se essa formulação se refere especificamente a desenhos de ajuste por confundidores ou a estudos observacionais em geral.
+- **Regra de ajuste em DAGs:** a linha 75 usa “pode exigir bloqueio” para confundidores, mas não explicita no trecho o conjunto completo de caminhos ou critérios que determinariam o bloqueio em uma aplicação.
+- **Alcance de SUTVA:** a linha 77 combina tratamento “suficientemente preciso” com ausência de dependência inadvertida entre unidades, mas não separa formalmente, no trecho, essas duas dimensões nem define as versões relevantes do tratamento.
+- **Ordem lógica e revisão iterativa:** a linha 79 prescreve uma sequência e, no mesmo parágrafo, admite ida e volta entre etapas; o trecho não especifica em que sentido a sequência continua sendo obrigatória quando uma etapa posterior revisa uma anterior.
 
-## 6. Termos que precisam permanecer consistentes
+## Termos que precisam permanecer consistentes
 
-- **Pergunta causal:** vem antes da técnica e é traduzida pelo estimando.
-- **Objeto causal:** conjunto das escolhas sobre população, intervenção, resultado, horizonte e comparação contrafactual.
-- **Contrafactual:** resultado não observado da mesma unidade ou comparação aproximada pelo desenho; não deve virar sinônimo genérico de grupo de controle.
-- **Resultados potenciais:** $Y_i(1)$ e $Y_i(0)$ na formulação binária usada.
-- **Estimando:** quantidade causal alvo, definida independentemente do procedimento de cálculo.
-- **Estimador:** regra aplicada à amostra para aprender sobre o estimando.
-- **Estimativa:** valor numérico produzido pelo estimador.
-- **Identificação:** ligação, sob suposições, entre a quantidade causal e a distribuição observada.
-- **Inferência estatística:** quantificação da incerteza da estimativa, distinta da identificação.
-- **Desenho de pesquisa:** ponte entre estimando e dados que explicita a origem da variação e a comparação contrafactual.
-- **Suposições de identificação:** afirmações sobre o processo gerador dos dados e o mundo social; não propriedades automáticas de métodos.
-- **Credibilidade causal** versus **precisão estatística:** dimensões distintas; a redação posterior deve preservar essa separação.
-- **Tratamento**, **intervenção**, **exposição**, **oferta**, **adesão** e **elegibilidade:** não são intercambiáveis sem definição; a própria seção os distingue.
-- **Experimento**, **experimento natural**, **quase experimento** e **estudo observacional:** categorias usadas na seção cuja relação deve permanecer estável no restante do texto.
-- **Confundidor**, **colisor** e **variável pós-tratamento:** papéis causais distintos, não rótulos definidos somente pelo momento de mensuração.
-- **DAG**, **grafo**, **operador de intervenção** e eventual **SCM/modelo causal estrutural:** precisam ser conectados sem apresentar o operador `do` como propriedade de qualquer grafo associacional.
-- **Estabilidade da intervenção** e **ausência de interferência:** condições relacionadas, mas não sinônimas.
+- **Pergunta causal**, **objeto causal** e **comparação contrafactual**: aparecem como decisões substantivas anteriores à técnica (linha 55).
+- **População relevante**, **versões da intervenção**, **resultado** e **horizonte temporal**: compõem a definição inicial do objeto causal (linha 55).
+- **Tratamento**, **controle**, **\(X_i\)**, **\(Y_i(1)\)**, **\(Y_i(0)\)** e **\(Y_i(x)\)**: devem conservar os papéis notacionais apresentados nas linhas 57–59.
+- **Resultado potencial** e **resultado observado**: a seção os contrasta; não são sinônimos (linha 59).
+- **Efeito individual**, **efeito causal**, **associação observada** e **efeito causal médio**: designam níveis ou tipos distintos de quantidade no trecho (linhas 59 e 67).
+- **Estimando**, **estimador** e **estimativa**: são definidos como quantidade-alvo, regra amostral e valor numérico, respectivamente (linha 61).
+- **Identificação**, **desenho**, **suposições de identificação** e **inferência estatística**: a seção os encadeia, mas não os trata como sinônimos (linhas 65–69).
+- **LATE**, **compliers** e **monotonicidade**: aparecem no contexto específico de variáveis instrumentais e não devem ser usados como efeitos gerais da população (linha 63).
+- **Credibilidade causal** e **precisão estatística**: são dimensões distintas e conjuntamente relevantes (linha 69).
+- **Causas comuns**, **confundimento**, **condicionamento**, **bloqueio** e **controles**: referem-se a papéis e operações diferentes no argumento de identificação (linhas 67, 71, 73 e 75).
+- **Regressão**, **pareamento**, **diferença-em-diferenças**, **RDD** e **variáveis instrumentais**: são técnicas ou desenhos citados, não garantias automáticas das suposições de identificação (linha 67).
+- **DAG**, **grafo**, **colisor**, **variável pós-tratamento**, **mediador**, **efeito intermediário** e **operador de intervenção**: a seção distingue esses termos ao discutir a estrutura causal (linha 75).
+- **Intervir em \(X\)** e **observar unidades com \(X=x\)**: são operações conceitualmente diferentes (linha 75).
+- **SUTVA**, *Stable Unit Treatment Value Assignment*, **tratamento suficientemente preciso** e dependência do tratamento de outras unidades: formam o vocabulário específico do pressuposto apresentado na linha 77.
+- **Pergunta causal**, **estimando**, **estrutura causal**, **desenho**, **suposições**, **estimador** e **inferência**: constituem a sequência lógica explicitada na linha 79.
 
-## 7. Perguntas para o agente macro
+## Perguntas para o agente macro
 
-1. O verbete pretende restringir a exposição de resultados potenciais ao tratamento binário simples? Se sim, esse limite deve ser explicitado para impedir leitura excessivamente geral?
-2. “Precisão estatística é necessária” quer dizer que a incerteza precisa ser quantificada ou que uma estimativa causal precisa ser estreita para ser útil? A redação deve distinguir essas interpretações?
-3. A frase sobre “outros estudos observacionais” deve ser limitada explicitamente a estratégias de ajuste por confundidores, evitando parecer uma caracterização de todos os desenhos observacionais?
-4. Para cumprir a menção concisa a DAGs/SCM, basta o operador `do` ou é necessário nomear “modelos causais estruturais” e situar em uma oração a relação com os DAGs?
-5. A exigência de ausência de interferência deve ser apresentada como parte da formulação simples adotada, em vez de necessidade irrestrita de toda análise por resultados potenciais?
-6. A distinção entre experimento natural e quase experimento será definida em outra seção? Se não, vale usar uma única categoria ou indicar a sobreposição terminológica?
-7. Claims fundamentais sem citação local — problema contrafactual, identificação, colisores, variáveis pós-tratamento, estabilidade e interferência — receberão referências no agente macro ou a estratégia editorial é reservar citações apenas aos pontos centrais?
-8. A expressão “efeito local para unidades próximas de um limiar” deve ser harmonizada com o exemplo de RDD para deixar claro que o estimando é local ao ponto de corte?
-9. A sequência da linha 71 será usada como arquitetura organizadora do verbete inteiro? Se sim, as aplicações devem ser narradas na mesma ordem terminológica para preservar a fidelidade do argumento.
-
+- O escopo binário de tratamento e controle nas linhas 57–59 deve ser tratado como uma escolha deliberada desta exposição ou apenas como a notação introdutória do trecho?
+- O agente macro pretende nomear formalmente os dois estimandos contrastados no exemplo do tabagismo da linha 61, ou manter a descrição substantiva usada pela seção?
+- Ao retomar variáveis instrumentais, quais “suposições usuais” da linha 63 devem permanecer explicitamente associadas ao LATE, além da monotonicidade mencionada?
+- A expressão “efeito causal médio” da linha 67 deve permanecer sem um referente populacional adicional quando reaparecer em outras partes do verbete?
+- A formulação sobre estudos observacionais da linha 71 deve ser lida como descrição de ajuste de causas comuns ou como enunciado para todo desenho observacional?
+- Na continuidade do verbete, “controle” será reservado à condição de tratamento ou também abrangerá variáveis auxiliares usadas para identificação e precisão, como discutido na linha 73?
+- O vocabulário de DAGs e modelos causais estruturais usado na linha 75 será retomado com a mesma distinção entre observação e intervenção?
+- A formulação de SUTVA na linha 77 será usada como referência geral para resultados potenciais ou apenas para a formulação simples apresentada neste trecho?
+- A sequência da linha 79 será a arquitetura organizadora das seções seguintes, mantendo a possibilidade de revisão iterativa mencionada no próprio parágrafo?
+- As citações locais associadas aos estimandos, ao LATE, à revolução da credibilidade e à distinção entre estimando e identificação devem continuar sendo os pontos de apoio bibliográfico desta cadeia argumentativa?

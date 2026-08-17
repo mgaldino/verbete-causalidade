@@ -1,0 +1,7 @@
+metric_id,metric,n,denominator,denominator_n,percent
+quantitative_inference_observed,Artigos quantitativos com infer<c3><aa>ncia estat<c3><ad>stica classificada,1994,artigos emp<c3><ad>ricos quantitativos,1999,99.7
+with_statistical_inference,Quantificam formalmente a incerteza,743,artigos quantitativos com infer<c3><aa>ncia estat<c3><ad>stica classificada,1994,37.3
+without_statistical_inference,N<c3><a3>o quantificam formalmente a incerteza,1251,artigos quantitativos com infer<c3><aa>ncia estat<c3><ad>stica classificada,1994,62.7
+quantitative_explanatory,Artigos quantitativos com pretens<c3><a3>o causal ou explicativa,1944,artigos emp<c3><ad>ricos quantitativos,1999,97.2
+with_explicit_identification,Estrat<c3><a9>gia expl<c3><ad>cita de identifica<c3><a7><c3><a3>o causal,59,artigos quantitativos com pretens<c3><a3>o causal ou explicativa,1944,3
+without_explicit_identification,Sem estrat<c3><a9>gia expl<c3><ad>cita de identifica<c3><a7><c3><a3>o causal,1885,artigos quantitativos com pretens<c3><a3>o causal ou explicativa,1944,97

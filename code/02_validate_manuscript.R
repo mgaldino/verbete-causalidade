@@ -12,6 +12,8 @@ run_manuscript_validation <- function() {
 
   manuscript_path <- "paper/verbete-causalidade.Rmd"
   bibliography_path <- "references.bib"
+  denominator_summary_path <-
+    "data/processed/abcp_quantitative_explanatory_identification_summary.csv"
   plain_text_path <- "output/verbete-causalidade.txt"
   ast_path <- "output/verbete-causalidade-pandoc.json"
   bibliography_json_path <- "output/references-csl.json"
@@ -22,6 +24,12 @@ run_manuscript_validation <- function() {
   }
   if (!file.exists(bibliography_path)) {
     stop("Bibliografia não encontrada: ", bibliography_path)
+  }
+  if (!file.exists(denominator_summary_path)) {
+    stop(
+      "Resumo de denominadores não encontrado: ", denominator_summary_path,
+      ". Execute code/03_recalculate_quantitative_explanatory_denominators.R."
+    )
   }
   if (!requireNamespace("stringi", quietly = TRUE)) {
     stop("O pacote 'stringi' é necessário para contagem Unicode de palavras.")
@@ -95,6 +103,36 @@ run_manuscript_validation <- function() {
   }
 
   manuscript_lines <- readLines(manuscript_path, encoding = "UTF-8", warn = FALSE)
+  manuscript_text <- paste(manuscript_lines, collapse = "\n")
+  denominator_summary <- utils::read.csv(
+    denominator_summary_path,
+    check.names = FALSE,
+    stringsAsFactors = FALSE,
+    encoding = "UTF-8"
+  )
+  expected_denominator_metric_ids <- c(
+    "quantitative_inference_observed",
+    "with_statistical_inference",
+    "without_statistical_inference",
+    "quantitative_explanatory",
+    "with_explicit_identification",
+    "without_explicit_identification"
+  )
+  missing_denominator_metric_ids <- setdiff(
+    expected_denominator_metric_ids,
+    denominator_summary$metric_id
+  )
+  expected_numeric_claims <- c(
+    "1.999 artigos quantitativos",
+    "1.994 têm informação disponível sobre inferência estatística",
+    "743 deles, ou 37%",
+    "1.944, ou 97,2%",
+    "59, ou 3,0%",
+    "1.885, ou 97,0%"
+  )
+  missing_numeric_claims <- expected_numeric_claims[
+    !stringi::stri_detect_fixed(manuscript_text, expected_numeric_claims)
+  ]
   plain_text <- paste(
     readLines(plain_text_path, encoding = "UTF-8", warn = FALSE),
     collapse = "\n"
@@ -254,6 +292,8 @@ run_manuscript_validation <- function() {
     cited_metadata_complete = length(invalid_metadata_keys) == 0L,
     manuscript_metadata_complete = length(missing_metadata) == 0L,
     reference_count = length(citation_keys) >= 6L && length(citation_keys) <= 12L,
+    denominator_metrics_complete = length(missing_denominator_metric_ids) == 0L,
+    denominator_claims_consistent = length(missing_numeric_claims) == 0L,
     word_limit = word_count <= 5000L,
     preamble_word_range = preamble_word_count >= 150L && preamble_word_count <= 200L,
     required_headings_exact = length(missing_headings) == 0L,
@@ -275,6 +315,14 @@ run_manuscript_validation <- function() {
     paste0("- Chaves ausentes na bibliografia: ", format_values(missing_keys)),
     paste0("- Metadados bibliográficos incompletos: ", format_values(invalid_metadata_keys)),
     paste0("- Metadados YAML ausentes: ", format_values(missing_metadata)),
+    paste0(
+      "- Métricas de denominador ausentes: ",
+      format_values(missing_denominator_metric_ids)
+    ),
+    paste0(
+      "- Marcadores numéricos de denominador ausentes no manuscrito: ",
+      format_values(missing_numeric_claims)
+    ),
     paste0("- Seções obrigatórias ausentes ou inexatas: ", format_values(missing_headings)),
     paste0(
       "- Marcadores editoriais remanescentes: ",

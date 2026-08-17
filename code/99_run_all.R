@@ -2,8 +2,9 @@
 # Pipeline reproduzível — verbete "Causalidade"
 # =============================================================================
 # Uso, a partir da raiz do repositório: Rscript code/99_run_all.R
-# Etapas: extração dos casos ABCP, validação do manuscrito, renderização do PDF,
-# validação programática do PDF e registro do ambiente computacional.
+# Etapas: extração dos casos ABCP, cálculo dos denominadores comparáveis,
+# validação do manuscrito, renderização e validação programática do PDF e
+# registro do ambiente computacional.
 # =============================================================================
 
 write_session_record <- function(path = "quality_reports/sessionInfo.txt") {
@@ -131,13 +132,19 @@ run_pipeline <- function() {
 
   on.exit(write_session_record(), add = TRUE)
 
-  cat("[1/4] Extraindo casos causais ABCP...\n")
+  cat("[1/5] Extraindo casos causais ABCP...\n")
   source("code/01_extract_abcp_causal_design_cases.R", local = new.env(parent = globalenv()))
 
-  cat("\n[2/4] Validando manuscrito e citações...\n")
+  cat("\n[2/5] Recalculando denominadores comparáveis...\n")
+  source(
+    "code/03_recalculate_quantitative_explanatory_denominators.R",
+    local = new.env(parent = globalenv())
+  )
+
+  cat("\n[3/5] Validando manuscrito e citações...\n")
   source("code/02_validate_manuscript.R", local = new.env(parent = globalenv()))
 
-  cat("\n[3/4] Renderizando PDF...\n")
+  cat("\n[4/5] Renderizando PDF...\n")
   rendered_pdf <- rmarkdown::render(
     input = "paper/verbete-causalidade.Rmd",
     output_format = "pdf_document",
@@ -154,7 +161,7 @@ run_pipeline <- function() {
     stop("Renderização produziu PDF em caminho inesperado: ", rendered_pdf)
   }
 
-  cat("\n[4/4] Validando PDF renderizado...\n")
+  cat("\n[5/5] Validando PDF renderizado...\n")
   validate_pdf()
 
   cat("\n=== Pipeline concluído ===\n")
